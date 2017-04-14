@@ -1,0 +1,233 @@
+@charset "utf-8";
+html,
+body,
+div,
+p,
+ul,
+li,
+dl,
+dt,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+input,
+select,
+button,
+textarea,
+iframe,
+table,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+img {
+  border: 0 none;
+  vertical-align: top;
+}
+ul,
+li {
+  list-style-type: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 14px;
+}
+body,
+input,
+select,
+button,
+textarea {
+  font-size: 14px;
+  font-family: "Microsoft YaHei", "微软雅黑", Tahoma, Geneva, sans-serif;
+}
+button {
+  cursor: pointer;
+}
+i,
+em,
+cite {
+  font-style: normal;
+}
+body {
+  background: #fff;
+  line-height: 1.2;
+  min-width: 1200px;
+}
+a,
+a:link {
+  color: #666;
+  text-decoration: none;
+}
+a:focus {
+  outline: none;
+}
+.fixed:after {
+  content: ".";
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+.clearfix {zoom:1;}    /*==for IE6/7 Maxthon2==*/
+.clearfix :after {
+    clear:both;
+    content:'.';
+    display:block;
+    width: 0;
+    height: 0;
+    visibility:hidden;
+}   /*==for FF/chrome/opera/IE8==*/
+.hide {
+  display: none;
+}
+.header_box2 {
+  width: 100%;
+  background: #ededed;
+  margin-top: 1px;
+}
+.header_logo {
+  width: 980px;
+  margin: auto;
+  overflow: hidden;
+  background: url(../../images/xzkt/9first/advertising.gif) no-repeat 304px bottom;
+}
+.header_logo h1 img {
+  padding: 18px 0;
+}
+.header_box3 {
+  width: 100%;
+  background: #0354a6;
+}
+.header_nav {
+  width: 980px;
+  height: 64px;
+  margin: auto;
+}
+.header_nav span,
+.header_nav a {
+  float: left;
+  padding: 0 30px;
+  font-size: 18px;
+  line-height: 64px;
+  color: #fff;
+}
+.header_nav .hover,
+.header_nav a:hover {
+  background: #ffe300;
+  color: #333;
+  text-decoration: none;
+}
+.footer {
+  background: #fff;
+}
+.footer .foot {
+  background: #0354a6;
+}
+.footer .foot ul {
+  width: 756px;
+  height: 34px;
+  margin: 0 auto;
+  padding-top: 13px;
+  color: #fff;
+  font-family: 'Microsoft YaHei', Arial;
+  font-size: 14px;
+  text-align: center;
+}
+.footer ul {
+  width: 750px;
+  height: 20px;
+  line-height: 20px;
+  margin: 0 auto;
+}
+.footer li {
+  float: left;
+}
+.footer li a {
+  color: #fff;
+}
+.footer li i {
+  margin: 0 12px;
+}
+.footer .foot-copy {
+  padding-top: 20px;
+  color: #999;
+  font-family: 'Microsoft YaHei', Arial;
+  font-size: 12px;
+  text-align: center;
+}
+.footer .foot-copy p {
+  margin-top: 8px;
+}
+.footer .foot-copy p em {
+  margin: 0 8px;
+  color: #dadada;
+}
+.foot-icon {
+  padding-top: 5px;
+  background: #fff;
+}
+.foot-icon .icon-con {
+  width: 225px;
+  margin: 0 auto;
+  *width: 230px;
+}
+.foot-icon .icon-con .police img {
+  height: 50px;
+  vertical-align: baseline;
+}
+.foot-icon .icon-con .anquan img {
+  vertical-align: 8px;
+}
+.foot-icon .icon-con a {
+  *margin-right: 5px;
+}
+.foot-icon .icon-con a:hover {
+  text-decoration: none;
+}
+.ie-tips {
+  position: relative;
+  height: 30px;
+  line-height: 30px;
+  background: #f9d272;
+  color: #f00;
+  font-size: 14px;
+  text-align: center;
+}
+.ie-tips b{
+  font-weight: bold;
+}
+.ie-tips .js-tip-close {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  cursor: pointer;
+}
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { 
+  color: #aaa; 
+} 
+input:-moz-placeholder, textarea:-moz-placeholder { 
+  color: #aaa; 
+} 
+input::-moz-placeholder, textarea::-moz-placeholder { 
+  color: #aaa; 
+} 
+input:-ms-input-placeholder, textarea:-ms-input-placeholder { 
+  color: #aaa; 
+} 
