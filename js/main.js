@@ -53,3 +53,9 @@ if( !('placeholder' in document.createElement('input')) ){
 	$('.js-follow').click(function(){
 		$(this).toggleClass('follows');
 	})
+
+	// 简介 笔记 评价 样式切换
+	$('.js-tabs > a').click(function () {
+		$(this).find('span').addClass('active');
+		$(this).siblings('a').children().removeClass('active');
+	})
