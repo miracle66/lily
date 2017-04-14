@@ -190,8 +190,9 @@
  	padding-left: 0;
  }
  .project.white > .content .row ul li > div.course-tag span.address{
- 	background: url('../images/address.png') no-repeat 0 0;
+ 	background: url('../images/smicon.png') no-repeat;
  	padding-left: 20px;
+ 	background-position: 0 -105px;
  }
  .project.white > .content .row ul li > div.tutor > span > i{
  	color: #00a7ea;
