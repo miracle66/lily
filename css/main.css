@@ -411,7 +411,9 @@
 }
 .pane .left-pane .pane-bot > .single > span{
     color: #333;
-    padding: 10px;
+    padding: 0 10px;
+    min-width: 60px;
+    display: inline-block;
 }
 .pane .left-pane .small{
     background: #ffffff;
@@ -755,13 +757,13 @@
     margin-top: 35px;
 }
 .content .note-pane .note-detail .detail-header .right-time .time-bg{
-	display: inline-block;
-	background: url(../images/smicon.png) no-repeat 5px 7px;
-	width: 32px;
-	height: 32px;
-	border: 1px solid #8bd2ef;
-	vertical-align: middle;
-	margin-top: -1px;
+    display: inline-block;
+    background: url(../images/smicon.png) no-repeat 5px 7px;
+    width: 32px;
+    height: 32px;
+    border: 1px solid #8bd2ef;
+    vertical-align: middle;
+    margin-top: -1px;
 }
 .content .note-pane .note-detail .detail-header .right-time .times{
     background: #8bd2ef;
@@ -799,9 +801,58 @@
 .content .note-pane .note-detail .detail-act a.share{
     background: url('../images/share.png') no-repeat 0 1px;
 }
+/*评价*/
+.content .note-pane .assess-edit{
+    margin: 0;
+    background: #f8f8f8;
+    padding-top: 30px;
+}
+.content .note-pane .assess-edit .stars{
+    text-align: center;
+    margin-bottom: 25px;
+}
+.content .note-pane .assess-edit .stars img{
+    cursor: pointer;
+}
+.content .note-pane .assess-edit .edits{
+    margin: 15px;
+    text-align: right;
+}
+.content .note-pane .assess-edit .edits textarea{
+    width:100%;
+    resize: none;
+    border:1px solid #dadada;
+    text-indent: 15px;
+    padding-top: 15px;
+}
+.content .note-pane .assess-edit .edits > a{
+    width: 120px;
+    padding: 12px 0;
+    background: #b4b4b4;
+    display: inline-block;
+    text-align: center;
+    color: #ffffff;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    margin-top: 15px;
+    font-size:16px;
+}
 /*单门课程 end*/
-
-
+/*线下公开课*/
+.pane .left-pane .left-content.gy{
+    border:none;
+    background: #f8f8f8;
+    padding:10px;
+}
+.pane .left-pane.line-open{
+    display: block;
+    width:auto;
+}
+.page-line .left-pane .left-condition{
+    margin-top: 0;
+}
+/*线下公开课*/
 
 
 

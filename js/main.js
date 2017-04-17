@@ -30,6 +30,7 @@ if( !('placeholder' in document.createElement('input')) ){
   // 课程首页
   //设置 综合排序 一栏 第一个tab左边框无线
   $('.js-tabClick a:first').css({'border-left':'none'});
+$('.js-tabClick a:last').css({'border-right':'none'});
 
 	// 排序筛选 js
 	$('.js-tabClick a').on('click',function(){
