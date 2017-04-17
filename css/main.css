@@ -855,6 +855,34 @@
 /*线下公开课*/
 
 
+/*内训导师详情*/
+.course .content .tutor-tags .course-tags > span:first-child{
+    background: none;
+    padding-left: 0;
+}
+.course .content .tutor-tags .course-tags > span:last-child{
+    border-right:none;
+}
+.course .content .tutor-tags .tags{
+    margin-top: 20px;
+    display: inline-block;
+    height:175px;
+    overflow-y: auto;
+}
+.course .content .tutor-tags .tags .course-desc {
+    border: 1px solid #ccedfb;
+    color: #73c4f0;
+    max-width: 195px;
+    text-align: center;
+    display: inline-block;
+    margin: 0 5px 10px 0;
+    font-size: 13px;
+}
+.course .content .tutor-tags .course-btn{
+    /*margin-top: 79px;*/
+}
+/*内训导师详情*/
+
 
 /*分页 end*/
 .pane .right-pane{
