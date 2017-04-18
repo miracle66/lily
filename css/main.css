@@ -577,7 +577,7 @@
 }
 .content .left-desc{
     display: inline-block;
-    width: 855px;
+    width: 870px;
 }
 .content .left-desc .course-left{
     padding: 15px;
@@ -624,13 +624,12 @@
     display: inline-block;
     vertical-align: top;
     margin-left: 15px;
-    max-width: 325px;
+    max-width: 310px;
 }
 .content .course-right .course-right-top{
     padding: 20px;
     background: #ffffff;
     text-align: center;
-    width: 285px;
     margin:0 0 20px 0;
 }
 .content .course-right .course-right-top > img{
@@ -658,7 +657,7 @@
 }
 .content .course-right .course-right-bot .assess{
     border-bottom: 1px solid #ebebeb;
-    padding-bottom: 20px;
+    padding-bottom: 12px;
     color: #333;
     margin-left: 5px;
     margin-right: 5px;
@@ -878,8 +877,86 @@
     margin: 0 5px 10px 0;
     font-size: 13px;
 }
-.course .content .tutor-tags .course-btn{
-    /*margin-top: 79px;*/
+.content .left-tutor .left-desc{
+    width:920px;
+}
+.content .left-tutor .course-right{
+    max-width: 260px;
+}
+.content .left-tutor .course-right .tutor-right-top{
+    background: #ffffff;
+}
+.content .left-tutor .course-right .tutor-right-top > h2{
+    border-bottom: 1px solid #dadada;
+    padding: 12px;
+    font-size: 18px;
+    font-weight: normal;
+}
+.content .left-tutor .course-right .tutor-right-top .tutor-right-list{
+    margin: 0 0 20px 0;
+}
+.content .left-tutor .course-right .tutor-right-top .tutor-right-list > img{
+    width: 68px;
+    height: 68px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;;
+}
+.content .left-tutor .course-right .tutor-right-top .tutor-right-list .list-desc{
+    display: inline-block;
+    color: #a0a0a0;
+}
+.content .left-tutor .course-right .tutor-right-top .tutor-right-list .list-desc > p{
+    margin: 10px;
+}
+.content .left-tutor .course-right .tutor-right-top .tutor-right-list .list-desc > p:first-child{
+    color: #333;
+}
+.content .left-tutor .course-right .tutor-right-top .tutor-right-list .list-single{
+    margin: 20px 12px;
+}
+.content .left-tutor .course-right .tutor-right-top .tutor-right-list > a{
+    padding: 15px 0;
+    text-align: center;
+    background: #fff;
+    border-top: 1px solid #ebebeb;
+    display: inline-block;
+    width: 100%;;
+}
+.content .left-tutor .course-right .tutor-right-top.top-middle .tutor-right-list .list-desc{
+
+}
+.content .left-tutor .course-right .tutor-right-top.top-middle .tutor-right-list .list-desc > p{
+    margin:0 0 5px 2px;
+    font-size: 12px;
+    width: 168px;
+    word-wrap: break-word;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.content .left-tutor .course-right .tutor-right-top.top-middle .tutor-right-list .list-desc > p:first-child{
+    font-size:inherit;
+}
+.content .left-tutor .course-right .tutor-right-top.top-middle .tutor-right-list .list-desc > p > i{
+    color: #20b2ed;
+}
+.content .left-tutor .content{
+    width:920px;
+}
+.content .left-tutor .content .row ul li{
+    margin:17px;
+}
+.content .left-tutor .content .row ul li img{
+    width: 195px;
+    height:130px;
+}
+.content .left-tutor .content .row ul li > div.course-tag  > img{
+    width:72px;
+    height: 12px;
+}
+.content .left-tutor .content .row ul li > div.course-tag  > span{
+    font-size:12px;
 }
 /*内训导师详情*/
 
@@ -890,7 +967,7 @@
     color: #fff;
 }
 .pane .right-pane .right-content{
-    padding: 10px;
+    padding: 12px;
 }
 .pane .right-pane .right-content > h2{
     font-size: 18px;
