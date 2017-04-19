@@ -27,10 +27,20 @@ if( !('placeholder' in document.createElement('input')) ){
 }
 
 
+// 课程首页 顶部分类点击样式
+$('.js-top > a').click(function(){
+	$(this).addClass('active').siblings().removeClass('active');
+})
+// 公共顶部筛选 点击添加样式
+$(document).on('click','.js-select > .single > span',function () {
+	$(this).addClass('active').siblings().removeClass('active');
+})
+
+
   // 课程首页
   //设置 综合排序 一栏 第一个tab左边框无线
-  $('.js-tabClick a:first').css({'border-left':'none'});
-$('.js-tabClick a:last').css({'border-right':'none'});
+  	$('.js-tabClick a:first').css({'border-left':'none'});
+  	$('.js-tabClick a.fr').css({'border-right':'none'});
 
 	// 排序筛选 js
 	$('.js-tabClick a').on('click',function(){

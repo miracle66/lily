@@ -410,10 +410,14 @@
     padding: 10px;
 }
 .pane .left-pane .pane-bot > .single > span{
-    color: #333;
-    padding: 0 10px;
-    min-width: 60px;
-    display: inline-block;
+    padding:3px 10px;
+    margin:0 10px 0 0;
+    cursor: pointer;
+    color: #333333;
+}
+.pane .left-pane .pane-bot > .single > span.active{
+    background: #69bff3;
+    color: #ffffff;
 }
 .pane .left-pane .small{
     background: #ffffff;
@@ -575,21 +579,24 @@
 .content .bot-pane{
     margin:30px 0;
 }
+.content .bot-pane > .content{
+    margin-bottom: 20px;
+}
 .content .left-desc{
     display: inline-block;
     width: 870px;
 }
-.content .left-desc .course-left{
+.course-left{
     padding: 15px;
     background: #fff;
 }
-.content .left-desc .course-left h2{
+.course-left h2{
     font-size: 18px;
     color: #00a7ea;
     margin: 10px 0;
     font-weight: normal;
 }
-.content .left-desc .course-left > p{
+.course-left > p{
     color: #333333;
     line-height: 25px;
 }
@@ -624,7 +631,7 @@
     display: inline-block;
     vertical-align: top;
     margin-left: 15px;
-    max-width: 310px;
+    width: 310px;
 }
 .content .course-right .course-right-top{
     padding: 20px;
@@ -673,7 +680,9 @@
     float: left;
     width: 42px;
     height: 42px;
-    border-radius: 100px;
+    -webkit-border-radius:100px;
+    -moz-border-radius:100px;
+    border-radius:100px;
 }
 .content .course-right .course-right-bot .assess .assess-pane .assess-right{
     margin-left: 50px;
@@ -838,7 +847,7 @@
     font-size:16px;
 }
 /*单门课程 end*/
-/*线下公开课*/
+/*线下公开课单页*/
 .pane .left-pane .left-content.gy{
     border:none;
     background: #f8f8f8;
@@ -850,22 +859,267 @@
 }
 .page-line .left-pane .left-condition{
     margin-top: 0;
+    margin-bottom: 30px;
 }
-/*线下公开课*/
+.page-line .left-pane{
+    width: 920px;
+}
+.page-line .left-pane .project{
+    padding:0;
+ }
+.page-line .left-pane .project .opens{
+    border:1px solid #dadada;
+    margin:20px 0;
+}
+.page-line .left-pane .project .open-single{
+    padding:15px;
+}
+.page-line .left-pane .project .open-single img{
+    width: 225px;
+    height: 150px;
+    float: left;
+}
+.page-line .left-pane .project .open-single .open-single-desc{
+    margin-left: 240px;
+}
+.page-line .left-pane .project .open-single .open-single-desc{
+    font-size: 18px;
+    font-weight:normal;
+}
+.page-line .left-pane .project .open-single .open-single-desc .open-title > span{
+    display: inline-block;
+    color: #333;
+    font-size: 14px;
+}
+.page-line .left-pane .project .open-single .open-single-desc .open-title{
+    margin-top: 0;
+}
+.page-line .left-pane .project .open-single .open-single-desc .open-title > h2{
+    font-size: 18px;
+    color: #333;
+    font-weight: normal;
+}
+.page-line .left-pane .project .opens:first-child .open-single .open-single-desc .open-title > span{
+    background: #f5a1a1;
+    padding: 4px 10px;
+    font-size: 14px;
+    color: #fff;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;;
+}
+.page-line .left-pane .project .opens .open-single .open-single-desc > span > i{
+    color: #20b2ed;
+}
+.page-line .left-pane .project .open-single .open-single-desc > div{
+    height:40px;
+    margin-top: 15px;
+}
+.page-line .left-pane .project .open-single .open-single-desc .open-ad > span{
+    display: inline-block;
+    font-size: 15px;
+    color: #666666;
+    margin: 0 40px 0 0;
+    background: url("../images/smicon.png") no-repeat 0 -97px;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 20px;
+}
+.page-line .left-pane .project .open-single .open-single-desc .open-ad > span.date{
+    background-position: 0 -26px;
+}
+.page-line .left-pane .project .open-single .open-single-desc .open-price{
+    color: #ff4000;
+    font-size: 20px;
 
+}
+.page-line .left-pane .project .open-single .open-single-desc .open-price > span.fl > s,.page-line .left-pane .project .open-single .open-single-desc .open-price > span.fr{
+    font-size:14px;
+    color: #bbbbbb;
+}
+.page-line .left-pane .project .open-single .open-single-desc .open-price > span.fr > a{
+    background: url(../images/share.png) no-repeat 0 2px;
+    padding-left: 20px;
+    margin-left: 30px;
+}
+.page-line .left-pane .project .open-tutor{
+    background: #f8f8f8;
+    padding:10px 15px;
+}.page-line .left-pane .project .open-tutor > img{
+     width:40px;
+     height:40px;
+     -webkit-border-radius: 100px;
+     -moz-border-radius: 100px;
+     border-radius: 100px;;
+ }
+.page-line .left-pane .project .open-tutor .open-tutor-txt{
+    display: inline-block;
+    font-size: 16px;
+}
+.page-line .left-pane .project .open-tutor .open-tutor-txt > p{
+    font-size:14px;
+    margin-top: 5px;
+    color: #666;
+}
+.pane .page-line .hot-lesson{
+    background: #f8f8f8;
+    width: 265px;
+}
+.pane .right-pane.hot-lesson .right-content{
+    border:1px solid #dadada;
+}
+.pane .right-pane.hot-lesson .right-content > h2{
+    color: #333;
+    border-bottom: 1px solid #e5e5e5;
+}
+.pane .right-pane.hot-lesson .right-content > h2 > span{
+    background: #f8f8f8;
+}
+.pane .right-pane.hot-lesson .right-content > div{
+    width:inherit;
+    color: #333;
+}
+.pane .right-pane.hot-lesson .right-content > div > .lesson-single{
+    display: inline-block;
+}
+.pane .right-pane.hot-lesson .right-content > div > .lesson-single > p{
+    margin: 0 0 5px 2px;
+    font-size: 12px;
+    width: 168px;
+    word-wrap: break-word;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;;
+}
+.pane .right-pane.hot-lesson .right-content > div > .lesson-single > p:first-child{
+    font-size:inherit;
+}
+.pane .right-pane.hot-lesson .right-content > div > .lesson-single > p > i{
+    color: #20b2ed;
+}
+.pane .right-pane.hot-lesson .right-content > div > img,.content .left-tutor .course-right .tutor-right-top .tutor-right-list .list-single.square > img{
+    width:60px;
+    height:40px;
+}
+.pane .right-pane.hot-lesson .right-content > div > a{
+    color: #333;
+}
+/*线下公开课单页*/
+
+/*线下课程详情*/
+.course .content .right-course.line-tags .course-desc{
+    border:none;
+    width:inherit;
+    background: #f8f8f8;
+}
+.course .content .right-course.line-tags .course-desc > div{
+    margin: 15px 0;
+    color: #333333;
+}
+.course .content .right-course.line-tags .course-desc > div > span{
+    color: #808080;
+    padding-left: 25px;
+    background: url("../images/smicon.png") no-repeat 0 0;
+}
+.course .content .right-course.line-tags .course-desc > div > span.tel{
+    background-position: 0 -67px;
+}
+.course .content .right-course.line-tags .course-desc > div > span.startTime{
+    background-position: 0 -32px;
+}
+.course .content .right-course.line-tags .course-desc > div > span.address{
+    background-position: 0 -103px;
+}
+.course .content .right-course.line-tags > h2.price{
+    margin:15px 0;
+}
+.content .bot-pane.line-detail .note-pane{
+    margin-top: 0;
+}
+.content .bot-pane.line-detail .note-pane .note-detail .detail-header .right-time{
+    background: url("../images/smicon.png") no-repeat 0 -141px;
+    padding-left: 25px;
+    color: #808080;
+}
+.content .bot-pane.line-detail .note-pane .assess-edit .edits > a{
+    background: #00a7ea;
+}
+.content .bot-pane.line-detail .course-right .course-right-bot .assess{
+    border-bottom:none;
+}
+.content .bot-pane.line-detail .course-right .course-right-bot > h2{
+    margin-bottom: 10px;
+}
+.content .bot-pane.line-detail .course-right .course-right-bot .assess .assess-pane{
+    padding:5px 10px;
+}
+.content .bot-pane.line-detail .course-right .course-right-bot .assess .assess-pane .assess-right{
+    line-height: 42px;
+}
+/*线下课程详情 end*/
+
+/*活动首页*/
+.page-line .left-pane .project .open-single .open-single-desc .open-title > h2 > span{
+    font-size: 12px;
+    color: #ffffff;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    padding: 5px 10px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.page-line .left-pane .project .open-single .open-single-desc .open-title span.red{
+    background: #e64442;
+}
+.page-line .left-pane .project .open-single .open-single-desc .open-title span.blue{
+    background: #5ba7f2;
+}
+.page-line .left-pane .project .open-single .open-single-desc .open-title span.orange{
+    background: #f49a42;
+}
+.page-line .left-pane .project .open-single .open-single-desc .open-title span.green{
+    background: #3ece88;
+}
+.pane .right-pane.hot-lesson .right-note{
+    background: url(../images/activity_bg.png) no-repeat 0 0;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    margin-top: 30px;
+}
+.pane .right-pane.hot-lesson .right-note span{
+    line-height: 25px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 15px;
+    margin-left: 45px;
+    text-align: left;
+}
+/*活动首页 end*/
+
+/*活动详情页*/
+.activity-detail{
+    padding-bottom: 40px;
+}
+.activity-detail .detail-img{
+    text-align: center;
+    margin:40px 0;
+}
+/*活动详情页 end*/
 
 /*内训导师详情*/
-.course .content .tutor-tags .course-tags > span:first-child{
+.course .content .tutor-tags .course-tags > span:first-child,.course .content .line-tags .course-tags > span:first-child{
     background: none;
     padding-left: 0;
 }
-.course .content .tutor-tags .course-tags > span:last-child{
+.course .content .tutor-tags .course-tags > span:last-child,.course .content .line-tags .course-tags > span:last-child{
     border-right:none;
 }
 .course .content .tutor-tags .tags{
     margin-top: 20px;
     display: inline-block;
-    height:175px;
+    height:172px;
     overflow-y: auto;
 }
 .course .content .tutor-tags .tags .course-desc {
