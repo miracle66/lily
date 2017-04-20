@@ -1,0 +1,238 @@
+@charset "utf-8";.w {
+    width: 980px;
+    margin: 0 auto
+}
+
+.h {
+    height: auto
+}
+
+.width {
+    width: 100%;
+    height: auto
+}
+
+.scale {
+    -webkit-filter: grayscale(1)
+}
+
+.hidetxt {
+    font-size: 0;
+    line-height: 0;
+    _overflow: hidden
+}
+
+.fbg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    height: 1000px;
+    filter: alpha(opacity=50)\0;
+    opacity: 0\0;
+    zoom:1\0;opacity: .5;
+    background: #000
+}
+
+.login-bar {
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    z-index: 1001;
+    width: 475px;
+    height: auto;
+    margin-left: -237.5px;
+    background: #fff
+}
+
+.login-bar .top {
+    position: relative;
+    height: 72px;
+    border-bottom: 1px solid #e9e9e9;
+    background: #fff url(../images/login_bg.jpg) no-repeat
+}
+
+.login-bar .top .close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 43px;
+    height: 27px;
+    background: url(../images/login_close.jpg) no-repeat
+}
+
+.login-bar .tabhead {
+    position: absolute;
+    bottom: 0;
+    left: 120px;
+    width: 235px
+}
+
+.login-bar .tabhead a {
+    float: left;
+    display: block;
+    width: 85px;
+    height: 40px;
+    line-height: 40px;
+    color: #999;
+    font-family: 'Microsoft YaHei',Arial;
+    font-size: 18px;
+    text-align: center
+}
+
+.login-bar .tabhead a.cur {
+    color: #444;
+    border-bottom: 2px solid #a4a4a4;
+    text-decoration: none
+}
+
+.login-bar .tabhead a:hover {
+    text-decoration: none
+}
+
+.login-bar .tabhead a.reg-a {
+    margin-left: 65px;
+    _margin-left: 32px
+}
+
+.login-bar .login-wrap {
+    position: relative;
+    width: 300px;
+    margin: 30px auto 0
+}
+
+.login-bar .login-wrap .label {
+    margin-bottom: 18px
+}
+
+.login-bar .login-wrap .user,.login-bar .login-wrap .email,.login-bar .login-wrap .pwd {
+    width: 230px;
+    padding: 10px 0 10px 50px;
+    border-radius: 3px;
+    font-family: 'Microsoft YaHei',Arial;
+    font-size: 16px
+}
+
+.login-bar .login-wrap .user {
+    background: #fff url(../images/login_user.jpg) no-repeat 0 1px
+}
+
+.login-bar .login-wrap .email {
+    background: #fff url(../images/login_email.jpg) no-repeat 0 1px
+}
+
+.login-bar .login-wrap .pwd {
+    background: #fff url(../images/login_lock.jpg) no-repeat 0 1px
+}
+
+.login-bar .login-wrap input:focus {
+    border-color: #66afe9;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.075),0 0 3px rgba(102,175,233,0.6)
+}
+
+.login-bar .login-wrap .error {
+    border: 1px solid #dca7a7;
+    box-shadow: inset 0 1px 1px rgba(248,185,183,0.075),0 0 3px rgba(248,185,183,0.6)
+}
+
+.login-bar .login-wrap .checkbox {
+    margin-right: 5px;
+    vertical-align: -2px
+}
+
+.login-bar .login-wrap .agreement {
+    color: #808080;
+    font-family: 'Microsoft YaHei',Arial;
+    font-size: 14px
+}
+
+.login-bar .login-wrap .agreement a {
+    color: #808080;
+    font-family: 'Microsoft YaHei',Arial;
+    font-size: 14px
+}
+
+.login-bar .login-wrap .forget {
+    float: right;
+    margin-right: 20px;
+    color: #2f83d6;
+    font-size: 14px
+}
+
+.login-bar .login-wrap .tips {
+    position: absolute;
+    top: -90px;
+    left: 0;
+    width: 252px;
+    padding: 15px;
+    border: 1px solid #dca7a7;
+    border-radius: 3px;
+    background-color: #f2dede;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.25),0 1px 2px rgba(0,0,0,0.05);
+    color: #a94442;
+    font-family: 'Microsoft YaHei',Arial;
+    font-size: 14px;
+    text-align: center
+}
+
+.login-bar .login-wrap .err {
+    padding-left: 40px;
+    color: #f00;
+    font-size: 14px
+}
+
+.login-bar .btns {
+    margin-top: 30px;
+    margin-bottom: 30px
+}
+
+.login-bar .btns a {
+    display: block;
+    width: 280px;
+    height: 42px;
+    line-height: 42px;
+    border-radius: 3px;
+    color: #fff;
+    font-family: 'Microsoft YaHei',Arial;
+    font-size: 18px;
+    text-align: center
+}
+
+.login-bar .btns a:hover {
+    text-decoration: none
+}
+
+.login-bar .btns .btn-reg {
+    background: #478fd7
+}
+
+.login-bar .btns .btn-login {
+    background: #ea812c
+}
+
+.autoemail-list {
+    display: none;
+    position: absolute;
+    top: 42px;
+    left: 0;
+    width: 100%;
+    border: 1px solid #d8d8d8;
+    border-top: 0;
+    background-color: #fff
+}
+
+.autoemail-list li {
+    overflow: hidden;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 6px;
+    border-top: 1px solid #d8d8d8;
+    cursor: pointer;
+    zoom:1}
+
+.autoemail-list li:hover,.autoemail-list li.hover {
+    background-color: #f2fbff
+}

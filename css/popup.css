@@ -1,0 +1,610 @@
+@charset "utf-8";.h,.width {
+    height: auto
+}
+
+.aui_footer,.aui_main {
+    background: #fff
+}
+
+.add-brain-temp .create-brain:hover,.add-brain-temp .create-favorite:hover,.add-favorite .create-brain:hover,.add-favorite .create-favorite:hover,.aui_close,.aui_close:hover,.aui_state_noTitle .aui_close {
+    text-decoration: none
+}
+
+.w {
+    width: 980px;
+    margin: 0 auto
+}
+
+.width {
+    width: 100%
+}
+
+.scale {
+    -webkit-filter: grayscale(1)
+}
+
+.hidetxt {
+    font-size: 0;
+    line-height: 0
+}
+
+.aui_outer {
+    text-align: left
+}
+
+.aui_buttons button,.aui_close,.aui_main,.popup-alert {
+    text-align: center
+}
+
+table.aui_border,table.aui_dialog {
+    width: auto;
+    margin: 0;
+    border: 0;
+    border-collapse: collapse
+}
+
+.aui_c,.aui_e,.aui_footer,.aui_header,.aui_main,.aui_n,.aui_ne,.aui_nw,.aui_s,.aui_se,.aui_sw,.aui_tdIcon,.aui_w {
+    padding: 0
+}
+
+.aui_buttons button,.aui_header {
+    font: 12px/1.11 'Microsoft Yahei',Tahoma,Arial,Helvetica,STHeiti;
+    -o-font-family: Tahoma,Arial
+}
+
+.aui_close {
+    display: block;
+    position: absolute;
+    outline: 0
+}
+
+.aui_main {
+    min-width: 9em;
+    min-width: 0\9
+}
+
+.aui_content {
+    display: inline-block;
+    border: none;
+    text-align: left
+}
+
+.aui_content.aui_state_full {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0!important
+}
+
+.aui_loading {
+    width: 96px;
+    height: 32px;
+    background: url(icons/loading.gif) center center no-repeat;
+    text-align: left;
+    text-indent: -999em;
+    overflow: hidden
+}
+
+.aui_icon {
+    vertical-align: middle
+}
+
+.aui_icon div {
+    width: 48px;
+    height: 48px;
+    margin: 10px 0 10px 10px;
+    background-position: center center;
+    background-repeat: no-repeat
+}
+
+.aui_buttons {
+    text-align: right;
+    white-space: nowrap
+}
+
+.aui_buttons button {
+    display: inline-block;
+    width: auto;
+    margin-left: 15px;
+    padding: 6px 8px;
+    border: 1px solid #999;
+    border-radius: 5px;
+    background: #ddd;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#dddddd');
+    background: linear-gradient(top,#fff,#ddd);
+    background: -moz-linear-gradient(top,#fff,#ddd);
+    background: -webkit-gradient(linear,0 0,0 100%,from(#fff),to(#ddd));
+    text-shadow: 0 1px 1px #fff;
+    box-shadow: 0 1px 0 rgba(255,255,255,.7),0 -1px 0 rgba(0,0,0,.09);
+    line-height: 1;
+    color: #333;
+    font-family: Tahoma,Arial/9!important;
+    letter-spacing: 2px;
+    cursor: pointer;
+    overflow: visible;
+    -moz-transition: -moz-box-shadow linear .2s;
+    -webkit-transition: -webkit-box-shadow linear .2s;
+    transition: box-shadow linear .2s
+}
+
+.aui_buttons button:focus {
+    outline: 0;
+    border-color: #426dc9;
+    box-shadow: 0 0 8px rgba(66,109,201,.9)
+}
+
+.aui_buttons button:hover {
+    border-color: #666;
+    color: #000
+}
+
+.aui_buttons button:active {
+    border-color: #666;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#dddddd', endColorstr='#ffffff');
+    background: linear-gradient(top,#ddd,#fff);
+    background: -moz-linear-gradient(top,#ddd,#fff);
+    background: -webkit-gradient(linear,0 0,0 100%,from(#ddd),to(#fff));
+    box-shadow: inset 0 1px 5px rgba(66,109,201,.9),inset 0 1px 1em rgba(0,0,0,.3)
+}
+
+.aui_outer:active,.aui_state_drag .aui_outer,.aui_state_drag .aui_title,.aui_state_drag .aui_titleBar,.aui_state_noTitle .aui_dialog,.aui_state_noTitle .aui_outer {
+    box-shadow: none
+}
+
+.aui_buttons button::-moz-focus-inner {
+    margin: 0;
+    padding: 0;
+    border: none
+}
+
+.aui_buttons button[disabled] {
+    border: 1px solid #999;
+    background: #ddd;
+    color: #666;
+    cursor: default;
+    filter: alpha(opacity=50);
+    opacity: .5;
+    box-shadow: none
+}
+
+button.aui_state_highlight,button.aui_state_highlight:active {
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#33bbee', endColorstr='#2288cc')
+}
+
+button.aui_state_highlight {
+    color: #fff;
+    border: 1px solid #1c6a9e;
+    background: #28c;
+    background: linear-gradient(top,#3be,#28c);
+    background: -moz-linear-gradient(top,#3be,#28c);
+    background: -webkit-gradient(linear,0 0,0 100%,from(#3be),to(#28c));
+    text-shadow: -1px -1px 1px #1c6a9e
+}
+
+button.aui_state_highlight:hover {
+    border-color: #0F3A56;
+    color: #fff
+}
+
+button.aui_state_highlight:active {
+    border-color: #1c6a9e;
+    background: linear-gradient(top,#3be,#28c);
+    background: -moz-linear-gradient(top,#3be,#28c);
+    background: -webkit-gradient(linear,0 0,0 100%,from(#3be),to(#28c))
+}
+
+.aui_inner {
+    background: #fff
+}
+
+.aui_inner,.aui_outer {
+    border: none
+}
+
+.aui_inner i,.aui_outer i {
+    color: red
+}
+
+.aui_inner .title-info,.aui_outer .title-info {
+    border-top: 1px solid #f4f4f4;
+    height: 45px;
+    line-height: 45px;
+    margin-top: 15px
+}
+
+.aui_inner .aui_content tr,.aui_outer .aui_content tr {
+    height: 25px;
+    line-height: 25px
+}
+
+.aui_ne,.aui_nw,.aui_se,.aui_sw {
+    width: 8px;
+    height: 8px
+}
+
+.aui_titleBar {
+    position: relative;
+    height: 40px
+}
+
+.aui_title {
+    height: 48px;
+    line-height: 47px;
+    padding: 0 28px 0 10px;
+    background-color: #f4f4f4;
+    color: #333;
+    font-family: 'Microsoft YaHei';
+    font-family: Tahoma,Arial/9!important;
+    font-size: 16px;
+    font-weight: 400;
+    text-overflow: ellipsis;
+    overflow: hidden
+}
+
+.aui_close {
+    top: 11px;
+    right: 10px;
+    width: 21px;
+    height: 21px;
+    line-height: 21px;
+    padding: 1px;
+    border-radius: 50%;
+    border: 2px solid #aaa;
+    color: #aaa;
+    font-family: Helvetica,STHeiti;
+    font-size: 26px
+}
+
+.aui_content {
+    color: #666
+}
+
+.aui_state_noTitle .aui_ne,.aui_state_noTitle .aui_nw,.aui_state_noTitle .aui_se,.aui_state_noTitle .aui_sw {
+    width: 3px;
+    height: 3px
+}
+
+.aui_state_noTitle .aui_inner {
+    border: 1px solid #666;
+    background: #fff
+}
+
+.aui_state_noTitle .aui_outer {
+    border: none
+}
+
+.aui_state_noTitle .aui_e,.aui_state_noTitle .aui_n,.aui_state_noTitle .aui_ne,.aui_state_noTitle .aui_nw,.aui_state_noTitle .aui_s,.aui_state_noTitle .aui_se,.aui_state_noTitle .aui_sw,.aui_state_noTitle .aui_w {
+    background: rgba(0,0,0,.05);
+    background: #000!important\9;
+    filter: alpha(opacity=5)!important
+}
+
+.aui_state_noTitle .aui_titleBar {
+    bottom: 0
+}
+
+.aui_state_noTitle .aui_close {
+    top: 0;
+    right: 0;
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    background: 0 0;
+    font-size: 18px;
+    text-align: center;
+    text-indent: 0
+}
+
+.aui_state_noTitle .aui_close:active,.aui_state_noTitle .aui_close:hover {
+    color: #900;
+    text-decoration: none
+}
+
+.aui_state_noTitle .aui_title {
+    display: none
+}
+
+.aui_content {
+    font-size: 14px
+}
+
+.popup-alert {
+    line-height: 180%;
+    font-size: 18px
+}
+
+.popup-alert .fwb {
+    font-weight: 700
+}
+
+.popup-alert p {
+    text-align: left
+}
+
+.popup-confirm {
+    padding: 15px 0;
+    font-size: 20px
+}
+
+.aui_buttons .btn-cancel,.report-form {
+    font-size: 14px;
+    font-family: 'Microsoft YaHei',Arial
+}
+
+.aui_buttons {
+    position: relative;
+    padding: 8px 30px 42px 8px
+}
+
+.aui_buttons .btn-cancel {
+    position: absolute;
+    top: 12px;
+    right: 155px;
+    margin: 0 17px 0 10px;
+    color: #666
+}
+
+.report-form {
+    width: 440px;
+    color: #000
+}
+
+.report-form .bold {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-weight: 700
+}
+
+.report-form label {
+    display: block;
+    margin-bottom: 10px
+}
+
+.report-form label input {
+    margin-right: 3px;
+    vertical-align: -2px
+}
+
+.report-success {
+    width: 440px;
+    font-family: 'Microsoft YaHei',Arial
+}
+
+.report-success h3 {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    color: #2685e5;
+    font-size: 18px;
+    font-weight: 700
+}
+
+.report-success p {
+    color: #000;
+    font-size: 14px;
+    line-height: 200%
+}
+
+.create-favorite-form {
+    color: #333;
+    font-family: 'Microsoft YaHei',Arial;
+    font-size: 14px
+}
+
+.create-favorite-form .label {
+    margin-bottom: 15px
+}
+
+.create-favorite-form .label p {
+    margin-bottom: 5px
+}
+
+.create-favorite-form .label .title {
+    width: 407px;
+    padding: 8px 0 8px 10px;
+    border: 1px solid #d3d3d3;
+    background: #fff;
+    color: #333;
+    font-family: 'Microsoft YaHei',Arial;
+    font-size: 14px
+}
+
+.create-favorite-form .label .content {
+    width: 397px;
+    height: 76px;
+    padding: 10px;
+    border: 1px solid #d3d3d3;
+    background: #fff;
+    color: #333;
+    font-family: 'Microsoft YaHei',Arial;
+    font-size: 14px
+}
+
+.create-favorite-form .label input:focus,.create-favorite-form .label textarea:focus {
+    border-color: #66afe9;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6)
+}
+
+.create-favorite-form .label .error {
+    border: 1px solid #dca7a7;
+    box-shadow: inset 0 1px 1px rgba(248,185,183,.075),0 0 8px rgba(248,185,183,.6)
+}
+
+.add-brain-temp,.add-favorite {
+    width: 430px;
+    font-family: 'Microsoft YaHei',Arial
+}
+
+.add-brain-temp li,.add-favorite li {
+    width: 417px;
+    height: 46px;
+    line-height: 46px;
+    margin-bottom: 19px;
+    border: 1px solid #d3d3d3;
+    background: #fff;
+    cursor: pointer
+}
+
+.add-brain-temp li strong,.add-favorite li strong {
+    margin: 0 15px;
+    color: #333;
+    font-size: 16px;
+    font-weight: 700
+}
+
+.remove-document-temp .doc .icon,.remove-document-temp .doc .iconfont {
+    margin-right: 8px;
+    vertical-align: -2px
+}
+
+.add-brain-temp li span,.add-favorite li span {
+    color: #999;
+    font-size: 14px
+}
+
+.add-brain-temp li .iconfont,.add-favorite li .iconfont {
+    display: none
+}
+
+.add-brain-temp .cur,.add-favorite .cur {
+    position: relative;
+    border: 1px solid #9dcbe2;
+    background: #f2fafd
+}
+
+.add-brain-temp .cur strong,.add-favorite .cur strong {
+    color: #2685e5
+}
+
+.add-brain-temp .cur span,.add-favorite .cur span {
+    color: #9ec9e3
+}
+
+.add-brain-temp .cur .iconfont,.add-favorite .cur .iconfont {
+    display: block;
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    line-height: 34px;
+    color: #2685e5;
+    font-size: 34px
+}
+
+.add-brain-temp .create-brain,.add-brain-temp .create-favorite,.add-favorite .create-brain,.add-favorite .create-favorite {
+    color: #2685e5;
+    font-size: 14px
+}
+
+.add-favorite .blue,.add-favorite .document-title span {
+    color: #388fe7
+}
+
+.add-favorite .favorite-list {
+    max-height: 260px;
+    margin-bottom: 10px;
+    overflow-y: auto;
+    overflow-x: hidden
+}
+
+.add-favorite .favorite-list li {
+    width: 405px
+}
+
+.add-favorite .document-title {
+    border-bottom: 1px solid #f4f4f4;
+    height: 40px;
+    line-height: 40px
+}
+
+.add-favorite i {
+    color: red
+}
+
+.add-favorite p {
+    line-height: 33px;
+    padding-left: 10px
+}
+
+.add-document-temp .label {
+    margin-bottom: 10px;
+    color: #666;
+    font-family: 'Microsoft YaHei',Arial;
+    font-size: 14px
+}
+
+.add-document-temp p {
+    line-height: 180%
+}
+
+.add-document-temp .tip {
+    color: #bf151c
+}
+
+.add-document-temp .input {
+    width: 407px;
+    padding: 8px 0 8px 10px;
+    color: #666;
+    font-family: 'Microsoft YaHei',Arial;
+    font-size: 14px
+}
+
+.add-document-temp input:focus,.add-document-temp textarea:focus {
+    border-color: #66afe9;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6)
+}
+
+.add-document-temp .error,.edit-form .error {
+    border: 1px solid #dca7a7;
+    box-shadow: inset 0 1px 1px rgba(248,185,183,.075),0 0 8px rgba(248,185,183,.6)
+}
+
+.remove-document-temp {
+    width: 420px
+}
+
+.remove-document-temp .msg {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    color: #333;
+    font-family: 'Microsoft YaHei',Arial;
+    font-size: 16px;
+    text-align: center
+}
+
+.remove-document-temp .doc {
+    margin-bottom: 40px;
+    text-align: center
+}
+
+.remove-document-temp .doc .iconfont {
+    color: #bfdff3;
+    font-size: 22px
+}
+
+.remove-document-temp .doc a {
+    color: #2685e5;
+    font-family: 'Microsoft YaHei',Arial;
+    font-size: 16px
+}
+
+.edit-form {
+    position: relative
+}
+
+.edit-form .content {
+    width: 440px;
+    height: 135px;
+    padding: 10px 5px 10px 10px;
+    color: #666;
+    font-family: 'Microsoft YaHei',Arial;
+    font-size: 14px
+}
+
+.edit-form .limit-num {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    color: #aaa;
+    font-family: Arial,'Microsoft YaHei';
+    font-size: 14px
+}

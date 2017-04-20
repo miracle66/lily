@@ -5,7 +5,6 @@
 
 @charset "utf-8";
 
-
 /*首页*/
 .banner{
     width: 100%;
@@ -341,8 +340,8 @@
     vertical-align: bottom;
 }
 .top-banner > .content > .right-info > span > a.name{
-    height: 29px;
     width: 90px;
+    line-height: 42px;
     word-wrap: break-word;
     overflow: hidden;
     white-space: nowrap;
@@ -415,7 +414,7 @@
     cursor: pointer;
     color: #333333;
 }
-.pane .left-pane .pane-bot > .single > span.active{
+.pane .left-pane .pane-bot > .single > span:hover,.pane .left-pane .pane-bot > .single > span.active{
     background: #69bff3;
     color: #ffffff;
 }
@@ -511,10 +510,7 @@
 }
 .course .content .right-course > h2.price > s{
     color: #bbbbbb;
-    font-size: 20px;
-}
-.course .content .right-course .course-btn{
-
+    font-size: 18px;
 }
 .course .content .right-course .course-btn > a{
     padding: 13px 0;
@@ -836,7 +832,7 @@
 .content .note-pane .assess-edit .edits > a{
     width: 120px;
     padding: 12px 0;
-    background: #b4b4b4;
+    background: #00a7eb;
     display: inline-block;
     text-align: center;
     color: #ffffff;
@@ -866,7 +862,7 @@
 }
 .page-line .left-pane .project{
     padding:0;
- }
+}
 .page-line .left-pane .project .opens{
     border:1px solid #dadada;
     margin:20px 0;
@@ -874,17 +870,14 @@
 .page-line .left-pane .project .open-single{
     padding:15px;
 }
-.page-line .left-pane .project .open-single img{
+.page-line .left-pane .project .open-single > img{
     width: 225px;
     height: 150px;
-    float: left;
 }
 .page-line .left-pane .project .open-single .open-single-desc{
-    margin-left: 240px;
-}
-.page-line .left-pane .project .open-single .open-single-desc{
-    font-size: 18px;
-    font-weight:normal;
+    display: inline-block;
+    width: 645px;
+    margin-left: 10px;
 }
 .page-line .left-pane .project .open-single .open-single-desc .open-title > span{
     display: inline-block;
@@ -899,7 +892,13 @@
     color: #333;
     font-weight: normal;
 }
-.page-line .left-pane .project .opens:first-child .open-single .open-single-desc .open-title > span{
+.page-line .left-pane .project .open-single .open-single-desc .open-title > h2 > img{
+    width: 96px;
+    height: 17px;
+    margin-left: 40px;
+    margin-top: 2px;
+}
+.page-line .left-pane .project .opens .open-single .open-single-desc .open-title > h2 > span.pink.fr{
     background: #f5a1a1;
     padding: 4px 10px;
     font-size: 14px;
@@ -908,37 +907,41 @@
     -moz-border-radius: 100px;
     border-radius: 100px;;
 }
-.page-line .left-pane .project .opens .open-single .open-single-desc > span > i{
+.page-line .left-pane .project .opens .open-single .open-single-desc .open-title > h2 > span.fr{
+    color: #808080;
+}
+.page-line .left-pane .project .opens .open-single .open-single-desc .open-title > h2 > span.pink > i{
+    color: #ffffff;
+}
+.page-line .left-pane .project .opens .open-single .open-single-desc .open-title > h2 > span > i{
     color: #20b2ed;
 }
 .page-line .left-pane .project .open-single .open-single-desc > div{
-    height:40px;
-    margin-top: 15px;
+    margin-top: 20px;
 }
-.page-line .left-pane .project .open-single .open-single-desc .open-ad > span{
+.page-line .left-pane .project .open-single .open-single-desc .open-bgs > span{
     display: inline-block;
     font-size: 15px;
     color: #666666;
     margin: 0 40px 0 0;
-    background: url("../images/smicon.png") no-repeat 0 -97px;
-    height: 30px;
-    line-height: 30px;
+    background: url("../images/smicon.png") no-repeat 0 -104px;
     padding-left: 20px;
 }
-.page-line .left-pane .project .open-single .open-single-desc .open-ad > span.date{
-    background-position: 0 -26px;
+.page-line .left-pane .project .open-single .open-single-desc .open-bgs > span.date{
+    background-position: 0 -32px;
 }
 .page-line .left-pane .project .open-single .open-single-desc .open-price{
     color: #ff4000;
     font-size: 20px;
-
+    margin-top: 30px;
 }
-.page-line .left-pane .project .open-single .open-single-desc .open-price > span.fl > s,.page-line .left-pane .project .open-single .open-single-desc .open-price > span.fr{
+.page-line .left-pane .project .open-single .open-single-desc .open-price > div > s,.page-line .left-pane .project .open-single .open-single-desc .open-price > div > span{
     font-size:14px;
     color: #bbbbbb;
+    margin-top: 5px;
 }
-.page-line .left-pane .project .open-single .open-single-desc .open-price > span.fr > a{
-    background: url(../images/share.png) no-repeat 0 2px;
+.page-line .left-pane .project .open-single .open-single-desc .open-price > div > span > a{
+    background: url(../images/share.png) no-repeat 0 0;
     padding-left: 20px;
     margin-left: 30px;
 }
@@ -964,6 +967,7 @@
 .pane .page-line .hot-lesson{
     background: #f8f8f8;
     width: 265px;
+    margin: 0 0 20px 0;
 }
 .pane .right-pane.hot-lesson .right-content{
     border:1px solid #dadada;
@@ -978,6 +982,10 @@
 .pane .right-pane.hot-lesson .right-content > div{
     width:inherit;
     color: #333;
+}
+.pane .right-pane.hot-lesson .right-content > div > span.fr{
+    color: #808080;
+    font-size:13px;
 }
 .pane .right-pane.hot-lesson .right-content > div > .lesson-single{
     display: inline-block;
@@ -1060,14 +1068,14 @@
 
 /*活动首页*/
 .page-line .left-pane .project .open-single .open-single-desc .open-title > h2 > span{
-    font-size: 12px;
-    color: #ffffff;
+    font-size: 14px;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
     padding: 5px 10px;
     display: inline-block;
     vertical-align: middle;
+    color: #ffffff;
 }
 .page-line .left-pane .project .open-single .open-single-desc .open-title span.red{
     background: #e64442;
@@ -1081,20 +1089,34 @@
 .page-line .left-pane .project .open-single .open-single-desc .open-title span.green{
     background: #3ece88;
 }
-.pane .right-pane.hot-lesson .right-note{
+.pane .right-pane.activity-right{
+    background: #ffffff;
+}
+.pane .right-pane .right-note{
     background: url(../images/activity_bg.png) no-repeat 0 0;
     height: 100px;
     line-height: 100px;
     text-align: center;
     margin-top: 30px;
 }
-.pane .right-pane.hot-lesson .right-note span{
+.pane .right-pane .right-note span{
     line-height: 25px;
     display: inline-block;
     vertical-align: middle;
     margin-top: 15px;
     margin-left: 45px;
     text-align: left;
+}
+.page-line .left-pane .opens-more{
+    background: #eaeaea;
+    padding:15px 0;
+    text-align: center;
+    color: #808080;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    margin-top:30px;
+    margin-bottom: 20px;
 }
 /*活动首页 end*/
 
@@ -1107,6 +1129,59 @@
     margin:40px 0;
 }
 /*活动详情页 end*/
+
+/*内训课程首页*/
+.page-line .left-pane .project.train .open-single .open-single-desc > div{
+    line-height: 23px;
+    color: #333;
+}
+.page-line .left-pane .project.train .open-single .open-single-desc .open-price > div{
+    border: 1px solid #ccedfb;
+    color: #73c4f0;
+    max-width: 182px;
+    text-align: center;
+    display: inline-block;
+    margin: 0 5px 0 0;
+    font-size: 14px;
+    padding: 8px 10px;
+    word-wrap: break-word;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.page-line .left-pane .project.train .open-single .open-single-desc .open-price{
+    margin-top: 20px;
+}
+/*内训课程首页 end*/
+
+/*内训课程详情*/
+.course .content .right-course.train-detail .course-tags{
+    margin:10px 0;
+}
+.course .content .right-course.train-detail .course-desc > div{
+    margin: 12px 0;
+}
+.course .content .right-course.train-detail .course-desc > div > span.tutor{
+    background: url("../images/user.png") no-repeat 0 0;
+}
+.course .content .right-course.train-detail .course-desc > div > span.company{
+    background: url("../images/company.png") no-repeat 0 0;
+}
+.course .content .right-course.train-detail > h2.price{
+    margin: 18px 0;
+}
+.content .left-tutor .train-desc .content .row ul li{
+    margin: 10px 35px;
+}
+.content .left-tutor .train-desc .content .row ul li a{
+    font-size: 16px;
+}
+.content .left-tutor .train-desc .course-left-bot.train-style .project .content .row ul li{
+    margin: 10px 17px;
+}
+/*内训课程详情 end */
+
+
 
 /*内训导师详情*/
 .course .content .tutor-tags .course-tags > span:first-child,.course .content .line-tags .course-tags > span:first-child{
@@ -1122,7 +1197,7 @@
     height:172px;
     overflow-y: auto;
 }
-.course .content .tutor-tags .tags .course-desc {
+.course .content .tutor-tags .tags .course-desc{
     border: 1px solid #ccedfb;
     color: #73c4f0;
     max-width: 195px;
