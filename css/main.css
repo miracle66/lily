@@ -15,7 +15,7 @@
 }
 
 /*首页样式 start*/
-.content{
+.content,.pane{
     width: 1200px;
     margin: 0 auto;
 }
@@ -353,10 +353,6 @@
 }
 /*课程首页 头部*/
 /*课程首页 筛选*/
-.pane{
-    width: 1200px;
-    margin:0 auto;
-}
 .pane .pane-content{
     margin:20px 0;
 }
@@ -860,45 +856,45 @@
 .page-line .left-pane{
     width: 920px;
 }
-.page-line .left-pane .project{
+.project{
     padding:0;
 }
-.page-line .left-pane .project .opens{
+.project .opens{
     border:1px solid #dadada;
     margin:20px 0;
 }
-.page-line .left-pane .project .open-single{
+.project .open-single{
     padding:15px;
 }
-.page-line .left-pane .project .open-single > img{
+.project .open-single > img{
     width: 225px;
     height: 150px;
 }
-.page-line .left-pane .project .open-single .open-single-desc{
+.project .open-single .open-single-desc{
     display: inline-block;
     width: 645px;
     margin-left: 10px;
 }
-.page-line .left-pane .project .open-single .open-single-desc .open-title > span{
+.project .open-single .open-single-desc .open-title > span{
     display: inline-block;
     color: #333;
     font-size: 14px;
 }
-.page-line .left-pane .project .open-single .open-single-desc .open-title{
+.project .open-single .open-single-desc .open-title{
     margin-top: 0;
 }
-.page-line .left-pane .project .open-single .open-single-desc .open-title > h2{
+.project .open-single .open-single-desc .open-title > h2{
     font-size: 18px;
     color: #333;
     font-weight: normal;
 }
-.page-line .left-pane .project .open-single .open-single-desc .open-title > h2 > img{
+.project .open-single .open-single-desc .open-title > h2 > img{
     width: 96px;
     height: 17px;
     margin-left: 40px;
     margin-top: 2px;
 }
-.page-line .left-pane .project .opens .open-single .open-single-desc .open-title > h2 > span.pink.fr{
+.project .opens .open-single .open-single-desc .open-title > h2 > span.pink.fr{
     background: #f5a1a1;
     padding: 4px 10px;
     font-size: 14px;
@@ -907,19 +903,19 @@
     -moz-border-radius: 100px;
     border-radius: 100px;;
 }
-.page-line .left-pane .project .opens .open-single .open-single-desc .open-title > h2 > span.fr{
+.project .opens .open-single .open-single-desc .open-title > h2 > span.fr{
     color: #808080;
 }
-.page-line .left-pane .project .opens .open-single .open-single-desc .open-title > h2 > span.pink > i{
+.project .opens .open-single .open-single-desc .open-title > h2 > span.pink > i{
     color: #ffffff;
 }
-.page-line .left-pane .project .opens .open-single .open-single-desc .open-title > h2 > span > i{
+.project .opens .open-single .open-single-desc .open-title > h2 > span > i{
     color: #20b2ed;
 }
-.page-line .left-pane .project .open-single .open-single-desc > div{
+.project .open-single .open-single-desc > div{
     margin-top: 20px;
 }
-.page-line .left-pane .project .open-single .open-single-desc .open-bgs > span{
+.project .open-single .open-single-desc .open-bgs > span{
     display: inline-block;
     font-size: 15px;
     color: #666666;
@@ -927,39 +923,40 @@
     background: url("../images/smicon.png") no-repeat 0 -104px;
     padding-left: 20px;
 }
-.page-line .left-pane .project .open-single .open-single-desc .open-bgs > span.date{
+.project .open-single .open-single-desc .open-bgs > span.date{
     background-position: 0 -32px;
 }
-.page-line .left-pane .project .open-single .open-single-desc .open-price{
+.project .open-single .open-single-desc .open-price{
     color: #ff4000;
     font-size: 20px;
     margin-top: 30px;
 }
-.page-line .left-pane .project .open-single .open-single-desc .open-price > div > s,.page-line .left-pane .project .open-single .open-single-desc .open-price > div > span{
+.project .open-single .open-single-desc .open-price > div > s,.project .open-single .open-single-desc .open-price > div > span{
     font-size:14px;
-    color: #bbbbbb;
+    color: #999;
     margin-top: 5px;
 }
-.page-line .left-pane .project .open-single .open-single-desc .open-price > div > span > a{
+.project .open-single .open-single-desc .open-price > div > span > a{
     background: url(../images/share.png) no-repeat 0 0;
     padding-left: 20px;
     margin-left: 30px;
 }
-.page-line .left-pane .project .open-tutor{
+.project .open-tutor{
     background: #f8f8f8;
     padding:10px 15px;
-}.page-line .left-pane .project .open-tutor > img{
+}
+.project .open-tutor > img{
      width:40px;
      height:40px;
      -webkit-border-radius: 100px;
      -moz-border-radius: 100px;
      border-radius: 100px;;
  }
-.page-line .left-pane .project .open-tutor .open-tutor-txt{
+.project .open-tutor .open-tutor-txt{
     display: inline-block;
     font-size: 16px;
 }
-.page-line .left-pane .project .open-tutor .open-tutor-txt > p{
+.project .open-tutor .open-tutor-txt > p{
     font-size:14px;
     margin-top: 5px;
     color: #666;
@@ -1289,6 +1286,135 @@
 }
 /*内训导师详情*/
 
+/*个人中心*/
+.userPane .pane-content{
+    margin: 30px 0;
+}
+.userPane .right-wrapper{
+    background: #FFFFFF;
+}
+.userinfo-top{
+    background: url("../images/user_topbg.jpg") no-repeat 0 0;
+    height: 120px;
+}
+.userinfo-top .userinfo-left{
+    padding:15px 0 12px 0;
+}
+.userinfo-top .userinfo-left img{
+    width: 92px;
+    height:92px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;;
+}
+.userinfo-top .userinfo-left .userinfo-desc{
+    display: inline-block;
+    color: #FFFFFF;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+.userinfo-top .userinfo-left .userinfo-desc h2{
+    font-size: 18px;
+}
+.userinfo-top .userinfo-left .userinfo-desc .tags{
+    margin: 10px 0;
+    color: #bbecff;
+}
+.userinfo-top .userinfo-left .userinfo-desc .txt{
+    background: url("../images/pen_03.png") no-repeat 0 0;
+    padding-left:20px;
+    margin-top: 20px;
+    color: #bbecff;
+}
+.userinfo-top .userinfo-left > span{
+    margin-top: 25px;
+}
+.userinfo-top .userinfo-left > span > a{
+    display: inline-block;
+    background: transparent;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    padding: 12px 30px;
+    color: #fff;
+    margin: 0 0 0 10px;
+    width: 81px;
+    text-align: center;
+}
+
+.pane .left-list{
+    display: inline-block;
+    width: 225px;
+    background: #FFFFFF;
+}
+.pane .left-list ul li{
+    text-align: center;
+    font-size: 16px;
+}
+.pane .left-list ul li > a{
+    display: inline-block;
+    padding: 20px 0;
+    width: 225px;
+    text-align: center;
+}
+.pane .left-list ul li.active{
+    border-right: 3px solid #00a7ea;
+    background: #f8f8f8;
+}
+.pane .right-wrapper{
+    width: 960px;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 10px;
+}
+.pane .right-wrapper .right-tabs{
+    border-bottom:1px solid #dadada;
+}
+.pane .right-wrapper .right-tabs > ul{
+    margin: 0 20px;
+}
+.pane .right-wrapper .right-tabs ul li{
+    float: left;
+}
+.pane .right-wrapper .right-tabs ul li a{
+    display: inline-block;
+    padding: 20px;
+    font-size: 16px;
+}
+.pane .right-wrapper .right-tabs ul li a.active{
+    border-bottom:2px solid #00a7ea;
+    color: #00a7ea;
+}
+.pane .right-wrapper .lesson-container{
+    padding:20px;
+}
+.lesson-container .project .open-single .open-single-desc .open-bgs > span{
+    background-position: 0 -32px;
+}
+.lesson-container .project .open-single .open-single-desc .open-bgs > span.note{
+    background: url("../images/note_06.png") no-repeat 0 0;
+}
+.lesson-container .project .open-single .open-single-desc .open-bgs > span.note > i{
+    color: #00a7ea;
+}
+.lesson-container .project .open-single .open-single-desc .open-bgs > a.study{
+    display: inline-block;
+    padding: 12px 30px;
+    background: transparent;
+    color: #00a7ea;
+    border:1px solid #00a7ea;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    float: right;
+}
+.lesson-container .project .open-single .open-single-desc .open-price .smallgray{
+    margin-top: 70px;
+    font-size:15px;
+    color: #666666;
+}
+/*个人中心 end*/
 
 /*分页 end*/
 .pane .right-pane{
