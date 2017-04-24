@@ -70,3 +70,12 @@ $(document).on('click','.js-select > .single > span',function () {
 		$(this).find('span').addClass('active');
 		$(this).siblings('a').children().removeClass('active');
 	})
+
+
+
+
+// 个人中心 - 我的精品课 - 我的课程 笔记切换 js
+$(document).on('click','.notes-single .js-collapse',function () {
+	$(this).siblings('.notes').toggleClass('show');
+	console.log($(this).parents().siblings('.notes-single').children('.notes').removeClass('show'));
+})

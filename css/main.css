@@ -7,1174 +7,1175 @@
 
 /*首页*/
 .banner{
-    width: 100%;
-    min-width: 1200px;
+	width: 100%;
+	min-width: 1200px;
 }
 .banner img{
-    width: 100%;
+	width: 100%;
 }
 
 /*首页样式 start*/
 .content,.pane{
-    width: 1200px;
-    margin: 0 auto;
+	width: 1200px;
+	margin: 0 auto;
 }
 .project{
-    padding-top: 20px;
-    padding-bottom: 30px;
+	padding-top: 20px;
+	padding-bottom: 30px;
 }
 .project.usr .content .row{
-    margin-top: 40px;
+	margin-top: 40px;
 }
 .content .row .xsms{
-    background: #eb6c6c;
-    display: inline-block;
-    float: left;
-    padding: 25px 20px;
-    height: 212px;
-    width: 245px;
-    text-align: center;
+	background: #eb6c6c;
+	display: inline-block;
+	float: left;
+	padding: 25px 20px;
+	height: 212px;
+	width: 245px;
+	text-align: center;
 }
 .content .row ul{
-    /*float: right;*/
+	/*float: right;*/
 }
 .content .row ul li{
-    float: left;
-    margin: 0 0 0 20px;
+	float: left;
+	margin: 0 0 0 20px;
 }
 .content .row ul li > div{
-    margin: 10px 0;
+	margin: 10px 0;
 }
 .content .row ul li > div.course-title > span{
-    display: inline-block;
-    color: #00a7ea;
-    border: 1px solid #00a7ea;
-    padding: 2px;
-    border-radius: 2px;
+	display: inline-block;
+	color: #00a7ea;
+	border: 1px solid #00a7ea;
+	padding: 2px;
+	border-radius: 2px;
 }
 .content .row ul li > div.course-tag{
-    color: #999999;
+	color: #999999;
 }
 .content .row ul li > div.course-tag h2{
-    color: #ff4000;
-    font-size: 16px;
-    font-weight: normal;
+	color: #ff4000;
+	font-size: 16px;
+	font-weight: normal;
 }
 .content .row ul li > div.course-tag > span > i{
-    color: #54b9ee;
-    display: inline-table;
+	color: #54b9ee;
+	display: inline-table;
 }
 .content .row ul li img{
-    width: 285px;
-    height: 190px;
+	width: 285px;
+	height: 190px;
 }
 
 /*限时秒杀*/
 .project.usr .content .row .xsms .timer{
-    margin-top: 20px;
+	margin-top: 20px;
 }
 .project.usr .content .row .xsms .timer > div{
-    display: inline-block;
-    color: #ffffff;
+	display: inline-block;
+	color: #ffffff;
 }
 .project.usr .content .row .xsms .timer > div > span{
-    display: inline-block;
-    background: #ffffff;
-    border-radius: 5px;
-    padding: 10px;
-    color: #eb6c6c;
-    font-size: 38px;
-    font-weight: 800;
-    margin: 0 5px;
-    vertical-align: bottom;
+	display: inline-block;
+	background: #ffffff;
+	border-radius: 5px;
+	padding: 10px;
+	color: #eb6c6c;
+	font-size: 38px;
+	font-weight: 800;
+	margin: 0 5px;
+	vertical-align: bottom;
 }
 .project.usr .content .row .xsms .timer > div > p{
-    margin-top: 15px;
-    font-size: 16px;
+	margin-top: 15px;
+	font-size: 16px;
 }
 
 
 /*免费好课 追加*/
 
 .content .row .mfhk{
-    background: #2ac4db;
+	background: #2ac4db;
 }
 .content .row .mfhk h2{
-    color: #fff;
-    font-size: 25px;
-    margin: 30px 0;
-    font-weight: normal;
+	color: #fff;
+	font-size: 25px;
+	margin: 30px 0;
+	font-weight: normal;
 }
 .content .row .mfhk  a{
-    border-radius: 20px;
-    border:1px solid #fff;
-    padding: 8px;
-    display: block;
-    color: #fff;
-    width: 100px;
-    margin: 0 auto;
-    font-size: 16px;
+	border-radius: 20px;
+	border:1px solid #fff;
+	padding: 8px;
+	display: block;
+	color: #fff;
+	width: 100px;
+	margin: 0 auto;
+	font-size: 16px;
 }
 
 /*在线课程*/
 .project.gray{
-    background: #f9f9f9;
+	background: #f9f9f9;
 }
 .project > .content > h2{
-    margin: 20px 0 35px 0;
-    border-bottom: 1px solid #dadada;
-    padding-bottom: 5px;
-    position: relative;
+	margin: 20px 0 35px 0;
+	border-bottom: 1px solid #dadada;
+	padding-bottom: 5px;
+	position: relative;
 }
 .project > .content > h2 > span.title{
-    position: absolute;
-    font-size: 25px;
-    top: -4px;
-    font-weight: normal;
-    background: #f9f9f9;
+	position: absolute;
+	font-size: 25px;
+	top: -4px;
+	font-weight: normal;
+	background: #f9f9f9;
 }
 .project > .content > h2 > span > a{
-    color: #999999;
-    font-weight: normal;
+	color: #999999;
+	font-weight: normal;
 }
 .project.gray .content{
 }
 .project.gray .content .row img.img-left{
-    float: left;
+	float: left;
 }
 .project.gray .content .row ul li{
-    float: left;
-    margin: 0 0 20px 20px;
+	float: left;
+	margin: 0 0 20px 20px;
 }
 .project.gray .content .row ul li > a{
-    position: relative;
-    display: block;
+	position: relative;
+	display: block;
 }
 .project.gray .content .row ul li > a > span{
-    position: absolute;
-    background: url('../images/course_icon.png') no-repeat 0 0;
-    width: 64px;
-    height: 64px;
-    right: 0;
+	position: absolute;
+	background: url('../images/course_icon.png') no-repeat 0 0;
+	width: 64px;
+	height: 64px;
+	right: 0;
 
 }
 .project.gray .content .row ul li > a > span > em{
-    color: #fff;
-    text-align: center;
-    -moz-transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    position: absolute;
-    left: 13px;
-    top: 14px;
+	color: #fff;
+	text-align: center;
+	-moz-transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	position: absolute;
+	left: 13px;
+	top: 14px;
 }
 .project .content .row ul li > div.course-tag > h2 > s{
-    font-size: 12px;
-    color: #bbbbbb;
+	font-size: 12px;
+	color: #bbbbbb;
 }
 
 /*线下公开课*/
 .project.white{
-    background: #fff;
+	background: #fff;
 }
 .project.lis .content .row ul li:first-child{
-    margin-left: 0;
+	margin-left: 0;
 }
 .project.white > .content > h2 > span.title{
-    background: #fff;
+	background: #fff;
 }
 .project.lis > .content .row ul li > div.course-tag span{
-    background: inherit;
-    padding-left: 0;
+	background: inherit;
+	padding-left: 0;
 }
 .project.white > .content .row ul li > div.course-tag span.address{
-    background: url('../images/smicon.png') no-repeat;
-    padding-left: 20px;
-    background-position: 0 -105px;
+	background: url('../images/smicon.png') no-repeat;
+	padding-left: 20px;
+	background-position: 0 -105px;
 }
 .project.white > .content .row ul li > div.tutor > span > i{
-    color: #00a7ea;
+	color: #00a7ea;
 }
 .project.lis > .content .row ul li > div.green{
-    height: 253px;
-    min-width: 285px;
-    background: #acbb5f;
-    margin: 0;
+	height: 253px;
+	min-width: 285px;
+	background: #acbb5f;
+	margin: 0;
 }
 .project.lis > .content .row ul li > div.green > dl{
-    padding:10px;
+	padding:10px;
 }
 .project.lis > .content .row ul li > div.purple{
-    background: #ab7fd5;
-    height: 270px;
+	background: #ab7fd5;
+	height: 270px;
 }
 .project.lis > .content .row ul li > div.green dl dd{
-    padding: 8px 15px;
-    color: #fff;
+	padding: 8px 15px;
+	color: #fff;
 }
 
 /*人气导师*/
 .project.lis > .content .row.top-tutor ul li{
-    border-bottom: 1px solid #eeeeee;
+	border-bottom: 1px solid #eeeeee;
 }
 .project.lis > .content .row ul li{
-    position: relative;
+	position: relative;
 }
 .project.lis > .content .row ul li > div.tutor-desc{
-    position: absolute;
-    bottom: 25px;
-    width: 100%;
-    background: #fff;
-    line-height: 23px;
-    padding: 5px;
-    display: none;
+	position: absolute;
+	bottom: 25px;
+	width: 100%;
+	background: #fff;
+	line-height: 23px;
+	padding: 5px;
+	display: none;
 }
 .project.lis > .content .row ul li > div.tutor-desc > h2{
-    color: #333;
-    font-size: 16px;
+	color: #333;
+	font-size: 16px;
 }
 .project.lis > .content .row ul li > div.tutor-desc > p{
-    color: #808080;
+	color: #808080;
 }
 .project.lis > .content .row ul li:hover .tutor-desc{
-    display: block;
-    cursor: pointer;
+	display: block;
+	cursor: pointer;
 }
 
 
 /*活动专题*/
 .project.lis > .content .row ul li > div.course-title > span{
-    border:none;
-    color: #fff;
-    padding: 2px 10px;
+	border:none;
+	color: #fff;
+	padding: 2px 10px;
 }
 .project.lis > .content .row ul li > div.course-title > span.orange{
-    background: #f49a42;
+	background: #f49a42;
 }
 .project.lis > .content .row ul li > div.course-title > span.red{
-    background: #e64442;
+	background: #e64442;
 }
 .project.lis > .content .row ul li > div.course-title > span.blue{
-    background: #5ba7f2;
+	background: #5ba7f2;
 }
 .project.usr > .content .row ul li > div.course-tag span{
-    background: url('../images/user.png') no-repeat 0 0;
-    padding-left: 20px;
+	background: url('../images/user.png') no-repeat 0 0;
+	padding-left: 20px;
 }
 
 /*合作机构*/
 .project.gray > .content > .cooperate > a{
-    float: left;
-    margin: 0 20px 20px 0;
+	float: left;
+	margin: 0 20px 20px 0;
 }
 
 
 /*课程首页 头部*/
 .top-banner{
-    background: #444951;
-    padding:12px 0;
+	background: #444951;
+	padding:12px 0;
 }
 .top-banner img{
-    width: 200px;
+	width: 200px;
 }
 .top-banner > .content > ul{
-    margin-left: 65px;
-    display: inline-block;
-    vertical-align: middle;
+	margin-left: 65px;
+	display: inline-block;
+	vertical-align: middle;
 }
 .top-banner > .content > ul > li{
-    float: left;
-    margin: 10px 10px 10px 10px;
-    font-size: 18px;
+	float: left;
+	margin: 10px 10px 10px 10px;
+	font-size: 18px;
 }
 .top-banner > .content > ul > li > a{
-    color: #ffffff;
+	color: #ffffff;
 }
 .top-banner > .content > .searchCourse,.top-banner > .content > .right-info{
-    display: inline-block;
-    vertical-align: middle;
-    position: relative;
-    margin: 0 10px;
+	display: inline-block;
+	vertical-align: middle;
+	position: relative;
+	margin: 0 10px;
 }
 .top-banner > .content > .searchCourse > input{
-    padding: 6px 15px;
-    background: #666d79;
-    border: none;
-    color: #b0b6c2;
-    width: 190px;
+	padding: 6px 15px;
+	background: #666d79;
+	border: none;
+	color: #b0b6c2;
+	width: 190px;
 }
 .top-banner > .content > .searchCourse > img{
-    width: 36px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    cursor: pointer;
+	width: 36px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	cursor: pointer;
 }
 .top-banner > .content > .right-info{
-    float: right;
-    margin-right: 0;
+	float: right;
+	margin-right: 0;
 }
 
 .top-banner > .content > .right-info > a.info{
-    margin-right: 10px;
+	margin-right: 10px;
 }
 .top-banner > .content > .right-info > a > em{
-    display: inline-block;
-    background: #e10e01;
-    min-width: 15px;
-    height: 13px;
-    border-radius: 100px;
-    padding: 3px;
-    line-height: 13px;
-    text-align: center;
-    font-size: 12px;
+	display: inline-block;
+	background: #e10e01;
+	min-width: 15px;
+	height: 13px;
+	border-radius: 100px;
+	padding: 3px;
+	line-height: 13px;
+	text-align: center;
+	font-size: 12px;
 }
 .top-banner > .content > .right-info > a,.top-banner > .content > .right-info > span > a{
-    color: #ffffff;
-    display: inline-block;
+	color: #ffffff;
+	display: inline-block;
 }
 .top-banner > .content > .right-info > span{
-    margin-left: 20px;
-    display: inline-block;
-    vertical-align: bottom;
+	margin-left: 20px;
+	display: inline-block;
+	vertical-align: bottom;
 }
 .top-banner > .content > .right-info > span > a.name{
-    width: 90px;
-    line-height: 42px;
-    word-wrap: break-word;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
+	width: 90px;
+	line-height: 42px;
+	word-wrap: break-word;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
 }
 .top-banner > .content > .right-info > span > img{
-    width: 31px;
-    vertical-align: super;
+	width: 31px;
+	vertical-align: super;
 }
 /*课程首页 头部*/
 /*课程首页 筛选*/
 .pane .pane-content{
-    margin:20px 0;
+	margin:20px 0;
 }
 .pane .left-pane{
-    width: 960px;
-    display: inline-block;
+	width: 960px;
+	display: inline-block;
 }
 .pane .left-pane .left-content,.pane .left-pane .left-condition{
-    border: 1px solid #dadada;
+	border: 1px solid #dadada;
 }
 .pane .left-pane .left-condition{
-    margin:21px 0 15px 0;
+	margin:21px 0 15px 0;
 }
 .pane .left-pane .left-condition .pane-top a{
-    padding:10px 20px;
+	padding:10px 20px;
 }
 .pane .left-pane .left-condition .pane-top a > img{
-    vertical-align: middle;
+	vertical-align: middle;
 }
 .pane .left-pane .left-condition .pane-top > label{
-    margin-left: 10px;
+	margin-left: 10px;
 }
 .pane .left-pane .left-condition .pane-top > label > input{
-    margin-right: 5px;
-    cursor: pointer;
-    vertical-align: middle;
-    margin-top: -2px;
+	margin-right: 5px;
+	cursor: pointer;
+	vertical-align: middle;
+	margin-top: -2px;
 }
 .pane .left-pane .pane-top{
-    background: #f8f8f8;
+	background: #f8f8f8;
 }
 .pane .left-pane .pane-top > a{
-    display: inline-block;
-    padding: 10px 26px;
+	display: inline-block;
+	padding: 10px 26px;
 }
 .pane .left-pane .pane-top > a.all{
-    padding-left: 10px;
+	padding-left: 10px;
 }
 .pane .left-pane .pane-top > a.active{
-    color: #00a7eb;
+	color: #00a7eb;
 }
 .pane .left-pane .pane-top > a.bgs{
-    background: #ffffff;
-    border-left: 1px solid #dadada;
-    border-right: 1px solid #dadada;
-    color: #00a7eb;
+	background: #ffffff;
+	border-left: 1px solid #dadada;
+	border-right: 1px solid #dadada;
+	color: #00a7eb;
 }
 .pane .left-pane .pane-bot > .single{
-    color: #808080;
-    padding: 10px;
+	color: #808080;
+	padding: 10px;
 }
 .pane .left-pane .pane-bot > .single > span{
-    padding:3px 10px;
-    margin:0 10px 0 0;
-    cursor: pointer;
-    color: #333333;
+	padding:3px 10px;
+	margin:0 10px 0 0;
+	cursor: pointer;
+	color: #333333;
 }
 .pane .left-pane .pane-bot > .single > span:hover,.pane .left-pane .pane-bot > .single > span.active{
-    background: #69bff3;
-    color: #ffffff;
+	background: #69bff3;
+	color: #ffffff;
 }
 .pane .left-pane .small{
-    background: #ffffff;
-    padding-top: 0;
+	background: #ffffff;
+	padding-top: 0;
 }
 .pane .left-pane .small .content .row{
-    margin-top: 0;
+	margin-top: 0;
 }
 .pane .left-pane .small .content{
-    width: 980px;
+	width: 980px;
 }
-.pane .left-pane .small .content .row ul li img{
-    width: 225px;
-    height: 150px;
+.pane .left-pane .small .content .row ul li img,.pane .right-wrapper .lesson-container .project .open-single > a > img{
+	width: 225px;
+	height: 150px;
 }
 .pane .left-pane .small .content .row ul li{
-    margin: 0 20px 20px 0;
+	margin: 0 20px 20px 0;
 }
 .pane .left-pane .small .content .row ul li > div.course-title{
-    position: relative;
+	position: relative;
 }
 .pane .left-pane .small .content .row ul li > div.course-title > span{
-    position: absolute;
-    right: 0;
+	position: absolute;
+	right: 0;
 }
 /*分页*/
 .pager{
-    width: 50%;
-    margin: 30px 25% 10px 25%;
-    display: inline-block;
+	width: 50%;
+	margin: 30px 25% 10px 25%;
+	display: inline-block;
 }
 .pager ul#pages li{
-    float: left;
-    margin: 0 5px;
-    padding: 10px 15px;
-    border: 1px solid #ececec;
-    border-radius: 5px;
-    font-size: 16px;
+	float: left;
+	margin: 0 5px;
+	padding: 10px 15px;
+	border: 1px solid #ececec;
+	border-radius: 5px;
+	font-size: 16px;
 }
 .pager ul#pages li > a{
-    cursor: pointer;
-    color: #333;
+	cursor: pointer;
+	color: #333;
 }
 .pager ul#pages li.active{
-    background: #00a7eb;
+	background: #00a7eb;
 }
 .pager ul#pages li.active a{
-    color: #fff;
+	color: #fff;
 }
 /*课程首页 筛选*/
 /*单门课程*/
 .course{
-    background: #fff;
-    border-bottom: 1px solid #ebebeb;
-    padding:20px 0;
+	background: #fff;
+	border-bottom: 1px solid #ebebeb;
+	padding:20px 0;
 }
 .course .content .right-course{
-    display: inline-block;
-    width: 680px;
-    margin-left: 25px;
+	display: inline-block;
+	width: 680px;
+	margin-left: 25px;
 }
 .course .content .right-course > h2{
-    font-size: 24px;
+	font-size: 24px;
 }
 .course .content .right-course .course-tags{
-    margin:20px 0;
-    color: #a5a5a5;
+	margin:20px 0;
+	color: #a5a5a5;
 }
 .course .content .right-course .course-tags > span{
-    padding: 0 10px;
-    border-right: 1px solid #dadada;
+	padding: 0 10px;
+	border-right: 1px solid #dadada;
 }
 .course .content .right-course .course-tags > span:first-child{
-    padding-left: 20px;
-    background: url('../images/user.png') no-repeat 0 0;
+	padding-left: 20px;
+	background: url('../images/user.png') no-repeat 0 0;
 }
 .course .content .right-course .course-tags > span > i{
-    color: #00a7ea;
+	color: #00a7ea;
 }
 .course .content .right-course .course-desc{
-    padding:10px;
-    border:1px solid #eeeeee;
-    width: 390px;
-    color: #a5a5a5;
+	padding:10px;
+	border:1px solid #eeeeee;
+	width: 390px;
+	color: #a5a5a5;
 }
 .course .content .right-course > h2.price{
-    font-size: 30px;
-    color: #ff4000;
-    margin: 60px 0;
-    font-weight: normal;
+	font-size: 30px;
+	color: #ff4000;
+	margin: 60px 0;
+	font-weight: normal;
 }
 .course .content .right-course > h2.price > s{
-    color: #bbbbbb;
-    font-size: 18px;
+	color: #bbbbbb;
+	font-size: 18px;
 }
 .course .content .right-course .course-btn > a{
-    padding: 13px 0;
-    width: 185px;
-    display: inline-block;
-    text-align: center;
-    border-radius: 5px;
-    margin: 0 35px 0 0;
-    font-size: 18px;
+	padding: 13px 0;
+	width: 185px;
+	display: inline-block;
+	text-align: center;
+	border-radius: 5px;
+	margin: 0 35px 0 0;
+	font-size: 18px;
 }
 .course .content .right-course .course-btn > a.buy{
-    background: #ff8000;
-    color: #fff;
+	background: #ff8000;
+	color: #fff;
 }
 .course .content .right-course .course-btn > a.cart{
-    background: #ffffff;
-    border:1px solid #ff8000;
-    color: #ff8000;
+	background: #ffffff;
+	border:1px solid #ff8000;
+	color: #ff8000;
 }
 .course.course-top{
-    border-bottom: none;
-    padding: 0;
+	border-bottom: none;
+	padding: 0;
 }
 .course.course-top .content > a{
-    display: inline-block;
+	display: inline-block;
 }
 .course.course-top .content > a > span{
-    display: inline-block;
-    padding: 13px 30px;
-    font-size: 18px;
-    cursor: pointer;
+	display: inline-block;
+	padding: 13px 30px;
+	font-size: 18px;
+	cursor: pointer;
 }
 .course.course-top .content > a > span.active{
-    color: #00a7ea;
-    border-bottom: 1px solid #00a7ea;
+	color: #00a7ea;
+	border-bottom: 1px solid #00a7ea;
 }
 .course.course-top .content > div{
-    height: 48px;
-    line-height: 48px;
+	height: 48px;
+	line-height: 48px;
 }
 .course.course-top .content > div > span{
-    display: inline-block;
-    margin: 0 15px;
-    color: #333;
-    font-size: 16px;
-    cursor: pointer;
+	display: inline-block;
+	margin: 0 15px;
+	color: #333;
+	font-size: 16px;
+	cursor: pointer;
 }
 .course.course-top .content > div > span.follow{
-    background: url('../images/stars.png') no-repeat 0 0;
-    padding-left: 25px;
-    background-position: 0 16px;
+	background: url('../images/stars.png') no-repeat 0 0;
+	padding-left: 25px;
+	background-position: 0 16px;
 }
 .course.course-top .content > div > span.follows{
-    background-position: 0 -22px;
+	background-position: 0 -22px;
 }
 .course.course-top .content > div > span > img{
-    vertical-align: middle;
-    margin: 0 8px;
-    margin-top: -2px;
+	vertical-align: middle;
+	margin: 0 8px;
+	margin-top: -2px;
 }
 
 .content .bot-pane{
-    margin:30px 0;
+	margin:30px 0;
 }
 .content .bot-pane > .content{
-    margin-bottom: 20px;
+	margin-bottom: 20px;
 }
 .content .left-desc{
-    display: inline-block;
-    width: 870px;
+	display: inline-block;
+	width: 870px;
 }
 .course-left{
-    padding: 15px;
-    background: #fff;
+	padding: 15px;
+	background: #fff;
 }
 .course-left h2{
-    font-size: 18px;
-    color: #00a7ea;
-    margin: 10px 0;
-    font-weight: normal;
+	font-size: 18px;
+	color: #00a7ea;
+	margin: 10px 0;
+	font-weight: normal;
 }
 .course-left > p{
-    color: #333333;
-    line-height: 25px;
+	color: #333333;
+	line-height: 25px;
 }
 .content .left-desc .course-left-bot{
-    background: #fff;
-    margin: 20px 0;
+	background: #fff;
+	margin: 20px 0;
 }
 .content .left-desc .course-left-bot h2{
-    font-size: 18px;
-    font-weight: normal;
-    border-bottom: 1px solid #dadada;
-    padding: 15px;
+	font-size: 18px;
+	font-weight: normal;
+	border-bottom: 1px solid #dadada;
+	padding: 15px;
 }
 .content .left-desc .course-left-bot .log-list h2{
-    background: #f8f8f8;
-    border:none;
-    font-size: 16px;
-    position: relative;
+	background: #f8f8f8;
+	border:none;
+	font-size: 16px;
+	position: relative;
 }
 .content .left-desc .course-left-bot .log-list ul{
-    padding: 10px 0;
+	padding: 10px 0;
 }
 .content .left-desc .course-left-bot .log-list ul li{
-    padding: 10px 15px;
-    position: relative;
+	padding: 10px 15px;
+	position: relative;
 }
 .content .left-desc .course-left-bot .log-list h2 > span.abs,.content .left-desc .course-left-bot .log-list ul li > span.abs{
-    position: absolute;
-    left: 100px;
+	position: absolute;
+	left: 100px;
 }
 .content .course-right{
-    display: inline-block;
-    vertical-align: top;
-    margin-left: 15px;
-    width: 310px;
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 15px;
+	width: 310px;
 }
 .content .course-right .course-right-top{
-    padding: 20px;
-    background: #ffffff;
-    text-align: center;
-    margin:0 0 20px 0;
+	padding: 20px;
+	background: #ffffff;
+	text-align: center;
+	margin:0 0 20px 0;
 }
 .content .course-right .course-right-top > img{
-    width: 121px;
-    height: 121px;
-    border-radius: 100px;
+	width: 121px;
+	height: 121px;
+	border-radius: 100px;
 }
 .content .course-right .course-right-top > p{
-    text-align: justify;
-    line-height: 23px;
+	text-align: justify;
+	line-height: 23px;
 }
 .content .course-right .course-right-top > p.name{
-    text-align: center;
-    font-size: 18px;
-    margin: 15px 0;
+	text-align: center;
+	font-size: 18px;
+	margin: 15px 0;
 }
 .content .course-right .course-right-bot{
-    background: #ffffff;
+	background: #ffffff;
 }
 .content .course-right .course-right-bot > h2{
-    padding: 15px 10px;
-    border-bottom: 1px solid #dadada;
-    font-weight: normal;
-    font-size: 18px;
+	padding: 15px 10px;
+	border-bottom: 1px solid #dadada;
+	font-weight: normal;
+	font-size: 18px;
 }
 .content .course-right .course-right-bot .assess{
-    border-bottom: 1px solid #ebebeb;
-    padding-bottom: 12px;
-    color: #333;
-    margin-left: 5px;
-    margin-right: 5px;
-    padding-top: 5px;
+	border-bottom: 1px solid #ebebeb;
+	padding-bottom: 12px;
+	color: #333;
+	margin-left: 5px;
+	margin-right: 5px;
+	padding-top: 5px;
 }
 .content .course-right .course-right-bot .assess:last-child{
-    border: none;
+	border: none;
 }
 .content .course-right .course-right-bot .assess .assess-pane{
-    padding: 15px 10px;
+	padding: 15px 10px;
 }
 .content .course-right .course-right-bot .assess .assess-pane > img{
-    float: left;
-    width: 42px;
-    height: 42px;
-    -webkit-border-radius:100px;
-    -moz-border-radius:100px;
-    border-radius:100px;
+	float: left;
+	width: 42px;
+	height: 42px;
+	-webkit-border-radius:100px;
+	-moz-border-radius:100px;
+	border-radius:100px;
 }
 .content .course-right .course-right-bot .assess .assess-pane .assess-right{
-    margin-left: 50px;
+	margin-left: 50px;
 }
 .content .course-right .course-right-bot .assess .assess-pane .assess-right > p{
-    margin-top: 5px;
+	margin-top: 5px;
 }
 .content .course-right .course-right-bot .assess-txt{
-    padding: 0 10px;
-    line-height: 25px;
+	padding: 0 10px;
+	line-height: 25px;
 }
 .content .course-right > a{
-    padding: 15px 0;
-    text-align: center;
-    background: #fff;
-    border-top: 1px solid #ebebeb;
-    display: inline-block;
-    width: 100%;
+	padding: 15px 0;
+	text-align: center;
+	background: #fff;
+	border-top: 1px solid #ebebeb;
+	display: inline-block;
+	width: 100%;
 }
 
 
 .content .note-pane{
-    background: #fff;
-    margin: 30px 0;
-    padding-bottom: 30px;
+	background: #fff;
+	margin: 30px 0;
+	padding-bottom: 30px;
 }
 .content .note-pane h2{
-    padding: 15px;
-    border-bottom: 1px solid #dadada;
-    font-size: 17px;
-    font-weight: normal;
+	padding: 15px;
+	border-bottom: 1px solid #dadada;
+	font-size: 17px;
+	font-weight: normal;
 }
 .content .note-pane h2 > span > a{
-    margin:0 0 0 20px;
-    font-size:16px;
+	margin:0 0 0 20px;
+	font-size:16px;
 }
 .content .note-pane h2 > span > a.active{
-    color: #00a7ea;
+	color: #00a7ea;
 }
 .content .note-pane .note-detail{
-    border-bottom:1px solid #ebebeb;
-    margin: 15px;
-    padding-bottom: 15px;
+	border-bottom:1px solid #ebebeb;
+	margin: 15px;
+	padding-bottom: 15px;
 }
 .content .note-pane .note-detail > a.btn{
-    background: #eaeaea;
-    padding: 10px;
-    width: 90px;
-    text-align: center;
-    color: #666666;
-    margin: 0 20px 0 0;
-    display: inline-block;
+	background: #eaeaea;
+	padding: 10px;
+	width: 90px;
+	text-align: center;
+	color: #666666;
+	margin: 0 20px 0 0;
+	display: inline-block;
 }
 .content .note-pane .note-detail > a.btn.active{
-    color: #ffffff;
-    background: #00a7ea;
-}
-.content .note-pane .note-detail .detail-header{
-
+	color: #ffffff;
+	background: #00a7ea;
 }
 .content .note-pane .note-detail .detail-header > img{
-    width: 68px;
-    height:68px;
-    -webkit-border-radius: 100px;
-    -moz-border-radius: 100px;
-    border-radius: 100px;;
+	width: 68px;
+	height:68px;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	border-radius: 100px;;
 }
 .content .note-pane .note-detail .detail-header > span{
-    font-size: 18px;
-    display: inline-block;
-    margin-top: 20px;
-    margin-left: 20px;
+	font-size: 18px;
+	display: inline-block;
+	margin-top: 20px;
+	margin-left: 20px;
 }
 .content .note-pane .note-detail .detail-header > span.date{
-    font-size: 16px;
-    color: #999;
+	font-size: 16px;
+	color: #999;
 }
 .content .note-pane .note-detail .detail-header .right-time{
-    display: inline-block;
-    margin-top: 35px;
+	display: inline-block;
+	margin-top: 35px;
 }
 .content .note-pane .note-detail .detail-header .right-time .time-bg{
-    display: inline-block;
-    background: url(../images/smicon.png) no-repeat 5px 7px;
-    width: 32px;
-    height: 32px;
-    border: 1px solid #8bd2ef;
-    vertical-align: middle;
-    margin-top: -1px;
+	display: inline-block;
+	background: url(../images/smicon.png) no-repeat 5px 7px;
+	width: 32px;
+	height: 32px;
+	border: 1px solid #8bd2ef;
+	vertical-align: middle;
+	margin-top: -1px;
 }
 .content .note-pane .note-detail .detail-header .right-time .times{
-    background: #8bd2ef;
-    color: #fff;
-    padding: 1px 10px;
-    vertical-align: middle;
-    height: 32px;
-    line-height: 32px;
-    display: inline-block;
+	background: #8bd2ef;
+	color: #fff;
+	padding: 1px 10px;
+	vertical-align: middle;
+	height: 32px;
+	line-height: 32px;
+	display: inline-block;
 }
 .content .note-pane .note-detail .detail-txt{
-    margin: 20px 0 15px 0;
-    color: #666;
+	margin: 20px 0 15px 0;
+	color: #666;
 }
-.content .note-pane .note-detail .detail-txt > p{
-    line-height: 25px;
+.content .note-pane .note-detail .detail-txt p{
+	line-height: 25px;
+	text-align: justify;
 }
 .content .note-pane .note-detail .detail-act{
-    color: #999999;
-    padding-bottom: 20px;
+	color: #999999;
+	padding-bottom: 20px;
 }
 .content .note-pane .note-detail .detail-act a{
-    padding-left: 25px;
-    margin:0 7px;
+	padding-left: 25px;
+	margin:0 7px;
 }
 .content .note-pane .note-detail .detail-act a.top{
-    background: url('../images/smicon.png') no-repeat 0 -140px;
+	background: url('../images/smicon.png') no-repeat 0 -140px;
 }
 .content .note-pane .note-detail .detail-act a.follow{
-    background: url('../images/stars.png') no-repeat 0 1px;
+	background: url('../images/stars.png') no-repeat 0 1px;
 }
 .content .note-pane .note-detail .detail-act a.follows{
-    background: url('../images/stars.png') no-repeat 0 -37px;
+	background: url('../images/stars.png') no-repeat 0 -37px;
 }
 .content .note-pane .note-detail .detail-act a.share{
-    background: url('../images/share.png') no-repeat 0 1px;
+	background: url('../images/share.png') no-repeat 0 1px;
 }
 /*评价*/
 .content .note-pane .assess-edit{
-    margin: 0;
-    background: #f8f8f8;
-    padding-top: 30px;
+	margin: 0;
+	background: #f8f8f8;
+	padding-top: 30px;
 }
 .content .note-pane .assess-edit .stars{
-    text-align: center;
-    margin-bottom: 25px;
+	text-align: center;
+	margin-bottom: 25px;
 }
 .content .note-pane .assess-edit .stars img{
-    cursor: pointer;
+	cursor: pointer;
 }
 .content .note-pane .assess-edit .edits{
-    margin: 15px;
-    text-align: right;
+	margin: 15px;
+	text-align: right;
 }
 .content .note-pane .assess-edit .edits textarea{
-    width:100%;
-    resize: none;
-    border:1px solid #dadada;
-    text-indent: 15px;
-    padding-top: 15px;
+	width:100%;
+	resize: none;
+	border:1px solid #dadada;
+	text-indent: 15px;
+	padding-top: 15px;
 }
 .content .note-pane .assess-edit .edits > a{
-    width: 120px;
-    padding: 12px 0;
-    background: #00a7eb;
-    display: inline-block;
-    text-align: center;
-    color: #ffffff;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-    margin-top: 15px;
-    font-size:16px;
+	width: 120px;
+	padding: 12px 0;
+	background: #00a7eb;
+	display: inline-block;
+	text-align: center;
+	color: #ffffff;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	margin-top: 15px;
+	font-size:16px;
 }
 /*单门课程 end*/
 /*线下公开课单页*/
 .pane .left-pane .left-content.gy{
-    border:none;
-    background: #f8f8f8;
-    padding:10px;
+	border:none;
+	background: #f8f8f8;
+	padding:10px;
 }
 .pane .left-pane.line-open{
-    display: block;
-    width:auto;
+	display: block;
+	width:auto;
 }
 .page-line .left-pane .left-condition{
-    margin-top: 0;
-    margin-bottom: 30px;
+	margin-top: 0;
+	margin-bottom: 30px;
 }
 .page-line .left-pane{
-    width: 920px;
+	width: 920px;
 }
-.page-line .project{
-    padding:0;
+.page-line .project,.lesson-container .project{
+	padding:0;
+}
+.project .content .note-pane{
+	margin: 0;
 }
 .project .opens{
-    border:1px solid #dadada;
-    margin:20px 0;
+	border:1px solid #dadada;
+	margin:20px 0;
 }
 .project .open-single{
-    padding:15px;
+	padding:15px;
 }
 .project .open-single > img{
-    width: 225px;
-    height: 150px;
+	width: 225px;
+	height: 150px;
 }
 .project .open-single .open-single-desc{
-    display: inline-block;
-    width: 645px;
-    margin-left: 10px;
+	display: inline-block;
+	width: 645px;
+	margin-left: 10px;
 }
 .project .open-single .open-single-desc .open-title > span{
-    display: inline-block;
-    color: #333;
-    font-size: 14px;
+	display: inline-block;
+	color: #333;
+	font-size: 14px;
 }
 .project .open-single .open-single-desc .open-title{
-    margin-top: 0;
+	margin-top: 0;
 }
 .project .open-single .open-single-desc .open-title > h2{
-    font-size: 18px;
-    color: #333;
-    font-weight: normal;
+	font-size: 18px;
+	color: #333;
+	font-weight: normal;
 }
 .project .open-single .open-single-desc .open-title > h2 > img{
-    width: 96px;
-    height: 17px;
-    margin-left: 40px;
-    margin-top: 2px;
+	width: 96px;
+	height: 17px;
+	margin-left: 40px;
+	margin-top: 2px;
 }
 .project .opens .open-single .open-single-desc .open-title > h2 > span.pink.fr{
-    background: #f5a1a1;
-    padding: 4px 10px;
-    font-size: 14px;
-    color: #fff;
-    -webkit-border-radius: 100px;
-    -moz-border-radius: 100px;
-    border-radius: 100px;;
+	background: #f5a1a1;
+	padding: 4px 10px;
+	font-size: 14px;
+	color: #fff;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	border-radius: 100px;;
 }
 .project .opens .open-single .open-single-desc .open-title > h2 > span.fr{
-    color: #808080;
+	color: #808080;
 }
 .project .opens .open-single .open-single-desc .open-title > h2 > span.pink > i{
-    color: #ffffff;
+	color: #ffffff;
 }
 .project .opens .open-single .open-single-desc .open-title > h2 > span > i{
-    color: #20b2ed;
+	color: #20b2ed;
 }
 .project .open-single .open-single-desc > div{
-    margin-top: 20px;
+	margin-top: 20px;
 }
 .project .open-single .open-single-desc .open-bgs > span{
-    display: inline-block;
-    font-size: 15px;
-    color: #666666;
-    margin: 0 40px 0 0;
-    background: url("../images/smicon.png") no-repeat 0 -104px;
-    padding-left: 20px;
+	display: inline-block;
+	font-size: 15px;
+	color: #666666;
+	margin: 0 40px 0 0;
+	background: url("../images/smicon.png") no-repeat 0 -104px;
+	padding-left: 20px;
 }
 .project .open-single .open-single-desc .open-bgs > span.date{
-    background-position: 0 -32px;
+	background-position: 0 -32px;
 }
 .project .open-single .open-single-desc .open-price{
-    color: #ff4000;
-    font-size: 20px;
-    margin-top: 30px;
+	color: #ff4000;
+	font-size: 20px;
+	margin-top: 30px;
 }
 .project .open-single .open-single-desc .open-price > div > s,.project .open-single .open-single-desc .open-price > div > span{
-    font-size:14px;
-    color: #999;
-    margin-top: 5px;
+	font-size:14px;
+	color: #999;
+	margin-top: 5px;
 }
 .project .open-single .open-single-desc .open-price > div > span > a{
-    background: url(../images/share.png) no-repeat 0 0;
-    padding-left: 20px;
-    margin-left: 30px;
+	background: url(../images/share.png) no-repeat 0 0;
+	padding-left: 20px;
+	margin-left: 30px;
 }
 .project .open-tutor{
-    background: #f8f8f8;
-    padding:10px 15px;
+	background: #f8f8f8;
+	padding:10px 15px;
 }
 .project .open-tutor > img{
-     width:40px;
-     height:40px;
-     -webkit-border-radius: 100px;
-     -moz-border-radius: 100px;
-     border-radius: 100px;;
- }
+	width:40px;
+	height:40px;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	border-radius: 100px;;
+}
 .project .open-tutor .open-tutor-txt{
-    display: inline-block;
-    font-size: 16px;
+	display: inline-block;
+	font-size: 16px;
 }
 .project .open-tutor .open-tutor-txt > p{
-    font-size:14px;
-    margin-top: 5px;
-    color: #666;
+	font-size:14px;
+	margin-top: 5px;
+	color: #666;
 }
 .pane .page-line .hot-lesson{
-    background: #f8f8f8;
-    width: 265px;
-    margin: 0 0 20px 0;
+	background: #f8f8f8;
+	width: 265px;
+	margin: 0 0 20px 0;
 }
 .pane .right-pane.hot-lesson .right-content{
-    border:1px solid #dadada;
+	border:1px solid #dadada;
 }
 .pane .right-pane.hot-lesson .right-content > h2{
-    color: #333;
-    border-bottom: 1px solid #e5e5e5;
+	color: #333;
+	border-bottom: 1px solid #e5e5e5;
 }
 .pane .right-pane.hot-lesson .right-content > h2 > span{
-    background: #f8f8f8;
+	background: #f8f8f8;
 }
 .pane .right-pane.hot-lesson .right-content > div{
-    width:inherit;
-    color: #333;
+	width:inherit;
+	color: #333;
 }
 .pane .right-pane.hot-lesson .right-content > div > span.fr{
-    color: #808080;
-    font-size:13px;
+	color: #808080;
+	font-size:13px;
 }
 .pane .right-pane.hot-lesson .right-content > div > .lesson-single{
-    display: inline-block;
+	display: inline-block;
 }
 .pane .right-pane.hot-lesson .right-content > div > .lesson-single > p{
-    margin: 0 0 5px 2px;
-    font-size: 12px;
-    width: 168px;
-    word-wrap: break-word;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;;
+	margin: 0 0 5px 2px;
+	font-size: 12px;
+	width: 168px;
+	word-wrap: break-word;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;;
 }
 .pane .right-pane.hot-lesson .right-content > div > .lesson-single > p:first-child{
-    font-size:inherit;
+	font-size:inherit;
 }
 .pane .right-pane.hot-lesson .right-content > div > .lesson-single > p > i{
-    color: #20b2ed;
+	color: #20b2ed;
 }
 .pane .right-pane.hot-lesson .right-content > div > img,.content .left-tutor .course-right .tutor-right-top .tutor-right-list .list-single.square > img{
-    width:60px;
-    height:40px;
+	width:60px;
+	height:40px;
 }
 .pane .right-pane.hot-lesson .right-content > div > a{
-    color: #333;
+	color: #333;
 }
 /*线下公开课单页*/
 
 /*线下课程详情*/
 .course .content .right-course.line-tags .course-desc{
-    border:none;
-    width:inherit;
-    background: #f8f8f8;
+	border:none;
+	width:inherit;
+	background: #f8f8f8;
 }
 .course .content .right-course.line-tags .course-desc > div{
-    margin: 15px 0;
-    color: #333333;
+	margin: 15px 0;
+	color: #333333;
 }
 .course .content .right-course.line-tags .course-desc > div > span{
-    color: #808080;
-    padding-left: 25px;
-    background: url("../images/smicon.png") no-repeat 0 0;
+	color: #808080;
+	padding-left: 25px;
+	background: url("../images/smicon.png") no-repeat 0 0;
 }
 .course .content .right-course.line-tags .course-desc > div > span.tel{
-    background-position: 0 -67px;
+	background-position: 0 -67px;
 }
 .course .content .right-course.line-tags .course-desc > div > span.startTime{
-    background-position: 0 -32px;
+	background-position: 0 -32px;
 }
 .course .content .right-course.line-tags .course-desc > div > span.address{
-    background-position: 0 -103px;
+	background-position: 0 -103px;
 }
 .course .content .right-course.line-tags > h2.price{
-    margin:15px 0;
+	margin:15px 0;
 }
 .content .bot-pane.line-detail .note-pane{
-    margin-top: 0;
+	margin-top: 0;
 }
 .content .bot-pane.line-detail .note-pane .note-detail .detail-header .right-time{
-    background: url("../images/smicon.png") no-repeat 0 -141px;
-    padding-left: 25px;
-    color: #808080;
+	background: url("../images/smicon.png") no-repeat 0 -141px;
+	padding-left: 25px;
+	color: #808080;
 }
 .content .bot-pane.line-detail .note-pane .assess-edit .edits > a{
-    background: #00a7ea;
+	background: #00a7ea;
 }
 .content .bot-pane.line-detail .course-right .course-right-bot .assess{
-    border-bottom:none;
+	border-bottom:none;
 }
 .content .bot-pane.line-detail .course-right .course-right-bot > h2{
-    margin-bottom: 10px;
+	margin-bottom: 10px;
 }
 .content .bot-pane.line-detail .course-right .course-right-bot .assess .assess-pane{
-    padding:5px 10px;
+	padding:5px 10px;
 }
 .content .bot-pane.line-detail .course-right .course-right-bot .assess .assess-pane .assess-right{
-    line-height: 42px;
+	line-height: 42px;
 }
 /*线下课程详情 end*/
 
 /*活动首页*/
 .page-line .left-pane .project .open-single .open-single-desc .open-title > h2 > span{
-    font-size: 14px;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
-    padding: 5px 10px;
-    display: inline-block;
-    vertical-align: middle;
-    color: #ffffff;
+	font-size: 14px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	padding: 5px 10px;
+	display: inline-block;
+	vertical-align: middle;
+	color: #ffffff;
 }
 .page-line .left-pane .project .open-single .open-single-desc .open-title span.red{
-    background: #e64442;
+	background: #e64442;
 }
 .page-line .left-pane .project .open-single .open-single-desc .open-title span.blue{
-    background: #5ba7f2;
+	background: #5ba7f2;
 }
 .page-line .left-pane .project .open-single .open-single-desc .open-title span.orange{
-    background: #f49a42;
+	background: #f49a42;
 }
 .page-line .left-pane .project .open-single .open-single-desc .open-title span.green{
-    background: #3ece88;
+	background: #3ece88;
 }
 .pane .right-pane.activity-right{
-    background: #ffffff;
+	background: #ffffff;
 }
 .pane .right-pane .right-note{
-    background: url(../images/activity_bg.png) no-repeat 0 0;
-    height: 100px;
-    line-height: 100px;
-    text-align: center;
-    margin-top: 30px;
+	background: url(../images/activity_bg.png) no-repeat 0 0;
+	height: 100px;
+	line-height: 100px;
+	text-align: center;
+	margin-top: 30px;
 }
 .pane .right-pane .right-note span{
-    line-height: 25px;
-    display: inline-block;
-    vertical-align: middle;
-    margin-top: 15px;
-    margin-left: 45px;
-    text-align: left;
+	line-height: 25px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-top: 15px;
+	margin-left: 45px;
+	text-align: left;
 }
 .page-line .left-pane .opens-more{
-    background: #eaeaea;
-    padding:15px 0;
-    text-align: center;
-    color: #808080;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-    margin-top:30px;
-    margin-bottom: 20px;
+	background: #eaeaea;
+	padding:15px 0;
+	text-align: center;
+	color: #808080;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	margin-top:30px;
+	margin-bottom: 20px;
 }
 /*活动首页 end*/
 
 /*活动详情页*/
 .activity-detail{
-    padding-bottom: 40px;
+	padding-bottom: 40px;
 }
 .activity-detail .detail-img{
-    text-align: center;
-    margin:40px 0;
+	text-align: center;
+	margin:40px 0;
 }
 /*活动详情页 end*/
 
 /*内训课程首页*/
 .page-line .left-pane .project.train .open-single .open-single-desc > div{
-    line-height: 23px;
-    color: #333;
+	line-height: 23px;
+	color: #333;
 }
 .page-line .left-pane .project.train .open-single .open-single-desc .open-price > div{
-    border: 1px solid #ccedfb;
-    color: #73c4f0;
-    max-width: 182px;
-    text-align: center;
-    display: inline-block;
-    margin: 0 5px 0 0;
-    font-size: 14px;
-    padding: 8px 10px;
-    word-wrap: break-word;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
+	border: 1px solid #ccedfb;
+	color: #73c4f0;
+	max-width: 182px;
+	text-align: center;
+	display: inline-block;
+	margin: 0 5px 0 0;
+	font-size: 14px;
+	padding: 8px 10px;
+	word-wrap: break-word;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
 }
 .page-line .left-pane .project.train .open-single .open-single-desc .open-price{
-    margin-top: 20px;
+	margin-top: 20px;
 }
 /*内训课程首页 end*/
 
 /*内训课程详情*/
 .course .content .right-course.train-detail .course-tags{
-    margin:10px 0;
+	margin:10px 0;
 }
 .course .content .right-course.train-detail .course-desc > div{
-    margin: 12px 0;
+	margin: 12px 0;
 }
 .course .content .right-course.train-detail .course-desc > div > span.tutor{
-    background: url("../images/user.png") no-repeat 0 0;
+	background: url("../images/user.png") no-repeat 0 0;
 }
 .course .content .right-course.train-detail .course-desc > div > span.company{
-    background: url("../images/company.png") no-repeat 0 0;
+	background: url("../images/company.png") no-repeat 0 0;
 }
 .course .content .right-course.train-detail > h2.price{
-    margin: 18px 0;
+	margin: 18px 0;
 }
 .content .left-tutor .train-desc .content .row ul li{
-    margin: 10px 35px;
+	margin: 10px 35px;
 }
 .content .left-tutor .train-desc .content .row ul li a{
-    font-size: 16px;
+	font-size: 16px;
 }
 .content .left-tutor .train-desc .course-left-bot.train-style .project .content .row ul li{
-    margin: 10px 17px;
+	margin: 10px 17px;
 }
 /*内训课程详情 end */
 
@@ -1182,311 +1183,462 @@
 
 /*内训导师详情*/
 .course .content .tutor-tags .course-tags > span:first-child,.course .content .line-tags .course-tags > span:first-child{
-    background: none;
-    padding-left: 0;
+	background: none;
+	padding-left: 0;
 }
 .course .content .tutor-tags .course-tags > span:last-child,.course .content .line-tags .course-tags > span:last-child{
-    border-right:none;
+	border-right:none;
 }
 .course .content .tutor-tags .tags{
-    margin-top: 20px;
-    display: inline-block;
-    height:172px;
-    overflow-y: auto;
+	margin-top: 20px;
+	display: inline-block;
+	height:172px;
+	overflow-y: auto;
 }
 .course .content .tutor-tags .tags .course-desc{
-    border: 1px solid #ccedfb;
-    color: #73c4f0;
-    max-width: 195px;
-    text-align: center;
-    display: inline-block;
-    margin: 0 5px 10px 0;
-    font-size: 13px;
+	border: 1px solid #ccedfb;
+	color: #73c4f0;
+	max-width: 195px;
+	text-align: center;
+	display: inline-block;
+	margin: 0 5px 10px 0;
+	font-size: 13px;
 }
 .content .left-tutor .left-desc{
-    width:920px;
+	width:920px;
 }
 .content .left-tutor .course-right{
-    max-width: 260px;
+	max-width: 260px;
 }
 .content .left-tutor .course-right .tutor-right-top{
-    background: #ffffff;
+	background: #ffffff;
 }
 .content .left-tutor .course-right .tutor-right-top > h2{
-    border-bottom: 1px solid #dadada;
-    padding: 12px;
-    font-size: 18px;
-    font-weight: normal;
+	border-bottom: 1px solid #dadada;
+	padding: 12px;
+	font-size: 18px;
+	font-weight: normal;
 }
 .content .left-tutor .course-right .tutor-right-top .tutor-right-list{
-    margin: 0 0 20px 0;
+	margin: 0 0 20px 0;
 }
 .content .left-tutor .course-right .tutor-right-top .tutor-right-list > img{
-    width: 68px;
-    height: 68px;
-    -webkit-border-radius: 100px;
-    -moz-border-radius: 100px;
-    border-radius: 100px;;
+	width: 68px;
+	height: 68px;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	border-radius: 100px;;
 }
 .content .left-tutor .course-right .tutor-right-top .tutor-right-list .list-desc{
-    display: inline-block;
-    color: #a0a0a0;
+	display: inline-block;
+	color: #a0a0a0;
 }
 .content .left-tutor .course-right .tutor-right-top .tutor-right-list .list-desc > p{
-    margin: 10px;
+	margin: 10px;
 }
 .content .left-tutor .course-right .tutor-right-top .tutor-right-list .list-desc > p:first-child{
-    color: #333;
+	color: #333;
 }
 .content .left-tutor .course-right .tutor-right-top .tutor-right-list .list-single{
-    margin: 20px 12px;
+	margin: 20px 12px;
 }
 .content .left-tutor .course-right .tutor-right-top .tutor-right-list > a{
-    padding: 15px 0;
-    text-align: center;
-    background: #fff;
-    border-top: 1px solid #ebebeb;
-    display: inline-block;
-    width: 100%;;
+	padding: 15px 0;
+	text-align: center;
+	background: #fff;
+	border-top: 1px solid #ebebeb;
+	display: inline-block;
+	width: 100%;;
 }
 .content .left-tutor .course-right .tutor-right-top.top-middle .tutor-right-list .list-desc{
 
 }
 .content .left-tutor .course-right .tutor-right-top.top-middle .tutor-right-list .list-desc > p{
-    margin:0 0 5px 2px;
-    font-size: 12px;
-    width: 168px;
-    word-wrap: break-word;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
+	margin:0 0 5px 2px;
+	font-size: 12px;
+	width: 168px;
+	word-wrap: break-word;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
 }
 .content .left-tutor .course-right .tutor-right-top.top-middle .tutor-right-list .list-desc > p:first-child{
-    font-size:inherit;
+	font-size:inherit;
 }
 .content .left-tutor .course-right .tutor-right-top.top-middle .tutor-right-list .list-desc > p > i{
-    color: #20b2ed;
+	color: #20b2ed;
 }
 .content .left-tutor .content{
-    width:920px;
+	width:920px;
 }
 .content .left-tutor .content .row ul li{
-    margin:17px;
+	margin:17px;
 }
 .content .left-tutor .content .row ul li img{
-    width: 195px;
-    height:130px;
+	width: 195px;
+	height:130px;
 }
 .content .left-tutor .content .row ul li > div.course-tag  > img{
-    width:72px;
-    height: 12px;
+	width:72px;
+	height: 12px;
 }
 .content .left-tutor .content .row ul li > div.course-tag  > span{
-    font-size:12px;
+	font-size:12px;
 }
 /*内训导师详情*/
 
 /*个人中心*/
 .userPane .pane-content{
-    margin: 30px 0;
+	margin: 30px 0;
 }
 .userPane .right-wrapper{
-    background: #FFFFFF;
+	background: #FFFFFF;
 }
 .userinfo-top{
-    background: url("../images/user_topbg.jpg") no-repeat 0 0;
-    height: 120px;
+	background: url("../images/user_topbg.jpg") no-repeat 0 0;
+	height: 120px;
 }
 .userinfo-top .userinfo-left{
-    padding:15px 0 12px 0;
+	padding:15px 0 12px 0;
 }
 .userinfo-top .userinfo-left img{
-    width: 92px;
-    height:92px;
-    -webkit-border-radius: 100px;
-    -moz-border-radius: 100px;
-    border-radius: 100px;;
+	width: 92px;
+	height:92px;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	border-radius: 100px;;
 }
 .userinfo-top .userinfo-left .userinfo-desc{
-    display: inline-block;
-    color: #FFFFFF;
-    margin-left: 20px;
-    margin-top: 5px;
+	display: inline-block;
+	color: #FFFFFF;
+	margin-left: 20px;
+	margin-top: 5px;
 }
 .userinfo-top .userinfo-left .userinfo-desc h2{
-    font-size: 18px;
+	font-size: 18px;
 }
 .userinfo-top .userinfo-left .userinfo-desc .tags{
-    margin: 10px 0;
-    color: #bbecff;
+	margin: 10px 0;
+	color: #bbecff;
 }
 .userinfo-top .userinfo-left .userinfo-desc .txt{
-    background: url("../images/pen_03.png") no-repeat 0 0;
-    padding-left:20px;
-    margin-top: 20px;
-    color: #bbecff;
+	background: url("../images/pen_03.png") no-repeat 0 0;
+	padding-left:20px;
+	margin-top: 20px;
+	color: #bbecff;
 }
 .userinfo-top .userinfo-left > span{
-    margin-top: 25px;
+	margin-top: 25px;
 }
 .userinfo-top .userinfo-left > span > a{
-    display: inline-block;
-    background: transparent;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-    border: 1px solid #fff;
-    padding: 12px 30px;
-    color: #fff;
-    margin: 0 0 0 10px;
-    width: 81px;
-    text-align: center;
+	display: inline-block;
+	background: transparent;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	border: 1px solid #fff;
+	padding: 12px 30px;
+	color: #fff;
+	margin: 0 0 0 10px;
+	width: 81px;
+	text-align: center;
 }
 
 .pane .left-list{
-    display: inline-block;
-    width: 225px;
-    background: #FFFFFF;
+	display: inline-block;
+	width: 225px;
+	background: #FFFFFF;
 }
 .pane .left-list ul li{
-    text-align: center;
-    font-size: 16px;
+	text-align: center;
+	font-size: 16px;
 }
 .pane .left-list ul li > a{
-    display: inline-block;
-    padding: 20px 0;
-    width: 225px;
-    text-align: center;
+	display: inline-block;
+	padding: 20px 0;
+	width: 225px;
+	text-align: center;
 }
 .pane .left-list ul li.active{
-    border-right: 3px solid #00a7ea;
-    background: #f8f8f8;
+	border-right: 4px solid #00a7ea;
+	background: #f8f8f8;
+}
+.pane .left-list ul li.active a{
+	color: #00a7ea;
 }
 .pane .right-wrapper{
-    width: 960px;
-    display: inline-block;
-    vertical-align: top;
-    margin-left: 10px;
+	width: 960px;
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 10px;
 }
 .pane .right-wrapper .right-tabs{
-    border-bottom:1px solid #dadada;
+	border-bottom:1px solid #dadada;
 }
 .pane .right-wrapper .right-tabs > ul{
-    margin: 0 20px;
+	margin: 0 20px;
 }
 .pane .right-wrapper .right-tabs ul li{
-    float: left;
+	float: left;
 }
 .pane .right-wrapper .right-tabs ul li a{
-    display: inline-block;
-    padding: 20px;
-    font-size: 16px;
+	display: inline-block;
+	padding: 20px;
+	font-size: 16px;
 }
-.pane .right-wrapper .right-tabs ul li a.active{
-    border-bottom:2px solid #00a7ea;
-    color: #00a7ea;
+.pane .right-wrapper .right-tabs ul li.active{
+	border-bottom:2px solid #00a7ea;
+	color: #00a7ea;
+}
+.pane .right-wrapper .right-tabs ul li.active a{
+	color: #00a7ea;
 }
 .pane .right-wrapper .lesson-container{
-    padding:20px;
+	padding:20px;
 }
 .lesson-container .project .open-single .open-single-desc .open-bgs > span{
-    background-position: 0 -32px;
+	background-position: 0 -32px;
 }
 .lesson-container .project .open-single .open-single-desc .open-bgs > span.note{
-    background: url("../images/note_06.png") no-repeat 0 0;
+	background: url("../images/note_06.png") no-repeat 0 0;
 }
-.lesson-container .project .open-single .open-single-desc .open-bgs > span.note > i{
-    color: #00a7ea;
+.lesson-container .project .open-single .open-single-desc .open-bgs > span > i{
+	color: #00a7ea;
 }
 .lesson-container .project .open-single .open-single-desc .open-bgs > a.study{
-    display: inline-block;
-    padding: 12px 30px;
-    background: transparent;
-    color: #00a7ea;
-    border:1px solid #00a7ea;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-    float: right;
+	display: inline-block;
+	padding: 12px 30px;
+	background: transparent;
+	color: #00a7ea;
+	border:1px solid #00a7ea;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	float: right;
 }
 .lesson-container .project .open-single .open-single-desc .open-price .smallgray{
-    margin-top: 70px;
-    font-size:15px;
-    color: #666666;
+	margin-top: 70px;
+	font-size:15px;
+	color: #666666;
 }
+.lesson-container .project.care-list .open-single .open-single-desc .open-bgs > span{
+	background: url("../images/view.png") no-repeat 0 4px;
+}
+.lesson-container .project.care-list .open-single .open-single-desc .open-bgs > span.dates{
+	background: none;
+}
+
+/*个人中心 - 笔记*/
+.note-list{
+	margin-bottom: 100px;
+}
+.note-list .content{
+	width:inherit;
+}
+.project.note-list .content .note-pane .note-detail .detail-header{
+	height:36px;
+}
+.project.note-list .content .note-pane .note-detail .detail-header .right-time{
+	margin-top: 0;
+}
+.project.note-list .content .note-pane .notes{
+	border-left:1px solid #dadada;
+	margin-left: 100px;
+	display: none;
+}
+.project.note-list .content .note-pane .notes.show{
+	display: block;
+}
+.project.note-list .content .note-pane .note-detail{
+	margin: 0 0 15px 30px;
+}
+.project.note-list .content .note-pane .note-detail .detail-act  > img{
+	cursor: pointer;
+	width: 15px;
+	height: 16px;
+}
+.project.note-list .content .note-pane .note-detail .detail-act .from{
+	margin-left: 20px;
+}
+.project.note-list .content .note-pane .note-detail .detail-act .a_detail{
+	color: #00a7ea;
+}
+.project.note-list .content .note-pane .notes-single{
+	margin:10px 0;
+}
+.project.note-list .content .note-pane .notes-single > h2{
+	font-size:20px;
+	padding:5px 0 0 0;
+	color: #00a7ea;
+	position: relative;
+	border-bottom:none;
+	cursor: pointer;
+}
+/*箭头向下*/
+.arrow-down {
+	width: 0;
+	height: 0;
+	vertical-align: middle;
+	margin:0 5px;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-top: 5px solid #01a6e8;
+    display: inline-block;
+    cursor: pointer;
+}
+.project.note-list .content .note-pane .notes-single > h2 .date-dot{
+	background: url(../images/view.png) no-repeat 0 -20px;
+	height: 20px;
+	width: 20px;
+	position: absolute;
+	top: 10px;
+	left: 92px;
+}
+
+.project.note-list .content .note-pane .note-detail .detail-txt{
+	position: relative;
+	margin-top: 10px;
+}
+.project.note-list .content .note-pane .note-detail .detail-txt .date-dot{
+	position: absolute;
+	width: 65px;
+	height: 18px;
+	background: url(../images/view.png) no-repeat right -44px;
+	left: -84px;
+	text-align: left;
+	line-height: 20px;
+	color: #00a7ea;
+	font-size: 18px;
+}
+
+.pane .right-wrapper .lesson-container .project .open-single > a{
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+}
+.pane .right-wrapper .lesson-container .project .open-single > a > span{
+	position: absolute;
+	background: url(../images/course_icon.png) no-repeat 0 0;
+	width: 64px;
+	height: 64px;
+	right: 0;
+}
+.pane .right-wrapper .lesson-container .project .open-single > a > span > em{
+	color: #fff;
+	text-align: center;
+	-moz-transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	position: absolute;
+	left: 13px;
+	top: 14px;
+}
+
+/*个人中心 我的课程包 笔记*/
+.package-note .note-detail .detail-txt > h2{
+	border-bottom: none;
+	padding: 15px 15px 15px 0;
+	color: #333;
+	font-weight: 800;
+	background: #f8f8f8;
+}
+.package-note .note-detail .detail-txt > h2 > span {
+    font-weight:normal;
+    font-size: 14px;
+    color: #999999;
+}
+.package-note .note-detail .detail-txt > h2 > span > i{
+     color: #00a7ea;
+}
+.package-note .note-detail .detail-txt .package-desc{
+	background: #f8f8f8;
+	padding: 15px;
+	margin: 2px 0;
+}
+.package-note .note-detail .detail-txt .package-desc .detail-title{
+    display: inline-block;
+    line-height: 36px;
+    height: 36px;
+    font-size: 16px;
+    color: #666666;
+    font-weight: 800;
+    cursor: pointer;
+}
+
 /*个人中心 end*/
 
 /*分页 end*/
 .pane .right-pane{
-    background: #82cfd0;
-    color: #fff;
+	background: #82cfd0;
+	color: #fff;
 }
 .pane .right-pane .right-content{
-    padding: 12px;
+	padding: 12px;
 }
 .pane .right-pane .right-content > h2{
-    font-size: 18px;
-    font-weight: normal;
-    position: relative;
-    border-bottom: 1px solid #b4e2e3;
-    height: 22px;
+	font-size: 18px;
+	font-weight: normal;
+	position: relative;
+	border-bottom: 1px solid #b4e2e3;
+	height: 22px;
 }
 .pane .right-pane .right-content > h2 > span{
-    position: absolute;
-    left: 0;
-    background: #82cfd0;
-    top: 2px;
+	position: absolute;
+	left: 0;
+	background: #82cfd0;
+	top: 2px;
 }
 .pane .right-pane .right-content > h2,.pane .right-pane .right-content > div{
-    /*margin:10px 0;*/
+	/*margin:10px 0;*/
 }
 .pane .right-pane .right-content > div{
-    width: 200px;
-    word-wrap: break-word;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    margin:15px 0 0 0;
+	width: 200px;
+	word-wrap: break-word;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	margin:15px 0 0 0;
 }
 .pane .right-pane .right-content > div > a{
-    color: #ffffff;
+	color: #ffffff;
 }
 .pane .right-pane > a{
-    display: inline-block;
-    background: #74c3c4;
-    width: 100%;
-    height: 38px;
-    line-height: 38px;
-    color: #fff;
-    text-align: center;
-    border-top: 1px solid #b4e2e3;
+	display: inline-block;
+	background: #74c3c4;
+	width: 100%;
+	height: 38px;
+	line-height: 38px;
+	color: #fff;
+	text-align: center;
+	border-top: 1px solid #b4e2e3;
 }
 .pane .right-pane.green{
-    background: #acbb5f;
+	background: #acbb5f;
 }
 .pane .right-pane.green .right-content > h2{
-    border-bottom: 1px solid #cdd69f;
+	border-bottom: 1px solid #cdd69f;
 }
 .pane .right-pane.green .right-content > h2 > span{
-    background: #acbb5f;
+	background: #acbb5f;
 }
 .pane .right-pane.green > a{
-    background: #a2b152;
-    border-top: 1px solid #cdd69f;
+	background: #a2b152;
+	border-top: 1px solid #cdd69f;
 }
 .pane .right-pane.pink{
-    background: #ee9c9d;
-    margin-top: 30px;
+	background: #ee9c9d;
+	margin-top: 30px;
 }
 .pane .right-pane.pink .right-content > h2{
-    border-bottom: 1px solid #f5c4c4;
+	border-bottom: 1px solid #f5c4c4;
 }
 .pane .right-pane.pink .right-content > h2 > span{
-    background: #ee9c9d;
+	background: #ee9c9d;
 }
 .pane .right-pane.pink > a{
-    background: #e98c8d;
-    border-top: 1px solid #f5c4c4;
+	background: #e98c8d;
+	border-top: 1px solid #f5c4c4;
 }
 
 
@@ -1494,67 +1646,67 @@
 
 /*页面底部*/
 .foot{
-    background: #444951;
+	background: #444951;
 }
 .foot .bottom-pane{
-    margin: 20px auto;
+	margin: 20px auto;
 }
 .foot img{
-    vertical-align: middle;
+	vertical-align: middle;
 }
 .foot > .content > div{
-    color: #fff;
+	color: #fff;
 }
 .foot > .content > div.desc{
-    display: inline-block;
-    width: 300px;
-    float: left;
+	display: inline-block;
+	width: 300px;
+	float: left;
 }
 .foot > .content > div.desc > div.left-txt{
-    text-align: justify;
-    line-height: 23px;
+	text-align: justify;
+	line-height: 23px;
 }
 .foot > .content > div.desc > div.care{
-    margin: 20px 0;
+	margin: 20px 0;
 }
 .foot > .content > div.right-list{
-    display: inline-block;
-    width: 900px;
+	display: inline-block;
+	width: 900px;
 }
 .foot > .content > div.right-list > ul{
-    margin-left: 35px;
-    display: inline-block;
+	margin-left: 35px;
+	display: inline-block;
 }
 .foot > .content > div.right-list > ul > li{
-    float: left;
-    margin: 0 30px;
-    text-align: center;
+	float: left;
+	margin: 0 30px;
+	text-align: center;
 }
 .foot > .content > div.right-list > ul > li > a{
-    display: block;
-    margin: 15px 0;
-    color: #b7b9bb;
+	display: block;
+	margin: 15px 0;
+	color: #b7b9bb;
 }
 .foot > .content > div.right-list > ul > li > p{
-    margin-top: 10px;
+	margin-top: 10px;
 }
 
 
 /*课程详情 tab 切换 css*/
 .tab-content>.tab-pane {
-    display: none;
+	display: none;
 }
 .tab-content>.active {
-    display: block;
+	display: block;
 }
 
 .fade {
-    opacity: 0;
-    -webkit-transition: opacity .15s linear;
-    -o-transition: opacity .15s linear;
-    transition: opacity .15s linear;
+	opacity: 0;
+	-webkit-transition: opacity .15s linear;
+	-o-transition: opacity .15s linear;
+	transition: opacity .15s linear;
 }
 
 .fade.in {
-    opacity: 1;
+	opacity: 1;
 }
