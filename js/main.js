@@ -39,8 +39,8 @@ $(document).on('click','.js-select > .single > span',function () {
 
   // 课程首页
   //设置 综合排序 一栏 第一个tab左边框无线
-  	$('.js-tabClick a:first').css({'border-left':'none'});
-  	$('.js-tabClick a.fr').css({'border-right':'none'});
+  $('.js-tabClick a:first').css({'border-left':'none'});
+  $('.js-tabClick a.fr').css({'border-right':'none'});
 
 	// 排序筛选 js
 	$('.js-tabClick a').on('click',function(){
@@ -74,8 +74,21 @@ $(document).on('click','.js-select > .single > span',function () {
 
 
 
-// 个人中心 - 我的精品课 - 我的课程 笔记切换 js
+// 个人中心 - 我的精品课 -  笔记切换 js
 $(document).on('click','.notes-single .js-collapse',function () {
 	$(this).siblings('.notes').toggleClass('show');
-	console.log($(this).parents().siblings('.notes-single').children('.notes').removeClass('show'));
+	$(this).parents().siblings('.notes-single').children('.notes').removeClass('show');
+})
+
+// 个人中心 - 我的课程包 -  笔记切换 js
+var $num = $('.note-detail').find('.package-desc');
+$num.each(function (i,k) {
+	$(k).find('.toggle:last').css({'border-bottom':'none'});
+})
+
+
+$('.package-desc .toggle:last').css({'border-bottom':"none"});
+$(document).on('click','.toggle .js-title',function () {
+	$(this).parents().siblings('.contents').toggleClass('show');
+	$(this).parents().siblings('.toggle').children('.contents').removeClass('show');
 })

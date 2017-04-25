@@ -884,7 +884,7 @@
 .project .open-single .open-single-desc .open-title{
 	margin-top: 0;
 }
-.project .open-single .open-single-desc .open-title > h2{
+.project .open-single .open-single-desc .open-title > h2,.project .open-single .open-single-desc .open-title > h2{
 	font-size: 18px;
 	color: #333;
 	font-weight: normal;
@@ -895,17 +895,17 @@
 	margin-left: 40px;
 	margin-top: 2px;
 }
-.project .opens .open-single .open-single-desc .open-title > h2 > span.pink.fr{
+.project.activity .opens .open-single .open-single-desc .open-title > h2 > span.pink.fr{
 	background: #f5a1a1;
 	padding: 4px 10px;
 	font-size: 14px;
-	color: #fff;
+	color: #fff !important;
 	-webkit-border-radius: 100px;
 	-moz-border-radius: 100px;
 	border-radius: 100px;;
 }
 .project .opens .open-single .open-single-desc .open-title > h2 > span.fr{
-	color: #808080;
+	color: #808080 !important;
 }
 .project .opens .open-single .open-single-desc .open-title > h2 > span.pink > i{
 	color: #ffffff;
@@ -1065,26 +1065,31 @@
 /*线下课程详情 end*/
 
 /*活动首页*/
-.page-line .left-pane .project .open-single .open-single-desc .open-title > h2 > span{
-	font-size: 14px;
+.page-line .left-pane .project .open-single .open-single-desc .open-title > h2 > span,.project .open-single .open-single-desc .open-title > h2 > span{
+	font-size: 13px;
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	border-radius: 3px;
-	padding: 5px 10px;
+	padding: 3px 10px;
 	display: inline-block;
 	vertical-align: middle;
 	color: #ffffff;
+	margin-left: 10px;
 }
-.page-line .left-pane .project .open-single .open-single-desc .open-title span.red{
+.page-line .left-pane .project.train .open-single .open-single-desc .open-title > h2 > span, .project.train .open-single .open-single-desc .open-title > h2 > span,.page-line .left-pane .project.activity .open-single .open-single-desc .open-title > h2 > span, .project.activity .open-single .open-single-desc .open-title > h2 > span{
+	/*color: #808080;*/
+	/*background: transparent;*/
+}
+.page-line .left-pane .project .open-single .open-single-desc .open-title span.red,.project .open-single .open-single-desc .open-title span.red{
 	background: #e64442;
 }
-.page-line .left-pane .project .open-single .open-single-desc .open-title span.blue{
+.page-line .left-pane .project .open-single .open-single-desc .open-title span.blue,.project .open-single .open-single-desc .open-title span.blue{
 	background: #5ba7f2;
 }
-.page-line .left-pane .project .open-single .open-single-desc .open-title span.orange{
+.page-line .left-pane .project .open-single .open-single-desc .open-title span.orange,.project .open-single .open-single-desc .open-title span.orange{
 	background: #f49a42;
 }
-.page-line .left-pane .project .open-single .open-single-desc .open-title span.green{
+.page-line .left-pane .project .open-single .open-single-desc .open-title span.green,.project .open-single .open-single-desc .open-title span.green{
 	background: #3ece88;
 }
 .pane .right-pane.activity-right{
@@ -1294,6 +1299,9 @@
 .userPane .right-wrapper{
 	background: #FFFFFF;
 }
+.userPane .tabbable > h2{
+	padding: 20px;
+}
 .userinfo-top{
 	background: url("../images/user_topbg.jpg") no-repeat 0 0;
 	height: 120px;
@@ -1399,6 +1407,9 @@
 .lesson-container .project .open-single .open-single-desc .open-bgs > span{
 	background-position: 0 -32px;
 }
+.lesson-container .project .open-single .open-single-desc .open-bgs > span.address{
+	background-position: 0 -104px;
+}
 .lesson-container .project .open-single .open-single-desc .open-bgs > span.note{
 	background: url("../images/note_06.png") no-repeat 0 0;
 }
@@ -1408,6 +1419,7 @@
 .lesson-container .project .open-single .open-single-desc .open-bgs > a.study{
 	display: inline-block;
 	padding: 12px 30px;
+	font-size: 16px;
 	background: transparent;
 	color: #00a7ea;
 	border:1px solid #00a7ea;
@@ -1426,17 +1438,19 @@
 }
 .lesson-container .project.care-list .open-single .open-single-desc .open-bgs > span.dates{
 	background: none;
+	padding-left: 0;
 }
 
 /*个人中心 - 笔记*/
 .note-list{
-	margin-bottom: 100px;
+	/*margin-bottom: 100px;*/
 }
 .note-list .content{
 	width:inherit;
 }
 .project.note-list .content .note-pane .note-detail .detail-header{
 	height:36px;
+	line-height: 36px;
 }
 .project.note-list .content .note-pane .note-detail .detail-header .right-time{
 	margin-top: 0;
@@ -1451,6 +1465,9 @@
 }
 .project.note-list .content .note-pane .note-detail{
 	margin: 0 0 15px 30px;
+}
+.project.note-list .content .note-pane .note-detail .detail-act{
+	padding-bottom: 0;
 }
 .project.note-list .content .note-pane .note-detail .detail-act  > img{
 	cursor: pointer;
@@ -1509,6 +1526,7 @@
 	line-height: 20px;
 	color: #00a7ea;
 	font-size: 18px;
+	top: 3px;
 }
 
 .pane .right-wrapper .lesson-container .project .open-single > a{
@@ -1536,35 +1554,134 @@
 }
 
 /*个人中心 我的课程包 笔记*/
-.package-note .note-detail .detail-txt > h2{
+/*个人中心 我的课程包 笔记*/
+.project.note-list.package-note .note-detail:first-child{
+	padding-top: 36px;
+}
+.project.note-list.package-note .content .note-pane .note-detail .detail-txt .date-dot{
+	top: 16px;
+}
+.project.note-list.package-note .note-detail .detail-txt > h2{
 	border-bottom: none;
-	padding: 15px 15px 15px 0;
+	padding: 15px 15px 15px 15px;
 	color: #333;
 	font-weight: 800;
 	background: #f8f8f8;
 }
-.package-note .note-detail .detail-txt > h2 > span {
-    font-weight:normal;
-    font-size: 14px;
-    color: #999999;
+.project.note-list.package-note .note-detail .detail-txt > h2 > span {
+	font-weight:normal;
+	font-size: 14px;
+	color: #999999;
 }
-.package-note .note-detail .detail-txt > h2 > span > i{
-     color: #00a7ea;
+.project.note-list.package-note .note-detail .detail-txt > h2 > span > i{
+	color: #00a7ea;
 }
-.package-note .note-detail .detail-txt .package-desc{
+.project.note-list.package-note .note-detail .detail-txt .package-desc{
 	background: #f8f8f8;
-	padding: 15px;
+	padding: 5px 15px;
 	margin: 2px 0;
 }
-.package-note .note-detail .detail-txt .package-desc .detail-title{
-    display: inline-block;
-    line-height: 36px;
-    height: 36px;
-    font-size: 16px;
-    color: #666666;
-    font-weight: 800;
-    cursor: pointer;
+.project.note-list.package-note .note-detail .detail-txt .package-desc .toggle{
+	margin: 10px 0;
+	border-bottom: 1px solid #dadada;
 }
+.project.note-list.package-note .note-detail .detail-txt .package-desc .toggle:last-child{
+	border-bottom:none;
+}
+.project.note-list.package-note .note-detail .detail-txt .package-desc .toggle .contents{
+	padding-bottom: 20px;
+	display: none;
+}
+.project.note-list.package-note .note-detail .detail-txt .package-desc .toggle .contents.show{
+	display: block;
+}
+.project.note-list.package-note .note-detail{
+	border-bottom:none;
+}
+.project.note-list.package-note .content .note-pane .note-detail .detail-header{
+	margin-bottom: 10px;
+}
+.project.note-list.package-note .note-detail .detail-txt .package-desc .detail-act{
+	margin-top: 20px;
+}
+.project.note-list.package-note .note-detail .detail-txt .package-desc .detail-title{
+	display: inline-block;
+	line-height: 36px;
+	height: 36px;
+	font-size: 16px;
+	color: #666666;
+	font-weight: 800;
+	cursor: pointer;
+}
+
+/*我的账户 - 我的订单*/
+.lesson-container .project .order-list{
+
+}
+.lesson-container .project .order-list table{
+	width: 100%;
+	border-collapse: collapse;
+	padding: 0;
+	border: none;
+}
+.lesson-container .project .order-list table tbody{
+	border:1px solid #dadada;
+}
+.lesson-container .project .order-list table tbody tr:first-child td{
+	padding: 10px 15px;
+	background: #f8f8f8;
+}
+.lesson-container .project .order-list table tr th{
+	color: #999999;
+	font-weight:normal;
+}
+.lesson-container .project .order-list table tr th,.lesson-container .project .order-list table tr td{
+	text-align: center;
+	padding: 15px;
+	color: #666;
+}
+.lesson-container .project .order-list table tr td:first-child{
+	text-align: left;
+}
+.lesson-container .project .order-list table tr td[colspan="4"],.lesson-container .project .order-list table tr th:last-child,.lesson-container .project .order-list table tr td:last-child{
+	text-align: right;
+}
+.lesson-container .project .order-list table tr td span{
+	display: inline-block;
+	font-size: 12px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	padding: 3px 10px;
+	color: #ffffff;
+	margin-right: 10px;
+	background: #999;
+}
+.lesson-container .project .order-list table tr td .red{
+	background: #e64442;
+}
+.lesson-container .project .order-list table tr td .blue{
+	background: #5ba7f2;
+}
+.lesson-container .project .order-list table tr td .orange{
+	background: #f49a42;
+}
+.lesson-container .project .order-list table tr td .green{
+	background: #3ece88;
+}
+.lesson-container .project .order-list table tr td > img{
+	cursor: pointer;
+}
+.lesson-container .project .order-list table tr td > b{
+	color: #ff4000;
+	font-size:18px;
+	font-weight:normal;
+}
+.lesson-container .project .order-list table tr td .js-pay{
+	color: #00a7ea;
+}
+
+
 
 /*个人中心 end*/
 
