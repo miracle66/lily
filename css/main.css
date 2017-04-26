@@ -737,7 +737,7 @@
 	height:68px;
 	-webkit-border-radius: 100px;
 	-moz-border-radius: 100px;
-	border-radius: 100px;;
+	border-radius: 100px;
 }
 .content .note-pane .note-detail .detail-header > span{
 	font-size: 18px;
@@ -902,7 +902,7 @@
 	color: #fff !important;
 	-webkit-border-radius: 100px;
 	-moz-border-radius: 100px;
-	border-radius: 100px;;
+	border-radius: 100px;
 }
 .project .opens .open-single .open-single-desc .open-title > h2 > span.fr{
 	color: #808080 !important;
@@ -951,7 +951,7 @@
 	height:40px;
 	-webkit-border-radius: 100px;
 	-moz-border-radius: 100px;
-	border-radius: 100px;;
+	border-radius: 100px;
 }
 .project .open-tutor .open-tutor-txt{
 	display: inline-block;
@@ -995,7 +995,7 @@
 	word-wrap: break-word;
 	overflow: hidden;
 	white-space: nowrap;
-	text-overflow: ellipsis;;
+	text-overflow: ellipsis;
 }
 .pane .right-pane.hot-lesson .right-content > div > .lesson-single > p:first-child{
 	font-size:inherit;
@@ -1232,7 +1232,7 @@
 	height: 68px;
 	-webkit-border-radius: 100px;
 	-moz-border-radius: 100px;
-	border-radius: 100px;;
+	border-radius: 100px;
 }
 .content .left-tutor .course-right .tutor-right-top .tutor-right-list .list-desc{
 	display: inline-block;
@@ -1253,7 +1253,7 @@
 	background: #fff;
 	border-top: 1px solid #ebebeb;
 	display: inline-block;
-	width: 100%;;
+	width: 100%;
 }
 .content .left-tutor .course-right .tutor-right-top.top-middle .tutor-right-list .list-desc{
 
@@ -1314,7 +1314,7 @@
 	height:92px;
 	-webkit-border-radius: 100px;
 	-moz-border-radius: 100px;
-	border-radius: 100px;;
+	border-radius: 100px;
 }
 .userinfo-top .userinfo-left .userinfo-desc{
 	display: inline-block;
@@ -1615,8 +1615,11 @@
 }
 
 /*我的账户 - 我的订单*/
-.lesson-container .project .order-list{
-
+.pane .right-wrapper .lesson-container.accounts{
+	padding:0;
+}
+.lesson-container .project .order-list,.lesson-container .project .income-list{
+	margin: 30px 0;
 }
 .lesson-container .project .order-list table{
 	width: 100%;
@@ -1624,10 +1627,10 @@
 	padding: 0;
 	border: none;
 }
-.lesson-container .project .order-list table tbody{
+.lesson-container .project .order-list table tbody table{
 	border:1px solid #dadada;
 }
-.lesson-container .project .order-list table tbody tr:first-child td{
+.lesson-container .project .order-list table tbody tr td tr:first-child td{
 	padding: 10px 15px;
 	background: #f8f8f8;
 }
@@ -1637,8 +1640,17 @@
 }
 .lesson-container .project .order-list table tr th,.lesson-container .project .order-list table tr td{
 	text-align: center;
-	padding: 15px;
+	padding: 10px 15px;
+	width:15%;
+}
+.lesson-container .project .order-list table tr td{
 	color: #666;
+}
+.lesson-container .project .order-list table tr th{
+	padding: 0 20px;
+}
+.lesson-container .project .order-list table tr th:first-child,.lesson-container .project .order-list table tr td:first-child{
+	width:30%;
 }
 .lesson-container .project .order-list table tr td:first-child{
 	text-align: left;
@@ -1681,9 +1693,196 @@
 	color: #00a7ea;
 }
 
+/*我的账户 - 我的收入*/
+.lesson-container .project .income-list{
+	padding: 15px;
+}
+.lesson-container .project .income-list .income{
+	background: #feeae6;
+	border-top:4px solid #f77154;
+	padding: 10px;
+	font-size:16px;
+}
+.lesson-container .project .income-list .income > p{
+	text-align: center;
+	margin: 10px 0;
+	color: #808080;
+}
+.lesson-container .project .income-list .income .accountsum{
+	font-size: 30px;
+	color: #f77154;
+}
+.lesson-container .project .income-list .income-detail{
+	border:1px solid #dadada;
+	margin:15px 0;
+}
+.lesson-container .project .income-list .income-detail .detail-toggle{
+}
+.lesson-container .project .income-list .income-detail .detail-toggle table{
+	width:100%;
+	display: none;
+}
+.lesson-container .project .income-list .income-detail .detail-toggle table.active{
+	display: table;
+}
+.lesson-container .project .income-list .income-detail .detail-toggle .toggle{
+	padding: 15px;
+	font-weight: normal;
+	color: #808080;
+	font-size: 16px;
+	cursor: pointer;
+}
+.lesson-container .project .income-list .income-detail .detail-toggle .toggle > span{
+	background: url(../images/arrow_icon1.png) no-repeat 62px 6px;
+	padding-right: 20px;
+}
+.lesson-container .project .income-list .income-detail .detail-toggle h2.active{
+	color: #39baed;
+}
+.lesson-container .project .income-list .income-detail .detail-toggle h2.active > span{
+	background-position: 62px -12px;
+	color: #39baed;
+}
+.lesson-container .project .income-list .income-detail .detail-toggle table tr td{
+	padding: 10px;
+	font-size:16px;
+	color: #666;
+}
+.lesson-container .project .income-list .income-detail .detail-toggle table tr .red{
+	font-size:24px;
+	color: #ff4000;
+}
+.lesson-container .project .income-list .income-detail .detail-toggle table tr td > p{
+	color: #999999;
+	line-height: 23px;
+}
+.lesson-container .project .income-list .income-detail .detail-toggle table tr td[colspan="3"]{
+	background: #f8f8f8;
+	color: #333333;
+	font-size: 16px;
+	text-align: left !important;
+}
 
 
 /*个人中心 end*/
+
+/*个人设置 */
+.right-wrapper.settings{
+	width: 1200px;
+}
+.right-wrapper.settings .information{
+	width: 900px;
+	margin: 100px auto;
+	text-align: center;
+}
+.right-wrapper.settings .information .headers{
+	display: inline-block;
+	width: 250px;
+	text-align: center;
+	margin-right: 115px;
+}
+.right-wrapper.settings .information .headers > img{
+	width: 200px;
+	height: 200px;
+}
+.right-wrapper.settings .information .headers > p > a{
+	margin: 40px 0;
+	display: inline-block;
+	padding:10px 25px;
+	color: #FFFFFF;
+	background: #8ce2e5;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+.right-wrapper.settings .information .infor{
+	display: inline-block;
+	width: 530px;
+	vertical-align: top;
+}
+.right-wrapper.settings .information .infor .infor-group{
+	margin:0 0 40px 0;
+}
+.right-wrapper.settings .information .infor .infor-group > input,.right-wrapper.settings .information .infor .infor-group > textarea{
+	border: 1px solid #dadada;
+	background: #f8f8f8;
+	padding: 10px;
+	width: 405px;
+}
+.right-wrapper.settings .information .infor .infor-group label{
+	margin:0 30px;
+	cursor: pointer;
+}
+.right-wrapper.settings .information .infor .infor-group label .ipt-default{
+	opacity: 0;
+	cursor: pointer;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+}
+.right-wrapper.settings .information .infor .infor-group label .ipt-style{
+	width: 24px;
+	height: 18px;
+	padding-top: 3px;
+	cursor: pointer;
+	text-align: center;
+	margin-right: 5px;
+	background: url('../images/arrow_icon1.png');
+	background-repeat: no-repeat;
+	background-position: -5px -35px;
+}
+.right-wrapper.settings .information .infor .infor-group label .on{
+	background-position: -5px -61px;
+}
+.right-wrapper.settings .information .infor .infor-group > textarea{
+	vertical-align: top;
+}
+.right-wrapper.settings .information .infor .infor-group > p{
+	text-align: right;
+	margin-right: 15px;
+	margin-top: 10px;
+	color: #808080;
+}
+.right-wrapper.settings .information .infor .infor-group > p > i{
+	color: #f00;
+}
+.right-wrapper.settings .information .information-save{
+	text-align: center;
+	margin:20px 0;
+}
+.right-wrapper.settings .information .information-save > a{
+	display: inline-block;
+	background: #00a7ea;
+	color: #FFFFFF;
+	padding: 15px 124px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	font-size:16px;
+}
+
+/*账户信息*/
+.right-wrapper.settings .information .infor .infor-group > a{
+	color: #00a7ea;
+}
+.right-wrapper.settings .information .infor .infor-group .password{
+	display: inline-block;
+	vertical-align: top;
+	margin-top: -22px;
+}
+.right-wrapper.settings .information .infor .infor-group .password > p > input{
+	width:200px;
+	margin:10px 0;
+	border: 1px solid #dadada;
+	background: #f8f8f8;
+	padding: 8px 10px;
+}
+.right-wrapper.settings .information .infor.account .infor-group > label{
+	/*display: inline-block;*/
+	/*width: 200px;*/
+}
+
+
+/*个人设置 end*/
 
 /*分页 end*/
 .pane .right-pane{
