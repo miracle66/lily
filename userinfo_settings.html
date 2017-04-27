@@ -12,6 +12,70 @@
 	<script src="http://f3.v.veimg.cn/global_ued/js/gallery/html5.js"></script>
 </head>
 <body style="background: #f2f2f2;">
+	<!--cover-->
+	<div class="cover"></div>
+	<!--cover end-->
+	<!--绑定手机号 弹层-->
+	<div class="cover-box js-close-box bindPhone">
+		<h2>绑定手机号 <img class="js-close fr" src="images/close.png" alt=""></h2>
+		<div class="form">
+			<div class="phone"><input type="text" id="phone" maxlength="11" placeholder="请输入手机号"></div>
+			<div class="code"><input name="code" type="text" id ="Txtidcode" class ="txtVerification" maxlength="4" placeholder="请输入验证码"><span id="idcode"></span></div>
+			<div><a class="js-save" href="javascript:void(0);">保存</a></div>
+		</div>
+	</div>
+	<!--绑定手机号 end 弹层-->
+	<!--绑定成功-->
+	<div class="cover-box js-close-box bindSuccess">
+		<img src="images/success.png" alt="">
+		<p class="bind-success">恭喜恭喜！绑定成功！</p>
+		<p class="jump"><i class="second">3</i>秒后跳转到账户信息</p>
+	</div>
+	<!--绑定成功 end-->
+	<!--实名认证 弹层-->
+	<div class="cover-box js-close-box nameAuthen">
+		<h2>实名认证 <img class="js-close fr" src="images/close.png" alt=""></h2>
+		<div class="authen-container">
+			<div class="authen-pane step1 active">实名信息 <span class="circle">1</span></div>
+			<div class="authen-icon"><img src="images/authen_iconleft.png" alt=""></div>
+			<div class="authen-pane step2">认证中 <span class="circle">2</span></div>
+			<div class="authen-icon"><img src="images/authen_iconright.png" alt=""></div>
+			<div class="authen-pane step3">认证成功 <span class="circle">3</span></div>
+
+			<div class="authen-content">
+				<div class="step step1 active">
+					<div class="infor">
+						<div class="infor-group"><label class="label">姓&emsp;&emsp;名：</label> <input type="text" placeholder="请输入姓名"></div>
+						<div class="infor-group">
+							<label class="label">性&emsp;&emsp;别：</label>
+							<div class="radios">
+								<label><span class="ipt-style on"><input type="radio" class="ipt-default" name="gender" value=""></span>保密</label>
+								<label><span class="ipt-style"><input type="radio" class="ipt-default" name="gender" value=""></span>男</label>
+								<label><span class="ipt-style"><input type="radio" class="ipt-default" name="gender" value=""></span>女</label>
+							</div>
+						</div>
+						<div class="infor-group"><label class="label">身份证号：</label> <input type="text" placeholder="请输入身份证号"></div>
+						<div class="infor-group"><label class="label">联系方式：</label> <input type="text" placeholder="请输入联系方式"></div>
+					</div>
+					<div class="information-save">
+						<a href="javascript:void(0);" class="js-authenBtn">认证</a>
+					</div>
+				</div>
+				<div class="step step2">
+					<div class="step-single"><label class="label">姓&emsp;&emsp;名：</label><span>林*宇</span></div>
+					<div class="step-single"><label class="label">性&emsp;&emsp;别：</label><span>男</span></div>
+					<div class="step-single"><label class="label">身份证号：</label><span>33*********88</span></div>
+					<div class="step-single"><label class="label">联系方式：</label><span>159****3009</span></div>
+
+					<div class="authening">账户正在认证中，您稍等哦~</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<!--实名认证 end 弹层-->
+
+
 	<!-- 头部 -->
 	<header>
 		<div class="top-banner">
@@ -65,15 +129,17 @@
 														<p><a href="javascript:void(0);">上传头像</a></p>
 													</div>
 													<div class="infor">
-														<div class="infor-group">昵&emsp;&emsp;称： <input type="text" placeholder="请输入昵称"></div>
+														<div class="infor-group"><label class="label">昵&emsp;&emsp;称：</label> <input type="text" placeholder="请输入昵称"></div>
 														<div class="infor-group">
-															性&emsp;&emsp;别：
-															<label for="secrecy"><span class="ipt-style on"><input type="radio" id="secrecy" class="ipt-default" name="gender" value=""></span>保密</label>
-															<label for="male"><span class="ipt-style"><input type="radio" id="male" class="ipt-default" name="gender" value=""></span>男</label>
-															<label for="female"><span class="ipt-style"><input type="radio" id="female" class="ipt-default" name="gender" value=""></span>女</label>
+															<label class="label">性&emsp;&emsp;别：</label>
+															<div class="radios">
+																<label for="secrecy"><span class="ipt-style on"><input type="radio" id="secrecy" class="ipt-default" name="gender" value=""></span>保密</label>
+																<label for="male"><span class="ipt-style"><input type="radio" id="male" class="ipt-default" name="gender" value=""></span>男</label>
+																<label for="female"><span class="ipt-style"><input type="radio" id="female" class="ipt-default" name="gender" value=""></span>女</label>
+															</div>
 														</div>
 														<div class="infor-group">
-															个性签名：
+															<label class="label">个性签名：</label>
 															<textarea name="" id="doc" cols="30" rows="8" placeholder="用一段话介绍自己"></textarea>
 															<p>还可以输入<i id="count">300</i>个字符</p>
 														</div>
@@ -91,15 +157,15 @@
 											<div class="project">
 												<div class="information">
 													<div class="infor account">
-														<div class="infor-group"><label>绑定手机号： </label><a href="javascript:void(0);">绑定手机号</a></div>
-														<div class="infor-group"><label>修改密码：</label>
+														<div class="infor-group"><label class="phone">绑定手机号： </label><a class="js-bindPhone" href="javascript:void(0);">绑定手机号</a></div>
+														<div class="infor-group"><label class="pwd">修改密码：</label>
 															<div class="password">
-																<p>输入原密码：<input type="text"></p>
-																<p>输入原密码：<input type="text"></p>
-																<p>输入原密码：<input type="text"></p>
+																<p>输入原密码：<input type="password"></p>
+																<p>输入原密码：<input type="password"></p>
+																<p>输入原密码：<input type="password"></p>
 															</div>
 														</div>
-														<div class="infor-group"><label>实名认证：</label><a href="javascript:void(0);">绑定手机号</a></div>
+														<div class="infor-group"><label class="authen">实名认证：</label><a class="js-authen" href="javascript:void(0);">去认证</a></div>
 													</div>
 												</div>
 											</div>
@@ -173,6 +239,7 @@
 
 	<script src="http://f3.v.veimg.cn/f2e/gallery/??seajs/2.2.0/sea.min.js,jquery/1.9.1/jquery.min.js"></script>
 	<script src="http://f3.v.veimg.cn/meadincms/static/ihma3.0/dist/js/bootstrap.min.js"></script>
+	<script src="js/libs/jquery.idcode.js"></script>
 	<script src="js/main.js"></script>
 	<script src="js/count.js"></script>
 </body> 

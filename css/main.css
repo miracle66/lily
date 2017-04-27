@@ -1795,31 +1795,41 @@
 	-moz-border-radius: 3px;
 	border-radius: 3px;
 }
-.right-wrapper.settings .information .infor{
+.infor{
 	display: inline-block;
 	width: 530px;
 	vertical-align: top;
 }
-.right-wrapper.settings .information .infor .infor-group{
+.infor .infor-group{
 	margin:0 0 40px 0;
 }
-.right-wrapper.settings .information .infor .infor-group > input,.right-wrapper.settings .information .infor .infor-group > textarea{
+.infor .infor-group > input,.infor .infor-group > textarea{
 	border: 1px solid #dadada;
 	background: #f8f8f8;
 	padding: 10px;
 	width: 405px;
 }
-.right-wrapper.settings .information .infor .infor-group label{
+.infor .infor-group .radios{
+	display: inline-block;
+	margin-top: 10px;
+	margin-left: -100px;
+}
+.infor .infor-group .radios label{
 	margin:0 30px;
 	cursor: pointer;
 }
-.right-wrapper.settings .information .infor .infor-group label .ipt-default{
+.infor .infor-group .label{
+	display: inline-block;
+	float: left;
+	margin-top: 10px;
+}
+.infor .infor-group label .ipt-default{
 	opacity: 0;
 	cursor: pointer;
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
 	filter: alpha(opacity=0);
 }
-.right-wrapper.settings .information .infor .infor-group label .ipt-style{
+.infor .infor-group label .ipt-style{
 	width: 24px;
 	height: 18px;
 	padding-top: 3px;
@@ -1830,26 +1840,26 @@
 	background-repeat: no-repeat;
 	background-position: -5px -35px;
 }
-.right-wrapper.settings .information .infor .infor-group label .on{
+.infor .infor-group label .on{
 	background-position: -5px -61px;
 }
-.right-wrapper.settings .information .infor .infor-group > textarea{
+.infor .infor-group > textarea{
 	vertical-align: top;
 }
-.right-wrapper.settings .information .infor .infor-group > p{
+.infor .infor-group > p{
 	text-align: right;
 	margin-right: 15px;
 	margin-top: 10px;
 	color: #808080;
 }
-.right-wrapper.settings .information .infor .infor-group > p > i{
+.infor .infor-group > p > i{
 	color: #f00;
 }
-.right-wrapper.settings .information .information-save{
+.information-save{
 	text-align: center;
 	margin:20px 0;
 }
-.right-wrapper.settings .information .information-save > a{
+.information-save > a{
 	display: inline-block;
 	background: #00a7ea;
 	color: #FFFFFF;
@@ -1861,28 +1871,239 @@
 }
 
 /*账户信息*/
-.right-wrapper.settings .information .infor .infor-group > a{
+.right-wrapper.settings .information .infor.account .infor-group{
+	position: relative;
+}
+.right-wrapper.settings .information .infor.account .infor-group > label{
+	position: absolute;
+	left: 50px;
+	background: url(../images/arrow_icon1.png) no-repeat;
+	padding-left: 45px;
+	height: 25px;
+	line-height: 25px;
+	top: -5px;
+
+}
+.right-wrapper.settings .information .infor.account .infor-group .phone{
+	background-position:  0 -91px;
+}
+.right-wrapper.settings .information .infor.account .infor-group .pwd{
+	background-position:  0 -128px;
+}
+.right-wrapper.settings .information .infor.account .infor-group .authen{
+	background-position:  0 -164px;
+}
+.right-wrapper.settings .information .infor.account .infor-group > a{
 	color: #00a7ea;
 }
-.right-wrapper.settings .information .infor .infor-group .password{
-	display: inline-block;
-	vertical-align: top;
-	margin-top: -22px;
+.right-wrapper.settings .information .infor.account .infor-group .password{
+	margin-left: 132px;
+	width: 100%;
+	color: #909090;
 }
-.right-wrapper.settings .information .infor .infor-group .password > p > input{
-	width:200px;
-	margin:10px 0;
+.right-wrapper.settings .information .infor.account .infor-group .password > p > input{
+	width: 228px;
+	margin: -10px 0 30px 0;
 	border: 1px solid #dadada;
 	background: #f8f8f8;
 	padding: 8px 10px;
 }
-.right-wrapper.settings .information .infor.account .infor-group > label{
-	/*display: inline-block;*/
-	/*width: 200px;*/
-}
 
 
 /*个人设置 end*/
+
+
+/*页面 弹层*/
+.cover{
+	width: 100%;
+	height: 100%;
+	background: #000000;
+	opacity: 0.5;
+	-moz-opacity: 0.5;
+	filter: alpha(opacity=50);
+	position: fixed;
+	_position: absolute;
+	top: 0;
+	z-index: 1000;
+	text-indent: -9999px;
+	display: none;
+}
+/*页面 弹层 end*/
+/*弹层内容*/
+/*---------------绑定手机号*/
+.cover-box{
+	position: fixed;
+	top: 30%;
+	left: 37.3%;
+	width: 480px;
+	background: #ffffff;
+	z-index: 9999;
+	display: none;
+}
+.cover-box > h2{
+	background: #00a7ea;
+	padding: 12px 10px;
+	margin-bottom: 20px;
+	color: #fff;
+	font-weight: normal;
+	font-size: 16px;
+}
+.cover-box > h2 > img{
+	cursor: pointer;
+}
+.cover-box .form{
+	margin-bottom: 40px;
+}
+.cover-box .form > div{
+	margin: 15px 0;
+	text-align: center;
+}
+.cover-box .form > div > input{
+	padding: 8px 0;
+	border: 1px solid #dadada;
+	width: 363px;
+	background: url(../images/arrow_icon1.png) no-repeat;
+	padding-left: 35px;
+	margin:5px 0;
+}
+.cover-box .form .phone > input{
+	background-position: 5px -86px;
+}
+.cover-box .form .code > input{
+	background-position: 5px -192px;
+	width: 220px;
+}
+.cover-box .form > div > a{
+	display: inline-block;
+	background: #00a7ea;
+	color: #FFFFFF;
+	padding: 10px 90px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	font-size: 16px;
+	margin-top: 20px;
+}
+.cover-box .form .code > span{
+	display: inline-block;
+	background: #efefef;
+	padding: 3px 0;
+	cursor: pointer;
+	margin-left: 15px;
+	font-size: 28px;
+	vertical-align: middle;
+	margin-top: -2px;
+	width: 128px;
+}
+.cover-box .form .code > span font{
+	margin:0 5px;
+}
+/*绑定成功*/
+.cover-box.bindSuccess{
+	width: 360px;
+	text-align: center;
+	left: 40.5%;
+	padding: 20px 0;
+}
+.cover-box.bindSuccess > img{
+	width:80px;
+	height:80px;
+}
+.cover-box.bindSuccess > p{
+	margin:20px 0 0 0;
+}
+.cover-box.bindSuccess .bind-success{
+	font-size: 20px;
+}
+.cover-box.bindSuccess .jump{
+	font-size: 12px;
+	color: #00a7ea;
+}
+
+/*实名认证*/
+.cover-box.nameAuthen{
+	width: 670px;
+	left: 32.3%;
+	top: 20%;
+	position: absolute;
+}
+.cover-box.nameAuthen .authen-container{
+	margin: 25px 0;
+	text-align: center;
+}
+.cover-box.nameAuthen .authen-container .authen-content{
+	margin: 80px 0 40px 0;
+}
+.cover-box.nameAuthen .authen-container .authen-content .step{
+	display: none;
+}
+.cover-box.nameAuthen .authen-container .authen-content .step .step-single{
+	margin: 20px 0;
+	font-size: 16px;
+}
+.cover-box.nameAuthen .authen-container .authen-content .step .step-single > label{
+	color: #999999;
+}
+.cover-box.nameAuthen .authen-container .authen-content .step .step-single > span{
+	width: 100px;
+	text-align: left;
+	display: inline-block;
+}
+.cover-box.nameAuthen .authen-container .authen-content .step.active{
+	display: block;
+}
+.cover-box.nameAuthen .authen-container .authen-content .step .authening{
+	margin-top: 50px;
+	text-align: center;
+	color: #00a7ea;
+	padding:15px 0;
+	background: #f2f2f2;
+}
+.cover-box.nameAuthen .authen-container .authen-content .infor .infor-group > input{
+	background: #FFFFFF;
+}
+.cover-box.nameAuthen .authen-container .authen-pane{
+	background: #dadada;
+	padding: 27px 30px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	display: inline-block;
+	font-size: 18px;
+	color: #fff;
+	width: 80px;
+	position: relative;
+}
+.cover-box.nameAuthen .authen-container .authen-pane.active{
+	background: #abd463;
+}
+.cover-box.nameAuthen .authen-container .authen-pane.active .circle{
+	border:1px solid #abd463;
+	color: #abd463;
+}
+.cover-box.nameAuthen .authen-container .authen-pane .circle{
+	position: absolute;
+	display: inline-block;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	border-radius: 100px;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	border: 1px solid #dadada;
+	background: #fff;
+	color: #dadada;
+	bottom: -15px;
+	left: 55px;
+	font-size:22px;
+}
+.cover-box.nameAuthen .authen-container .authen-icon{
+	display: inline-block;
+	margin:0 10px;
+}
+
+/*弹层内容*/
+
 
 /*分页 end*/
 .pane .right-pane{
