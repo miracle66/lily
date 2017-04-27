@@ -1913,6 +1913,59 @@
 /*个人设置 end*/
 
 
+/*账户信息修改*/
+.infor.update{
+	width: 460px;
+}
+.infor.update .infor-group{
+	margin: 30px 0;
+}
+.infor.update .infor-group > label{
+	display: inline-block;
+	float: inherit;
+	margin-top: 0;
+	background: url("../images/arrow_icon1.png") no-repeat;
+	padding-left: 30px;
+	height: 25px;
+	line-height: 25px;
+}
+.infor.update .infor-group label.account{
+	background-position: 0 -163px;
+}
+.infor.update .infor-group label.pwd,.infor.update .infor-group label.agPwd{
+	background-position: 0 -128px;
+}
+.infor.update .infor-group label.phone{
+	background-position: 0 -91px;
+}
+.infor.update .infor-group label.code{
+	background-position: 0 -198px;
+}
+
+.infor.update .infor-group .user-account{
+	display: inline-block;
+	width: 355px;
+	color: #00a7ea;
+	text-align: left;
+}
+.infor.update .infor-group > input{
+	width: 333px;
+}
+.infor.update .infor-group .yzm{
+	width: 214px;
+	margin-right: 15px;
+}
+.infor.update .infor-group .getYzm{
+	display: inline-block;
+	width: 100px;
+	background: #fff;
+	color: #00a7ea;
+	border: 1px solid #00a7ea;
+	padding: 11px 0;
+	cursor: pointer;
+}
+
+
 /*页面 弹层*/
 .cover{
 	width: 100%;
@@ -1959,18 +2012,17 @@
 	text-align: center;
 }
 .cover-box .form > div > input{
-	padding: 8px 0;
+	padding: 10px 0 10px 35px;
 	border: 1px solid #dadada;
 	width: 363px;
 	background: url(../images/arrow_icon1.png) no-repeat;
-	padding-left: 35px;
 	margin:5px 0;
 }
 .cover-box .form .phone > input{
-	background-position: 5px -86px;
+	background-position: 5px -85px;
 }
 .cover-box .form .code > input{
-	background-position: 5px -192px;
+	background-position: 5px -191px;
 	width: 220px;
 }
 .cover-box .form > div > a{
@@ -2058,6 +2110,19 @@
 	color: #00a7ea;
 	padding:15px 0;
 	background: #f2f2f2;
+}
+.cover-box.nameAuthen .authen-container .authen-content .step .step-success > img{
+	width: 80px;
+	height: 80px;
+}
+.cover-box.nameAuthen .authen-container .authen-content .step .step-success > p{
+	margin: 20px 0;
+}
+.cover-box.nameAuthen .authen-container .authen-content .step .step-success .bind-success{
+	font-size: 20px;
+}
+.cover-box.nameAuthen .authen-container .authen-content .step .step-success > p > a{
+	color: #00a7ea;
 }
 .cover-box.nameAuthen .authen-container .authen-content .infor .infor-group > input{
 	background: #FFFFFF;

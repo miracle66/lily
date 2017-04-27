@@ -80,6 +80,9 @@ $(".js-authen").click(function () {
 // 认证 开始
 $('.js-authenBtn').click(function () {
     $('.step2').addClass('active').siblings().removeClass('active');
+    setTimeout(function(){
+        $('.step3').addClass('active').siblings().removeClass('active');
+    },3000)
 })
 
 
