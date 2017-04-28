@@ -69,6 +69,13 @@
 	height: 190px;
 }
 
+.content .row ul li img:hover{
+	-moz-transition: all 1s ease 0s;
+	-o-transition: all 1s ease 0s;
+	-webkit-transition: all 1s ease 0s;
+	transition: all 1s ease 0s;
+}
+
 /*限时秒杀*/
 .project.usr .content .row .xsms .timer{
 	margin-top: 20px;
@@ -596,7 +603,7 @@
 	background: #fff;
 	margin: 20px 0;
 }
-.content .left-desc .course-left-bot h2{
+.content .left-desc .course-left-bot > h2{
 	font-size: 18px;
 	font-weight: normal;
 	border-bottom: 1px solid #dadada;
@@ -607,6 +614,7 @@
 	border:none;
 	font-size: 16px;
 	position: relative;
+	padding: 15px;
 }
 .content .left-desc .course-left-bot .log-list ul{
 	padding: 10px 0;
@@ -1769,6 +1777,7 @@
 /*个人设置 */
 .right-wrapper.settings{
 	width: 1200px;
+	margin-left: 0;
 }
 .right-wrapper.settings .information{
 	width: 900px;
@@ -1964,6 +1973,139 @@
 	padding: 11px 0;
 	cursor: pointer;
 }
+
+
+/*购物车*/
+.cart-container{
+}
+.cart-container .order-empty{
+	 margin-top: 100px;
+	display: none;
+}
+.cart-container .m-orderCart{
+	margin: 20px 0;
+}
+.cart-container > h2{
+	border-bottom:1px solid #dadada;
+	border-bottom: 1px solid #dadada;
+	text-align: left;
+	padding: 10px 0;
+	font-weight: normal;
+	font-size: 18px;
+}
+.cart-container h2 span{
+	color: #999;
+	font-size:14px;
+}
+.u-emptybig {
+	background: url('../images/cart.png') center 40px no-repeat;
+	padding: 260px 0 40px 0;
+}
+
+.u-emptybig .emptytext {
+	width: 80%;
+	text-align: center;
+	line-height: 2;
+	font-size: 16px;
+	font-family: '微软雅黑';
+	color: #666;
+	margin: 10px auto;
+}
+
+.cart-container .content .left-desc .course-left-bot{
+	background: #f8f8f8;
+}
+.cart-container .content .left-desc,.cart-container .content .left-tutor .content{
+	width: 1200px;
+}
+.cart-container .content .left-desc .course-left-bot > h2{
+	text-align: left;
+	border-bottom:1px solid #dadada;
+}
+.cart-container .content .left-tutor .content .row ul{
+	display: inline-block;
+	width: 1170px;
+	margin-left: 15px;
+}
+.cart-container .content .left-tutor .content .row ul li img{
+	width: 225px;
+	height: 150px;
+}
+.cart-container .project{
+	padding:20px 0;
+}
+.cart-container .project.usr .content .row{
+	margin-top: 0;
+}
+.cart-container .content .left-tutor .content .row ul li{
+	margin: 0 0 0 90px ;
+}
+.cart-container .content .left-tutor .content .row ul li:first-child{
+	margin-left: 0;
+}
+.cart-container .content .left-tutor .content .row ul li > div.course-tag  > span{
+	font-size: inherit;
+}
+
+
+/*购物车列表*/
+.m-orderCart{
+
+}
+.m-orderCart table{
+	width: 100%;
+	border-collapse: collapse;
+	padding: 0;
+	border: none;
+}
+.m-orderCart table tr th,.m-orderCart table tr td{
+	text-align: left;
+	padding: 20px;
+}
+.m-orderCart table tr th{
+	border-left:none !important;
+}
+.m-orderCart table tr td{
+	border-top:1px solid #dadada;
+	border-bottom:1px solid #dadada;
+	background: #f8f8f8;
+	color: #333333;
+}
+.m-orderCart table tr td > img{
+	width:110px;
+	height:73px;
+}
+.m-orderCart table tr td .delete{
+	background: url(../images/cart1.png) no-repeat;
+	height: 20px;
+	display: inline-block;
+	width: 20px;
+	background-position: 0 -52px;
+}
+.m-orderCart table tr td .red{
+	color: #e96d6d;
+}
+.m-orderCart table tr td:first-child{
+	border-left:1px solid #dadada;
+}
+.m-orderCart table tr td:last-child{
+	border-right:1px solid #dadada;
+}
+.m-orderCart table tr td .realprice{
+	color: #ff4000;
+	font-size:18px;
+}
+.m-orderCart table tr td > s,.m-orderCart table tr th{
+	color: #bbbbbb;
+	font-weight: normal;
+}
+.m-orderCart table tr th > input,.m-orderCart table tr td > input{
+	margin-right: 15px;
+	cursor: pointer;
+}
+
+
+/*购物车 end*/
 
 
 /*页面 弹层*/
