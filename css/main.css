@@ -1983,7 +1983,8 @@
 	display: none;
 }
 .cart-container .m-orderCart{
-	margin: 20px 0;
+	margin: 20px 0 250px 0;
+	padding-bottom: 20px;
 }
 .cart-container > h2{
 	border-bottom:1px solid #dadada;
@@ -2087,6 +2088,7 @@
 }
 .m-orderCart table tr td:first-child{
 	border-left:1px solid #dadada;
+	line-height: 73px;
 }
 .m-orderCart table tr td:last-child{
 	border-right:1px solid #dadada;
@@ -2094,6 +2096,34 @@
 .m-orderCart table tr td .realprice{
 	color: #ff4000;
 	font-size:18px;
+}
+.m-orderCart table tr label,.m-orderCart .allSum label{
+	cursor: pointer;
+}
+.m-orderCart table tr label .chk-style,.m-orderCart .allSum label .chk-style{
+	width: 21px;
+	height: 18px;
+	padding-top: 3px;
+	cursor: pointer;
+	text-align: center;
+	margin-right: 10px;
+	background: url('../images/cart1.png');
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	display: inline-block;
+	vertical-align: middle;
+}
+.m-orderCart table tr th label .chk-style{
+	vertical-align: inherit;
+}
+.m-orderCart table tr label .chk-style.on,.m-orderCart .allSum label .chk-style.on{
+	background-position: 0 -25px;
+}
+.m-orderCart table tr label .ipt-default,.m-orderCart .allSum label .ipt-default{
+	opacity: 0;
+	cursor: pointer;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
 }
 .m-orderCart table tr td > s,.m-orderCart table tr th{
 	color: #bbbbbb;
@@ -2103,7 +2133,64 @@
 	margin-right: 15px;
 	cursor: pointer;
 }
+.m-orderCart .allSum{
+	padding: 30px 20px;
+	margin: 20px 0 0 0;
+	background: #eaeaea;
+	position: relative;
+}
+.m-orderCart .allSum .deleteSelect{
+	margin-left: 50px;
+	display: none;
+}
+.m-orderCart .heji {
+	margin-right: 140px;
+	line-height: 20px;
+	text-align: right;
+	margin-top: -8px;
+}
+.m-orderCart .heji .realPay{
+	margin-top: 10px;
+}
+.m-orderCart .priz {
+	font-size: 20px;
+	color: #FF3900;
+}
+.m-orderCart .font-12 {
+	font-size: 12px;
+	color: #666666;
+}
+.m-orderCart .allSum .f-pa{
+	font-size: 20px;
+	text-align: center;
+	line-height: 80px;
+	width: 120px;
+	color: #fff;
+	right: 0;
+	top: -1px;
+	position: absolute;
+}
+.m-orderCart .allSum .disable {
+	background: #dadada;
+	border: 1px solid #dadada;
+	cursor: default;
+}
+.m-orderCart .allSum .chekout {
+	background: #ee6910;
+	border: 1px solid #FF8000;
+	cursor: pointer;
+}
+.m-orderCart .allSum .backCart{
+	color: #00a7ea;
+}
 
+.m-orderCart .allSum.tips{
+	background: #FFFFFF;
+	padding: 20px 0;
+}
+.m-orderCart .allSum.tips .price{
+	margin: 0 0 0 30px ;
+}
 
 /*购物车 end*/
 
