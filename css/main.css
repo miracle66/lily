@@ -451,7 +451,7 @@
 	margin: 30px 25% 10px 25%;
 	display: inline-block;
 }
-.pager ul#pages li{
+.pager .pages li{
 	float: left;
 	margin: 0 5px;
 	padding: 10px 15px;
@@ -459,14 +459,14 @@
 	border-radius: 5px;
 	font-size: 16px;
 }
-.pager ul#pages li > a{
+.pager .pages li > a{
 	cursor: pointer;
 	color: #333;
 }
-.pager ul#pages li.active{
+.pager .pages li.active{
 	background: #00a7eb;
 }
-.pager ul#pages li.active a{
+.pager .pages li.active a{
 	color: #fff;
 }
 /*课程首页 筛选*/
@@ -515,20 +515,22 @@
 	color: #bbbbbb;
 	font-size: 18px;
 }
-.course .content .right-course .course-btn > a{
+.course-btn > a{
 	padding: 13px 0;
 	width: 185px;
 	display: inline-block;
 	text-align: center;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
 	border-radius: 5px;
 	margin: 0 35px 0 0;
 	font-size: 18px;
 }
-.course .content .right-course .course-btn > a.buy{
+.course-btn > a.buy{
 	background: #ff8000;
 	color: #fff;
 }
-.course .content .right-course .course-btn > a.cart{
+.course-btn > a.cart{
 	background: #ffffff;
 	border:1px solid #ff8000;
 	color: #ff8000;
@@ -1146,7 +1148,7 @@
 	line-height: 23px;
 	color: #333;
 }
-.page-line .left-pane .project.train .open-single .open-single-desc .open-price > div{
+.page-line .left-pane .project.train .open-single .open-single-desc .open-price .square{
 	border: 1px solid #ccedfb;
 	color: #73c4f0;
 	max-width: 182px;
@@ -1299,6 +1301,193 @@
 	font-size:12px;
 }
 /*内训导师详情*/
+
+/*课程学习*/
+.study-progress{
+	background: #FFFFFF;
+	padding:20px;
+	margin-top: 30px;
+}
+.study-progress .course-finished {
+	font-size: 18px;
+	color: #333;
+}
+
+.study-progress .course-finished > span{
+	color:#00a7ea;
+	font-size: 22px;
+}
+
+.learnPro {
+	/*min-height: 100px;*/
+}
+.g-mn2 {
+	float: left;
+	width: 100%;
+}
+.g-sd2 {
+	position: relative;
+	float: right;
+	width: 225px;
+	margin-left: -225px;
+}
+
+.f-cb, .f-cbli li {
+	zoom: 1;
+}
+
+.f-pr {
+	position: relative;
+}
+
+.m-learnProgress {
+	padding: 0 ;
+	height: 45px;
+}
+
+.m-learnProgress .proDetail {
+	height: 20px;
+	color: #999;
+	font-size: 13px;
+}
+
+.m-learnProgress .pFinished {
+	display: block;
+	width: 370px;
+}
+
+.m-learnProgress .proDetail .pFinished em {
+	color: #333;
+	font-size: 16px;
+}
+
+.m-learnProgress .pTaskLeft {
+	display: block;
+	width: 540px;
+	text-align: right;
+	margin-top: 3px;
+	font-size: 12px;
+}
+
+.m-learnProgress .pTaskLeft em {
+	color: #1aa43a;
+	font-size: 16px;
+}
+
+.m-learnProgress .barBox .probg {
+	height: 18px;
+	margin-top: 7px;
+	background: #eaeaea;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+}
+
+.m-learnProgress .barBox .g-mn2c {
+	margin-right: 160px;
+}
+
+.m-learnProgress .barBox .g-sd2 {
+	margin-left: -125px;
+	width: 125px;
+}
+
+.m-learnProgress .barBox .probar {
+	width: 0;
+	height: 18px;
+	background: #ff8000;
+	-webkit-border-top-left-radius: 20px;
+	-moz-border-radius-topleft: 20px;
+	border-top-left-radius: 20px;
+	-webkit-border-bottom-left-radius: 20px;
+	-moz-border-radius-botomleft: 20px;
+	border-bottom-left-radius: 20px;
+}
+.m-learnProgress .barBox .probarfull{
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;;
+}
+
+.m-learnProgress .barBox .btn {
+	display: block;
+	text-decoration: none;
+	margin-top: -4px;
+	background: #ff8000;
+	color: #FFFFFF;
+	width: 125px;
+	height: 44px;
+	line-height: 42px;
+	text-align: center;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	font-size: 16px;
+}
+/*课程学习 end*/
+
+/*笔记详情页面*/
+.note-detail{
+	margin-bottom: 250px;
+}
+
+
+/*课程搜索结果结果页*/
+.empty-content{
+	font-size: 16px;
+	text-align: center;
+	margin: 150px 0;
+	min-height: 400px;
+	display: none;
+}
+.empty-content .emptyBg{
+	background: url(../images/empty.png) no-repeat 0 0;
+	width: 200px;
+	height: 120px;
+	margin: 20px auto;
+}
+.empty-content .emptyBg.emptyInfoBg{
+	background: url(../images/empty.png) no-repeat 0 -170px;
+	width: 200px;
+	height: 120px;
+	margin: 20px auto;
+}
+.pane .search-content .left-list ul li{
+	border-top:1px solid #eaeaea ;
+}
+.pane .search-content .left-list ul li:first-child{
+	border-top:none;
+}
+.pane .search-content .left-list ul li.active{
+
+	border-right:none;
+}
+ .pane .search-content .left-list ul li.active a{
+	color: #00a7ea;
+}
+.search-content .page-line .left-pane .project.train .open-single .open-single-desc .open-price{
+	/*margin-top: 20px;*/
+}
+.search-content .page-line .left-pane .project.train .open-single .open-single-desc .open-price .fee{
+	color: #ff4000;
+}
+.search-content .page-line .left-pane .project.train .open-single .open-single-desc .open-bgs{
+	margin-top: 10px;
+}
+.search-content .page-line .left-pane .project.train .open-single .open-single-desc .open-bgs .empty-bg{
+	background: none;
+	padding-left: 0;
+}
+.search-content .lesson-container .project .open-single .open-single-desc .open-bgs > span.address{
+	background-position: 0 -101px;
+}
+.search-content .lesson-container .project .open-single .open-single-desc .open-bgs > span.date{
+	background-position: 0 -30px;
+}
+.search-content .page-line .left-pane .project .open-single .open-single-desc .open-title span.red{
+	padding:0 10px;
+}
+/*课程搜索结果页 end*/
 
 /*个人中心*/
 .userPane .pane-content{
@@ -2053,7 +2242,7 @@
 .m-orderCart{
 
 }
-.m-orderCart table{
+table{
 	width: 100%;
 	border-collapse: collapse;
 	padding: 0;
@@ -2100,7 +2289,7 @@
 .m-orderCart table tr label,.m-orderCart .allSum label{
 	cursor: pointer;
 }
-.m-orderCart table tr label .chk-style,.m-orderCart .allSum label .chk-style{
+label .chk-style{
 	width: 21px;
 	height: 18px;
 	padding-top: 3px;
@@ -2116,10 +2305,10 @@
 .m-orderCart table tr th label .chk-style{
 	vertical-align: inherit;
 }
-.m-orderCart table tr label .chk-style.on,.m-orderCart .allSum label .chk-style.on{
+label .chk-style.on{
 	background-position: 0 -25px;
 }
-.m-orderCart table tr label .ipt-default,.m-orderCart .allSum label .ipt-default{
+label .ipt-default{
 	opacity: 0;
 	cursor: pointer;
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
@@ -2135,9 +2324,11 @@
 }
 .m-orderCart .allSum{
 	padding: 30px 20px;
-	margin: 20px 0 0 0;
+	margin: 30px 0 0 0;
 	background: #eaeaea;
 	position: relative;
+	height: 21px;
+	line-height: 21px;
 }
 .m-orderCart .allSum .deleteSelect{
 	margin-left: 50px;
@@ -2193,6 +2384,208 @@
 }
 
 /*购物车 end*/
+
+/*订单支付*/
+.order-pay{
+	padding-bottom: 200px;
+}
+.order-pay h2{
+	font-size:16px;
+	font-weight:normal;
+	margin:10px 15px;
+}
+.pay-title{
+	margin: 20px 0 5px 0;
+	padding: 0 15px;
+}
+.pay-title span{
+	font-size: 24px;
+	color: #ff4000;
+	vertical-align: middle;
+}
+.order-detail{
+	border: 1px solid #dadada;
+	padding:15px 0;
+}
+.order-detail .toggles{
+	padding:0 15px 15px 15px;
+	cursor: pointer;
+}
+/* 向下的箭头 */
+.toggles .dot-bottom {
+	font-size: 0;
+	line-height: 0;
+	border-width: 5px;
+	border-color: #999999;
+	border-bottom-width: 0;
+	border-style: dashed;
+	border-top-style: solid;
+	border-left-color: transparent;
+	border-right-color: transparent;
+	margin-left: 5px;
+}
+.order-detail table{
+	display: none;
+}
+.order-detail table.active{
+	display: table;
+	margin-bottom: 10px;
+}
+.order-detail table tr th{
+	background: #f8f8f8;
+}
+.order-detail table tr th , .order-detail table tr td{
+	padding: 10px 0;
+	text-align: center;
+	width:33%;
+	font-weight:normal;
+	color: #999;
+}
+.order-detail .pay-way{
+	margin:0 15px;
+	border-top:1px solid #dadada;
+}
+.order-detail .pay-way .pay-sel{
+	margin: 20px 0;
+}
+.order-detail .pay-way ul li{
+	float: left;
+	margin: 10px 22px;
+	border: 1px solid #dadada;
+	width: 148px;
+	height: 50px;
+	text-align: center;
+	background: #ffffff url(../images/pay.png) no-repeat;
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+	border-radius:3px;
+	cursor: pointer;
+}
+.order-detail .pay-way ul li.on{
+	border:1px solid #00a7ea;
+}
+.order-detail .pay-way ul li.zfb{
+	background-position: center 0;
+}
+.order-detail .pay-way ul li.wxzf{
+	background-position: center -45px;
+}
+.order-detail .pay-way ul li.gsyh{
+	background-position: center -92px;
+}
+.order-detail .pay-way ul li.jsyh{
+	background-position: center -144px;
+}
+.order-detail .pay-way ul li.nyyh{
+	background-position: center -191px;
+}
+.order-detail .pay-way ul li.zsyh{
+	background-position: center -240px;
+}
+.pay-agreement{
+	margin: 30px 0;
+	position: relative;
+}
+.pay-agreement .warning{
+	margin: 20px 0;
+	color: #e96d6d;
+}
+.pay-agreement .warning > span{
+	display: inline-block;
+	background: #f4c649;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	border-radius: 100px;
+	width: 18px;
+	height: 18px;
+	text-align: center;
+	line-height: 18px;
+	color: #fff;
+	margin-right: 5px;
+}
+.pay-agreement label .chk-style{
+	margin-right: 0;
+}
+.pay-agreement .agreement{
+	color: #00a7ea;
+}
+.pay-agreement .course-btn{
+	position: absolute;
+	top:20px;
+	right:0;
+}
+.pay-agreement .course-btn > a{
+	margin-right: 0;
+}
+
+/*订单支付 end*/
+
+/*扫码支付*/
+.order-pay.code-pay .order-detail{
+	padding:5px 0;
+}
+.order-pay.code-pay .pay-title{
+	padding:0;
+}
+.order-pay.code-pay .pay-title  > span{
+	color: #e96d6d;
+	font-size:14px;
+	font-weight:normal;
+}
+.order-pay.code-pay .pay-title .toggles{
+	width: 80px;
+	cursor: pointer;
+}
+.order-pay.code-pay .code{
+	text-align: center;
+	padding:20px;
+}
+.order-pay.code-pay .code .scan{
+	width: 250px;
+	background: url(../images/scan.png) no-repeat 75px 7px;
+	margin: 20px auto;
+	padding-left: 40px;
+	line-height: 20px;
+}
+.code > div{
+	margin:10px 0;
+}
+.code .price{
+	font-size: 24px;
+	color: #ff4000;
+}
+/*扫码支付 end*/
+
+/*支付结果*/
+.result > div{
+	margin: 50px 0;
+}
+.result .success-bg , .result .failure-bg{
+	margin: 100px 0 0 0;
+}
+.result .tips{
+	margin: 100px 0 0 0;
+}
+.result .course-btn > a{
+	margin:0 10px;
+}
+.result .course-btn .cart{
+	border: 1px solid #00a7ea;
+	color: #00a7ea;
+}
+.result .f-18{
+	font-size:  18px;
+}
+.result .tips{
+	background: #f8f8f8;
+	padding: 20px;
+	line-height: 30px;
+}
+.f-blue{
+	font-size: 16px;
+	color: #00a7ea;
+}
+/*支付结果 end*/
 
 
 /*页面 弹层*/
@@ -2284,7 +2677,19 @@
 	width: 360px;
 	text-align: center;
 	left: 40.5%;
-	padding: 20px 0;
+	padding:20px 0;
+}
+.success-bg{
+	background: url(../images/result_icon.png) no-repeat center 2px;
+	display: inline-block;
+	width: 80px;
+	height: 85px;
+}
+.failure-bg{
+	background: url(../images/result_icon.png) no-repeat center -116px;
+	display: inline-block;
+	width: 80px;
+	height: 85px;
 }
 .cover-box.bindSuccess > img{
 	width:80px;
@@ -2339,10 +2744,6 @@
 	color: #00a7ea;
 	padding:15px 0;
 	background: #f2f2f2;
-}
-.cover-box.nameAuthen .authen-container .authen-content .step .step-success > img{
-	width: 80px;
-	height: 80px;
 }
 .cover-box.nameAuthen .authen-container .authen-content .step .step-success > p{
 	margin: 20px 0;

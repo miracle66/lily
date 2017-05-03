@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
 	<meta http-equiv="X-UA-Compatible" content="IE=9" />
-	<title>我的购物车-提交订单</title>
+	<title>订单支付</title>
 	<link rel="shortcut icon" href="http://home.9first.com/favicon.ico">
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/main.css">
@@ -46,83 +46,56 @@
 			<div class="pane-content">
 				<div class="right-wrapper settings">
 					<div class="tab-content">
-						<!--购物车-->
-						<div class="cart-container">
-							<!--提交订单 -->
-							<div class="m-orderCart">
+						<!--订单支付-->
+						<div class="order-pay">
+							<h2>请在24小时内完成支付</h2>
+							<h2>超出24小时再支付可能导致购买失败，需重新下单购买</h2>
+							<div class="pay-title">
+								实付金额：<span>￥199.00</span>
+							</div>
+							<div class="order-detail orderDetail">
+								<div class="toggles js-orderDetail">订单详情 <span class="dot-bottom"></span></div>
 								<table>
-									<thead>
 									<tr>
-										<th></th>
-										<th>名称</th>
-										<th>类型</th>
-										<th>学期或课程有效期</th>
-										<th>单价（元）</th>
-										<th>单价（元）</th>
+										<th>课程包名称</th>
+										<th>学习时限</th>
 										<th>单价（元）</th>
 									</tr>
-									</thead>
-									<tbody id="paneAll">
 									<tr>
-										<td><img src="images/nxds.png" alt=""></td>
-										<td>如何甄选餐饮酒店的供应商</td>
-										<td>线下公开课</td>
-										<td>2016/08/14-2016/08/15</td>
-										<td><span class="realprice">￥199.00</span></td>
-										<td>--</td>
-										<td><span class="realprice">￥199.00</span></td>
+										<td>餐饮酒水运营管理</td>
+										<td>一个月</td>
+										<td>280.00</td>
 									</tr>
 									<tr>
-										<td><img src="images/nxds.png" alt=""></td>
-										<td>如何甄选餐饮酒店的供应商</td>
-										<td>线下公开课</td>
-										<td>2016/08/14-2016/08/15</td>
-										<td><span class="realprice">￥199.00</span></td>
-										<td>--</td>
-										<td><span class="realprice">￥199.00</span></td>
+										<td>餐饮酒水运营管理 下</td>
+										<td>一个月</td>
+										<td>280.00</td>
 									</tr>
-									<tr>
-										<td><img src="images/nxds.png" alt=""></td>
-										<td>如何甄选餐饮酒店的供应商</td>
-										<td>线下公开课</td>
-										<td>2016/08/14-2016/08/15</td>
-										<td><span class="realprice">￥199.00</span></td>
-										<td>--</td>
-										<td><span class="realprice">￥199.00</span></td>
-									</tr>
-									<tr>
-										<td><img src="images/nxds.png" alt=""></td>
-										<td>如何甄选餐饮酒店的供应商</td>
-										<td>线下公开课</td>
-										<td>2016/08/14-2016/08/15</td>
-										<td><span class="realprice">￥199.00</span></td>
-										<td>--</td>
-										<td><span class="realprice">￥199.00</span></td>
-									</tr>
-									</tbody>
 								</table>
-								<div class="allSum tips">
-									<select name="" id="">
-										<option value="">使用优惠券</option>
-										<option value="">优惠券后期发</option>
-									</select>
-									<div class="fr">
-										<span class="price">已优惠：<i>10元</i></span>
-										<span class="price">总计：<i>￥230</i></span>
-									</div>
-								</div>
-								<div class="allSum">
-									<label><a class="backCart" href="cart.html">返回购物车修改订单</a></label>
-									<a class="deleteSelect" href="javascript:void(0);">删除所选</a>
-									<div class="fr heji">
-										<div class="realPay">实付金额：<span class="priz">￥199.00</span></div>
-									</div>
-									<a href="cart_payment.html" class="chekout f-pa disable">提交订单</a>
+								<div class="pay-way clearfixs">
+									<div class="pay-sel">选择支付方式</div>
+									<ul class="js-payWay">
+										<li class="zfb"></li>
+										<li class="wxzf"></li>
+										<li class="gsyh"></li>
+										<li class="jsyh"></li>
+										<li class="nyyh"></li>
+										<li class="zsyh"></li>
+									</ul>
 								</div>
 							</div>
-							<!--提交订单 end-->
+							<div class="pay-agreement">
+								<label class="js-agreement">
+									<span class="chk-style"><input type="checkbox" class="ipt-default"></span>
+									我已经阅读并同意 <a class="agreement" href="javascript:void(0);">《先之云课堂用户付费协议》</a>
+								</label>
+								<div class="warning"><span>i</span>下单后，请在24小时内完成支付。超出24小时再支付可能导致购买失败，需重新下单购买。</div>
+								<div class="course-btn">
+									<a href="cart_codePay.html" class="buy fr">立即支付</a>
+								</div>
+							</div>
 						</div>
-						<!--购物车 end-->
+						<!--订单支付 end-->
 					</div>
 				</div>
 			</div>
@@ -188,5 +161,6 @@
 	<script src="http://f3.v.veimg.cn/f2e/gallery/??seajs/2.2.0/sea.min.js,jquery/1.9.1/jquery.min.js"></script>
 	<script src="js/libs/bootstrap.min.js"></script>
 	<script src="js/main.js"></script>
+	<script src="js/cart.js"></script>
 </body>
 </html>

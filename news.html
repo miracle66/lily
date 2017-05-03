@@ -4,14 +4,14 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
 	<meta http-equiv="X-UA-Compatible" content="IE=9" />
-	<title>我的购物车-提交订单</title>
+	<title>消息</title>
 	<link rel="shortcut icon" href="http://home.9first.com/favicon.ico">
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/main.css">
 
 	<script src="http://f3.v.veimg.cn/global_ued/js/gallery/html5.js"></script>
 </head>
-<body>
+<body style="background: #f2f2f2;">
 	<!-- 头部 -->
 	<header>
 		<div class="top-banner">
@@ -33,9 +33,9 @@
 					<a href="#" class="info">消息<em>99</em></a>
 					<a href="#">购物车</a>
 					<span>
-							<a class="name">地主家的积极</a>
-							<img src="images/header.png" alt="">
-						</span>
+						<a class="name">地主家的积极</a>
+						<img src="images/header.png" alt="">
+					</span>
 				</div>
 			</div>
 		</div>
@@ -46,83 +46,41 @@
 			<div class="pane-content">
 				<div class="right-wrapper settings">
 					<div class="tab-content">
-						<!--购物车-->
-						<div class="cart-container">
-							<!--提交订单 -->
-							<div class="m-orderCart">
-								<table>
-									<thead>
-									<tr>
-										<th></th>
-										<th>名称</th>
-										<th>类型</th>
-										<th>学期或课程有效期</th>
-										<th>单价（元）</th>
-										<th>单价（元）</th>
-										<th>单价（元）</th>
-									</tr>
-									</thead>
-									<tbody id="paneAll">
-									<tr>
-										<td><img src="images/nxds.png" alt=""></td>
-										<td>如何甄选餐饮酒店的供应商</td>
-										<td>线下公开课</td>
-										<td>2016/08/14-2016/08/15</td>
-										<td><span class="realprice">￥199.00</span></td>
-										<td>--</td>
-										<td><span class="realprice">￥199.00</span></td>
-									</tr>
-									<tr>
-										<td><img src="images/nxds.png" alt=""></td>
-										<td>如何甄选餐饮酒店的供应商</td>
-										<td>线下公开课</td>
-										<td>2016/08/14-2016/08/15</td>
-										<td><span class="realprice">￥199.00</span></td>
-										<td>--</td>
-										<td><span class="realprice">￥199.00</span></td>
-									</tr>
-									<tr>
-										<td><img src="images/nxds.png" alt=""></td>
-										<td>如何甄选餐饮酒店的供应商</td>
-										<td>线下公开课</td>
-										<td>2016/08/14-2016/08/15</td>
-										<td><span class="realprice">￥199.00</span></td>
-										<td>--</td>
-										<td><span class="realprice">￥199.00</span></td>
-									</tr>
-									<tr>
-										<td><img src="images/nxds.png" alt=""></td>
-										<td>如何甄选餐饮酒店的供应商</td>
-										<td>线下公开课</td>
-										<td>2016/08/14-2016/08/15</td>
-										<td><span class="realprice">￥199.00</span></td>
-										<td>--</td>
-										<td><span class="realprice">￥199.00</span></td>
-									</tr>
-									</tbody>
-								</table>
-								<div class="allSum tips">
-									<select name="" id="">
-										<option value="">使用优惠券</option>
-										<option value="">优惠券后期发</option>
-									</select>
-									<div class="fr">
-										<span class="price">已优惠：<i>10元</i></span>
-										<span class="price">总计：<i>￥230</i></span>
-									</div>
+						<!-- 消息 start -->
+						<div class="tabbable">
+								<div class="right-tabs clearfixs">
+									<ul class="nav nav-tabs">
+										<li class="active"><a href="#notes" data-toggle="tab" aria-expanded="true">通知</a></li>
+										<li><a href="#messages" data-toggle="tab" aria-expanded="true">系统消息</a></li>
+									</ul>
 								</div>
-								<div class="allSum">
-									<label><a class="backCart" href="cart.html">返回购物车修改订单</a></label>
-									<a class="deleteSelect" href="javascript:void(0);">删除所选</a>
-									<div class="fr heji">
-										<div class="realPay">实付金额：<span class="priz">￥199.00</span></div>
+								<div class="lesson-container accounts">
+									<div class="tab-content">
+										<!--通知-->
+										<div class="tab-pane active" id="notes">
+											<!--消息通知为空 显示-->
+											<div class="empty-content" style="display:block;">
+												<div class="emptyBg emptyInfoBg"></div>
+												<div>抱歉，目前还没有通知</div>
+											</div>
+											<!--消息通知为空 显示 end-->
+										</div>
+										<!--通知 end-->
+
+										<!--系统消息-->
+										<div class="tab-pane" id="messages">
+											<!--消息通知为空 显示-->
+											<div class="empty-content" style="display:block;">
+												<div class="emptyBg emptyInfoBg"></div>
+												<div>抱歉，目前还没有系统消息</div>
+											</div>
+											<!--消息通知为空 显示 end-->
+										</div>
+										<!--系统消息 end-->
 									</div>
-									<a href="cart_payment.html" class="chekout f-pa disable">提交订单</a>
 								</div>
 							</div>
-							<!--提交订单 end-->
-						</div>
-						<!--购物车 end-->
+						<!-- 消息 end -->
 					</div>
 				</div>
 			</div>

@@ -4,12 +4,11 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
 	<meta http-equiv="X-UA-Compatible" content="IE=9" />
-	<title>分享收益</title>
+	<title>课程学习 - 视频</title>
 	<link rel="shortcut icon" href="http://home.9first.com/favicon.ico">
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/main.css">
-
-	<script src="http://f3.v.veimg.cn/global_ued/js/gallery/html5.js"></script>
+	<link href="http://f3.v.veimg.cn/ketang_9first_com/css/xzkt/ketang.css" type="text/css" rel="stylesheet"  />
 </head>
 <body>
 	<!-- 头部 -->
@@ -41,81 +40,46 @@
 		</div>
 	</header>
 	<!-- 头部 end -->
+
+	<!-- 内容 -->
 	<section>
-		<div class="pane userPane">
-			<div class="pane-content">
-				<div class="right-wrapper settings">
-					<div class="tab-content">
-						<!--购物车-->
-						<div class="cart-container">
-							<h2>我的购物车&emsp;<span>共 <i>0</i>门课程</span></h2>
-							<!--空购物车-->
-							<div class="order-empty">
-								<div class="u-emptybig">
-									<p class="emptytext">好好学习，天天向上，看到喜欢的课程，点击【加入购物车】，在这里合并购买</p>
+		<!-- 课程首页 头部筛选 -->
+		<div class="pane">
+
+			<div class="pane-content page-line">
+				<div class="left-pane">
+					<div class="video-box">
+
+					</div>
+
+					<div class="video">
+						<div class="video-box">
+							<div class="share">
+								<div class="left-ctrl">
+									&lt;&lt;
 								</div>
-								<div class="content">
-									<div class="left-tutor">
-										<div class="left-desc">
-											<div class="course-left-bot train-style">
-												<h2>猜你喜欢</h2>
-												<div class="project usr gray">
-													<div class="content clearfixs">
-														<div class="row">
-															<ul>
-																<li>
-																	<a href="#"><span><em>8门课程</em></span><img src="images/kcxt_03.png" alt=""></a>
-																	<div class="course-title">如何甄选餐饮酒店的供应商<span class="fr">课程包</span></div>
-																	<div class="course-tag">
-																		<h2 class="fl">免费</h2>
-																		<span class="fr"><i>88人</i>学过</span>
-																	</div>
-																</li>
-																<li>
-																	<a href="#"><img src="images/kcxt_03.png" alt=""></a>
-																	<div class="course-title">如何甄选餐饮酒店的供应商<span class="fr">课程包</span></div>
-																	<div class="course-tag">
-																		<h2 class="fl">￥0.01 <s>￥20.00</s></h2>
-																		<span class="fr"><i>88人</i>学过</span>
-																	</div>
-																</li>
-																<li>
-																	<a href="#"><img src="images/kcxt_03.png" alt=""></a>
-																	<div class="course-title">如何甄选餐饮酒店的供应商<span class="fr">课程包</span></div>
-																	<div class="course-tag">
-																		<h2 class="fl">￥0.01 <s>￥20.00</s></h2>
-																		<span class="fr"><i>88人</i>学过</span>
-																	</div>
-																</li>
-																<li>
-																	<a href="#"><img src="images/kcxt_03.png" alt=""></a>
-																	<div class="course-title">如何甄选餐饮酒店的供应商<span class="fr">课程包</span></div>
-																	<div class="course-tag">
-																		<h2 class="fl">￥0.01 <s>￥20.00</s></h2>
-																		<span class="fr"><i>88人</i>学过</span>
-																	</div>
-																</li>
-															</ul>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
+								<div class="right-show">
+									<div class="show-text">分享</div>
+									<div class="bdsharebuttonbox">
+										<a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+										<a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+										<a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
 									</div>
 								</div>
 							</div>
-							<!--空购物车 end-->
-
-							<div class="m-orderCart">
-								
-							</div>
+							<div id="a1"></div>
 						</div>
-						<!--购物车 end-->
 					</div>
+				</div>
+				<div class="right-container fr">
+					<h2>目录</h2>
 				</div>
 			</div>
 		</div>
+		<!-- 课程首页 头部筛选 end-->
+		
 	</section>
+	<!-- 内容 end -->
 	<!-- 页面底部 -->
 	<footer>
 		<div class="project foot">
@@ -171,10 +135,59 @@
 			</div>
 		</div>
 	</footer>
-	<!-- 页面底部 -->
+	<!-- 页面底部 end -->
 
 	<script src="http://f3.v.veimg.cn/f2e/gallery/??seajs/2.2.0/sea.min.js,jquery/1.9.1/jquery.min.js"></script>
-	<script src="js/libs/bootstrap.min.js"></script>
 	<script src="js/main.js"></script>
-</body>
+	<script>
+		$(function(){
+			var vHeight = $(window).height()-120;
+			var vWidth = vHeight*1.5;
+			$('.left-ctrl').click(function(){
+				if($('.share').css('marginRight')=='0px') {
+					$('.share').animate({"marginRight":"-60px"},500);
+					$(this).html('&lt;&lt;');
+				}else{
+					$('.share').animate({"marginRight":"0px"},500);
+					$(this).html('&gt;&gt;');
+				}
+
+			});
+			$('.video').height(vHeight);
+			$('.video-box').width(vWidth);
+			$('.nav-lists').width(vWidth);
+			$('.head').width(vWidth);
+		});
+	</script>
+	<script type="text/javascript" src="js/libs/ckplayer.js" charset="utf-8"></script>
+	<script type="text/javascript">
+		function loadedHandler(){
+			setInterval(showtime,2000);
+		}
+		var isAddviewlog;
+		function showtime(){
+			var ck = CKobject.getObjectById('ckplayer_a1').getStatus(),t = ck.time;
+			if(t > 0 && !isAddviewlog){
+				isAddviewlog = true;
+//				$.ajax({
+//					url :"http://ketang.9first.com/index/studynum",
+//					type:"POST",
+//					data:{'id':1364},
+//				});
+			}
+		}
+		var flashvars={
+			f:'http://video.xz.veimg.cn/12/8418/pc_hd/12_8418XAsZGDUa.mp4',
+			c:0,
+			loaded:'loadedHandler',
+		};
+		var video=['http://video.xz.veimg.cn/12/8418/pc_hd/12_8418XAsZGDUa.mp4->video/mp4'];
+		var params={bgcolor:'#FFF',allowFullScreen:true,allowScriptAccess:'always',wmode:'transparent'};
+		CKobject.embed('http://ketang.9first.com/ckplayer/ckplayer.swf','a1','ckplayer_a1','100%','100%',false,flashvars,video,params);
+	</script>
+	<!-- 分享 js-->
+	<script>
+		var bdText = '我正在先之课堂上免费学习 《' + $('.title').text() + '》 ，课程非常不错奥，一起来学习吧。';
+		window._bd_share_config={"common":{"bdSnsKey":{},"bdText":bdText,bdDesc:bdText,"bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"32"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+</body> 
 </html>
