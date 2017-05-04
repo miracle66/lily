@@ -5,13 +5,274 @@
 
 @charset "utf-8";
 
+/*首页 顶部*/
+.index-banner{
+	padding: 40px 0;
+}
+.index-search{
+	display: inline-block;
+	margin:0 60px;
+}
+.index-search input{
+	width: 416px;
+	border: 2px solid #008fea;
+	height: 36px;
+	line-height: 36px;
+	padding-left: 10px;
+}
+.index-search .search-btn{
+	display: inline-block;
+	background: #008fea;
+	color: #FFFFFF;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	padding: 0 22px;
+	cursor: pointer;
+}
+.index-banner .course-btn{
+	display: inline-block;
+}
+.index-banner .course-btn > a.buy{
+	margin-right: 0;
+	background: #fbfbfb url(../images/index_icon.png) no-repeat 30px 12px;
+	border: 1px solid #e0e0e0;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	color: #333333;
+	font-size: 14px;
+	width: 118px;
+	padding: 11px 0 11px 25px;
+}
+.index-enter{
+	margin-top: 5px;
+	line-height: 32px;
+}
+.index-enter .header{
+	width:31px;
+	height: 31px;
+	-webkit-border-radius:100px;
+	-moz-border-radius:100px;
+	border-radius:100px;
+}
+.index-enter .before-enter,.index-enter .after-enter{
+	display: none;
+}
+.index-enter .before-enter{
+	margin-right: 10px;
+}
+.index-enter .show{
+	display: inline-block;
+}
+.after-enter .name{
+	width: 90px;
+	word-wrap: break-word;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	display: inline-block;
+}
+/*导航栏*/
+.navbar {
+	width: 100%;
+	min-width: 1000px;
+	color: #ffffff;
+	overflow: hidden;
+}
+.navbar .nav {
+	width: 100%;
+	background: #444951;
+}
+.navbar .de {
+	width: 1200px;
+	height: 65px;
+	margin: 0 auto;
+	position: relative;
+}
+.navbar .classify {
+	font-size: 16px;
+	font-weight: bold;
+	width: 197px;
+	height: 65px;
+	line-height: 65px;
+	float: left;
+	background: #008fea;
+	padding-left: 43px;
+}
+.navbar .classify i {
+	width: 22px;
+	height: 22px;
+	background: url(../images/index_icon.png) 0 -25px no-repeat;
+	position: absolute;
+	top: 22px;
+	left: 15px;
+}
+.navbar .nav-right,.navbar .nav-index{
+	font-size: 16px;
+	white-space: nowrap;
+	overflow: hidden;
+}
+.navbar .nav-index a{
+	color: #ffffff;
+	display: inline-block;
+	line-height: 65px;
+	padding: 0 40px;
+	cursor: pointer;
+}
+.navbar .nav-right a{
+	color: #ffffff;
+	display: inline-block;
+	line-height: 65px;
+	padding: 0 35px;
+	cursor: pointer;
+}
+
+.navbar .nav-right a.hover{
+	text-decoration:underline;
+	background: #FFE300 none repeat scroll 0% 0%;
+	color: #333;
+	text-decoration: none;
+}
+
+.navbar .ce-nav {
+	margin: 0 auto;
+	font-size: 0;
+}
+.navbar .ce-nav a {
+	font-size: 16px;
+	width: 140px;
+	text-align: center;
+	padding: 0;
+	float: left;
+}
+.navbar .ce-nav .hover,
+.navbar .ce-nav a:hover {
+	background: #ffe300;
+	color: #333333;
+}
+
+
+.banner .wrap {
+	width: 1200px;
+	margin: auto;
+	position: relative;
+	z-index: 999;
+}
+.banner .navi {
+	width: 240px;
+	position: absolute;
+	height: 400px;
+}
+.banner .navi ul li{
+	background: #0084d8;
+	padding:17.5px 15px 0 15px;
+	color: #FFFFFF;
+	border-bottom:1px solid #2696de;
+}
+.banner .navi ul li h2,.banner .navi ul li p{
+	padding: 0 0 15px 0;
+}
+.banner .navi ul li h2{
+	font-size:16px;
+}
+.alink a{
+	color: #7dc0ef;
+	margin: 0 0 15px 0;
+	text-align: left;
+	display: inline-block;
+	width: 67px;
+}
+
+.banner .wrap-right{
+	position: absolute;
+	right:0;
+	top: 20px;
+	width:235px;
+	height:310px;
+	background: url("../images/index_right.png") no-repeat 0 0;
+	text-align: center;
+	line-height: 310px;
+}
+.banner .wrap-right .filter-cover{
+	display: inline-block;
+	cursor: pointer;
+	width: 235px;
+	height: 310px;
+	z-index: 99999;
+	position: absolute;
+	left: 0;
+	background: #000;
+	/* older safari/Chrome browsers */
+	-webkit-opacity: 0.6;
+	/* Netscape and Older than Firefox 0.9 */
+	-moz-opacity: 0.6;
+	/* Safari 1.x (pre WebKit!) 老式khtml内核的Safari浏览器*/
+	-khtml-opacity: 0.6;
+	/* IE9 + etc...modern browsers */
+	opacity: .6;
+	/* IE 4-9 */
+	filter:alpha(opacity=60);
+	/*This works in IE 8 & 9 too*/
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+	/*IE4-IE9*/
+	filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
+}
+.banner .wrap-right .filter-cover > a{
+	z-index: 9999;
+	width: 120px;
+	height: 38px;
+	line-height: 38px;
+	display: inline-block;
+	background: #fff;
+	color: #00a7ea;
+	border: 1px solid #00a7ea;
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+	border-radius:3px;
+	/* older safari/Chrome browsers */
+	-webkit-opacity: 0.6;
+	/* Netscape and Older than Firefox 0.9 */
+	-moz-opacity: 0.6;
+	/* Safari 1.x (pre WebKit!) 老式khtml内核的Safari浏览器*/
+	-khtml-opacity: 0.6;
+	/* IE9 + etc...modern browsers */
+	opacity: .6;
+	/* IE 4-9 */
+	filter:alpha(opacity=60);
+	/*This works in IE 8 & 9 too*/
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+	/*IE4-IE9*/
+	filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
+}
+.banner .wrap-right .aview{
+	position: absolute;
+	background: #FFFFFF url(../images/index_icon.png) no-repeat 75px -41px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	width: 205px;
+	bottom: -50px;
+	left: 0;
+	padding-left: 30px;
+}
+
+
+
+/*首页顶部 end*/
+
+
+
+
+
 /*首页*/
 .banner{
 	width: 100%;
 	min-width: 1200px;
 }
-.banner img{
-	width: 100%;
+.banner .item img{
+	width: 1920px;
+	height:400px;
 }
 
 /*首页样式 start*/
@@ -711,7 +972,7 @@
 	margin: 30px 0;
 	padding-bottom: 30px;
 }
-.content .note-pane h2{
+.note-pane h2{
 	padding: 15px;
 	border-bottom: 1px solid #dadada;
 	font-size: 17px;
@@ -1963,6 +2224,29 @@
 
 /*个人中心 end*/
 
+/*关于先之*/
+.about-content{
+	margin-bottom: 20px;
+}
+.about-content > h2{
+	font-size: 22px;
+	color: #00a7ea;
+	margin-bottom: 20px;
+}
+.about-content > h3{
+	margin: 20px 0;
+	font-size: 16px;
+}
+.about-content > p{
+	color: #333;
+	line-height: 23px;
+}
+.about-content > b{
+	margin: 10px 0;
+	display: block;
+}
+/*关于先之 end*/
+
 /*个人设置 */
 .right-wrapper.settings{
 	width: 1200px;
@@ -2022,10 +2306,21 @@
 	margin-top: 10px;
 }
 .infor .infor-group label .ipt-default{
-	opacity: 0;
 	cursor: pointer;
-	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-	filter: alpha(opacity=0);
+	/* older safari/Chrome browsers */
+	-webkit-opacity: 0;
+	/* Netscape and Older than Firefox 0.9 */
+	-moz-opacity: 0;
+	/* Safari 1.x (pre WebKit!) 老式khtml内核的Safari浏览器*/
+	-khtml-opacity: 0;
+	/* IE9 + etc...modern browsers */
+	opacity: 0;
+	/* IE 4-9 */
+	filter:alpha(opacity=0);
+	/*This works in IE 8 & 9 too*/
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	/*IE4-IE9*/
+	filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
 }
 .infor .infor-group label .ipt-style{
 	width: 24px;
@@ -2061,7 +2356,7 @@
 	display: inline-block;
 	background: #00a7ea;
 	color: #FFFFFF;
-	padding: 15px 124px;
+	padding: 15px 95px;
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	border-radius: 3px;
@@ -2111,6 +2406,20 @@
 /*个人设置 end*/
 
 
+/*找回密码*/
+.information .pwd-bg{
+	background: url(../images/pwd_way.png) no-repeat 0 18px;
+	width: 330px;
+	height: 95px;
+	margin: 20px auto;
+	border: 2px solid #00a7ea;
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+	border-radius:3px;
+
+}
+/*找回密码 end*/
+
 /*账户信息修改*/
 .infor.update{
 	width: 460px;
@@ -2126,6 +2435,13 @@
 	padding-left: 30px;
 	height: 25px;
 	line-height: 25px;
+}
+.infor.update .infor-group label.address{
+	background: url("../images/address_03.png") no-repeat 0 0;
+}
+.infor.update .infor-group .address-txt{
+	width:333px;
+	resize: none;
 }
 .infor.update .infor-group label.account{
 	background-position: 0 -163px;
@@ -2152,6 +2468,11 @@
 .infor.update .infor-group .yzm{
 	width: 214px;
 	margin-right: 15px;
+}
+.infor.update .infor-group .codes{
+	float: right;
+	width: 90px !important;
+	margin-top: 0; !important;
 }
 .infor.update .infor-group .getYzm{
 	display: inline-block;
@@ -2309,10 +2630,21 @@ label .chk-style.on{
 	background-position: 0 -25px;
 }
 label .ipt-default{
-	opacity: 0;
 	cursor: pointer;
-	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-	filter: alpha(opacity=0);
+	/* older safari/Chrome browsers */
+	-webkit-opacity: 0;
+	/* Netscape and Older than Firefox 0.9 */
+	-moz-opacity: 0;
+	/* Safari 1.x (pre WebKit!) 老式khtml内核的Safari浏览器*/
+	-khtml-opacity: 0;
+	/* IE9 + etc...modern browsers */
+	opacity: 0;
+	/* IE 4-9 */
+	filter:alpha(opacity=0);
+	/*This works in IE 8 & 9 too*/
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	/*IE4-IE9*/
+	filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
 }
 .m-orderCart table tr td > s,.m-orderCart table tr th{
 	color: #bbbbbb;
@@ -2593,9 +2925,20 @@ label .ipt-default{
 	width: 100%;
 	height: 100%;
 	background: #000000;
-	opacity: 0.5;
+	/* older safari/Chrome browsers */
+	-webkit-opacity: 0.5;
+	/* Netscape and Older than Firefox 0.9 */
 	-moz-opacity: 0.5;
-	filter: alpha(opacity=50);
+	/* Safari 1.x (pre WebKit!) 老式khtml内核的Safari浏览器*/
+	-khtml-opacity: 0.5;
+	/* IE9 + etc...modern browsers */
+	opacity: .5;
+	/* IE 4-9 */
+	filter:alpha(opacity=50);
+	/*This works in IE 8 & 9 too*/
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+	/*IE4-IE9*/
+	filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
 	position: fixed;
 	_position: absolute;
 	top: 0;
@@ -2658,7 +3001,7 @@ label .ipt-default{
 	font-size: 16px;
 	margin-top: 20px;
 }
-.cover-box .form .code > span{
+span#idcode{
 	display: inline-block;
 	background: #efefef;
 	padding: 3px 0;
@@ -2924,6 +3267,7 @@ label .ipt-default{
 }
 
 
+/*bootstrap*/
 /*课程详情 tab 切换 css*/
 .tab-content>.tab-pane {
 	display: none;
@@ -2941,4 +3285,240 @@ label .ipt-default{
 
 .fade.in {
 	opacity: 1;
+}
+
+.carousel {
+	position: relative
+}
+
+.carousel-inner {
+	position: relative;
+	width: 100%;
+	overflow: hidden
+}
+
+.carousel-inner>.item {
+	position: relative;
+	display: none;
+	-webkit-transition: .6s ease-in-out left;
+	-o-transition: .6s ease-in-out left;
+	transition: .6s ease-in-out left
+}
+
+.carousel-inner>.item>a>img,.carousel-inner>.item>img {
+	line-height: 1
+}
+
+@media all and (transform-3d),(-webkit-transform-3d) {
+	.carousel-inner>.item {
+		-webkit-transition: -webkit-transform .6s ease-in-out;
+		-o-transition: -o-transform .6s ease-in-out;
+		transition: transform .6s ease-in-out;
+		-webkit-backface-visibility: hidden;
+		backface-visibility: hidden;
+		-webkit-perspective: 1000px;
+		perspective: 1000px
+	}
+
+	.carousel-inner>.item.active.right,.carousel-inner>.item.next {
+		left: 0;
+		-webkit-transform: translate3d(100%,0,0);
+		transform: translate3d(100%,0,0)
+	}
+
+	.carousel-inner>.item.active.left,.carousel-inner>.item.prev {
+		left: 0;
+		-webkit-transform: translate3d(-100%,0,0);
+		transform: translate3d(-100%,0,0)
+	}
+
+	.carousel-inner>.item.active,.carousel-inner>.item.next.left,.carousel-inner>.item.prev.right {
+		left: 0;
+		-webkit-transform: translate3d(0,0,0);
+		transform: translate3d(0,0,0)
+	}
+}
+
+.carousel-inner>.active,.carousel-inner>.next,.carousel-inner>.prev {
+	display: block
+}
+
+.carousel-inner>.active {
+	left: 0
+}
+
+.carousel-inner>.next,.carousel-inner>.prev {
+	position: absolute;
+	top: 0;
+	width: 100%
+}
+
+.carousel-inner>.next {
+	left: 100%
+}
+
+.carousel-inner>.prev {
+	left: -100%
+}
+
+.carousel-inner>.next.left,.carousel-inner>.prev.right {
+	left: 0
+}
+
+.carousel-inner>.active.left {
+	left: -100%
+}
+
+.carousel-inner>.active.right {
+	left: 100%
+}
+
+.carousel-control {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	width: 15%;
+	font-size: 20px;
+	color: #fff;
+	text-align: center;
+	text-shadow: 0 1px 2px rgba(0,0,0,.6);
+	background-color: rgba(0,0,0,0);
+	filter: alpha(opacity=50);
+	opacity: .5
+}
+
+.carousel-control.left {
+	background-image: -webkit-linear-gradient(left,rgba(0,0,0,.5) 0,rgba(0,0,0,.0001) 100%);
+	background-image: -o-linear-gradient(left,rgba(0,0,0,.5) 0,rgba(0,0,0,.0001) 100%);
+	background-image: -webkit-gradient(linear,left top,right top,from(rgba(0,0,0,.5)),to(rgba(0,0,0,.0001)));
+	background-image: linear-gradient(to right,rgba(0,0,0,.5) 0,rgba(0,0,0,.0001) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
+	background-repeat: repeat-x
+}
+
+.carousel-control.right {
+	right: 0;
+	left: auto;
+	background-image: -webkit-linear-gradient(left,rgba(0,0,0,.0001) 0,rgba(0,0,0,.5) 100%);
+	background-image: -o-linear-gradient(left,rgba(0,0,0,.0001) 0,rgba(0,0,0,.5) 100%);
+	background-image: -webkit-gradient(linear,left top,right top,from(rgba(0,0,0,.0001)),to(rgba(0,0,0,.5)));
+	background-image: linear-gradient(to right,rgba(0,0,0,.0001) 0,rgba(0,0,0,.5) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
+	background-repeat: repeat-x
+}
+
+.carousel-control:focus,.carousel-control:hover {
+	color: #fff;
+	text-decoration: none;
+	filter: alpha(opacity=90);
+	outline: 0;
+	opacity: .9
+}
+
+.carousel-control .glyphicon-chevron-left,.carousel-control .glyphicon-chevron-right,.carousel-control .icon-next,.carousel-control .icon-prev {
+	position: absolute;
+	top: 50%;
+	z-index: 5;
+	display: inline-block;
+	margin-top: -10px
+}
+
+.carousel-control .glyphicon-chevron-left,.carousel-control .icon-prev {
+	left: 50%;
+	margin-left: -10px
+}
+
+.carousel-control .glyphicon-chevron-right,.carousel-control .icon-next {
+	right: 50%;
+	margin-right: -10px
+}
+
+.carousel-control .icon-next,.carousel-control .icon-prev {
+	width: 20px;
+	height: 20px;
+	font-family: serif;
+	line-height: 1
+}
+
+.carousel-control .icon-prev:before {
+	content: '\2039'
+}
+
+.carousel-control .icon-next:before {
+	content: '\203a'
+}
+
+.carousel-indicators {
+	position: absolute;
+	bottom: 10px;
+	left: 50%;
+	z-index: 15;
+	width: 60%;
+	padding-left: 0;
+	margin-left: -30%;
+	text-align: center;
+	list-style: none
+}
+
+.carousel-indicators li {
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	margin: 1px;
+	text-indent: -999px;
+	cursor: pointer;
+	background-color: transparent;
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px;
+	border-radius:10px;
+	border:1px solid #7e8285
+}
+
+.carousel-indicators .active {
+	background-color: #b2d9e8
+}
+
+.carousel-caption {
+	position: absolute;
+	right: 15%;
+	bottom: 20px;
+	left: 15%;
+	z-index: 10;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	color: #fff;
+	text-align: center;
+	text-shadow: 0 1px 2px rgba(0,0,0,.6)
+}
+
+.carousel-caption .btn {
+	text-shadow: none
+}
+
+@media screen and (min-width: 768px) {
+	.carousel-control .glyphicon-chevron-left,.carousel-control .glyphicon-chevron-right,.carousel-control .icon-next,.carousel-control .icon-prev {
+		width:30px;
+		height: 30px;
+		margin-top: -10px;
+		font-size: 30px
+	}
+
+	.carousel-control .glyphicon-chevron-left,.carousel-control .icon-prev {
+		margin-left: -10px
+	}
+
+	.carousel-control .glyphicon-chevron-right,.carousel-control .icon-next {
+		margin-right: -10px
+	}
+
+	.carousel-caption {
+		right: 20%;
+		left: 20%;
+		padding-bottom: 30px
+	}
+
+	.carousel-indicators {
+		bottom: -50px
+	}
 }

@@ -8,12 +8,109 @@
 	<link rel="shortcut icon" href="http://home.9first.com/favicon.ico">
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/main.css">
+
 </head>
 <body>
+	<header>
+		<div class="index-banner">
+			<div class="content">
+				<img src="images/index_logo.png" alt="">
+				<div class="index-search">
+					<input type="text"><a class="search-btn js-indexSearch">搜索</a>
+				</div>
+				<div class="course-btn">
+					<a href="cart.html" class="buy">我的购物车</a>
+				</div>
+				<div class="index-enter fr">
+					<div class="before-enter show">
+						<a href="javascript:void(0);">登录</a>/<a href="javascript:void(0);">注册</a>
+					</div>
+					<div class="after-enter">
+						<span class="name">地主家的傻儿子多得多</span>
+					</div>
+					<img class="header" src="images/header.png" alt="">
+				</div>
+			</div>
+		</div>
+	</header>
 	<section>
+		<!--导航栏 start-->
+		<div class="navbar">
+			<div class="nav">
+				<div class="de">
+					<p class="classify"><i></i>证书分类</p>
+					<div class="nav-index">
+						<a href="http://ketang.9first.com/">直播</a>
+						<a href="http://ketang.9first.com/zhengshu">课程</a>
+						<a href="http://ketang.9first.com/tutor">资格认证</a>
+						<a href="http://ketang.9first.com/baomingzhinan">智库</a>
+						<a href="http://i.9first.com/special/index.php?r=studyday" target="_blank">企业服务</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--导航栏 end-->
 		<!-- banner start-->
 		<div class="banner">
-			<img src="images/banner.jpg" alt="">
+			<div class="wrap">
+				<div class="navi">
+					<ul>
+						<li>
+							<h2>酒店</h2>
+							<p>通用课程</p>
+							<div class="alink">
+								<a href="#">督导技能</a>
+								<a href="#">利益管理</a>
+								<a href="#">酒店英语</a>
+								<a href="#">团队建设</a>
+								<a href="#">收益管理</a>
+								<a href="#">财务预算</a>
+								<a href="#">领导力</a>
+							</div>
+						</li>
+						<li>
+							<p>专业课程</p>
+							<div class="alink">
+								<a href="#">运营管理</a>
+								<a href="#">营销创新</a>
+								<a href="#">操作技能</a>
+								<a href="#">工程技术</a>
+								<a href="#">筹建管理</a>
+								<a href="#">酒店HR</a>
+								<a href="#">安全保障</a>
+							</div>
+						</li>
+						<li>
+							<p>其他</p>
+							<div class="alink">
+								<a href="#">公寓</a>
+								<a href="#">民宿</a>
+								<a href="#">物业</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="wrap-right">
+					<div class="filter-cover">
+						<a href="#">进入直播间</a>
+					</div>
+					<a href="#" class="aview">观看直播</a>
+				</div>
+			</div>
+			<div id="bannerCarousel" class="carousel slide">
+				<ol class="carousel-indicators" style="bottom: 0;">
+					<li data-target="#bannerCarousel" data-slide-to="0" class="active"></li>
+					<li data-target="#bannerCarousel" data-slide-to="1" class=""></li>
+				</ol>
+				<div class="carousel-inner">
+					<div class="item active">
+						<img src="images/banner.jpg" alt="">
+					</div>
+					<div class="item">
+						<img src="images/banner.jpg" alt="">
+					</div>
+				</div>
+			</div>
 		</div>
 		<!-- banner end-->
 		<!-- part1 -->
@@ -480,40 +577,8 @@
 
 	<script src="http://f3.v.veimg.cn/f2e/gallery/??seajs/2.2.0/sea.min.js,jquery/1.9.1/jquery.min.js"></script>
 	<script src="js/libs/jquery.cookie.js"></script>
-	<script type="text/javascript">
-		console.log($.cookie('the_cookie','123'));
-		var intDiff = parseInt(259200);//倒计时总秒数量
-		function timer(intDiff){
-			window.setInterval(function(){
-				var day=0,
-						hour=0,
-						minute=0,
-						second=0;//时间默认值
-				if(intDiff > 0){
-//                day = Math.floor(intDiff / (60 * 60 * 24));
-					hour = Math.floor(intDiff / (60 * 60)) - (day * 24);
-					minute = Math.floor(intDiff / 60) - (day * 24 * 60) - (hour * 60);
-					second = Math.floor(intDiff) - (day * 24 * 60 * 60) - (hour * 60 * 60) - (minute * 60);
-				}else{
-					window.location.href = 'index.html';
-				}
-				if (minute <= 9) minute = '0' + minute;
-				if (second <= 9) second = '0' + second;
-//            $('#day_show').html(day+"天");
-				$('#hour_show').html(hour);
-				$('#minute_show').html(minute);
-				$('#second_show').html(second);
-				intDiff--;
-			}, 1000);
-		}
-		$(function(){
-			timer(intDiff);
-			console.log(intDiff);
-			// 读取 cookie );
-		});
-		$('.timer').on('click',function () {
-			console.log(intDiff);
-		})
-	</script>
+	<script src="js/libs/bootstrap.min.js"></script>
+	<script src="js/libs/jQuery-jcMarquee.js"></script>
+	<script src="js/index.js"></script>
 </body> 
 </html>
