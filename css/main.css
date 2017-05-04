@@ -5,6 +5,39 @@
 
 @charset "utf-8";
 
+/*页面悬浮 入口*/
+.sidebar{
+	position: fixed;
+	top:65%;
+	right: 50px;
+	z-index:999;
+}
+.sidebar ul li a{
+	background: url("../images/xficon.png") no-repeat 0 0;
+	width: 40px;
+	height:40px;
+	margin: 5px 0;
+	cursor: pointer;
+	display: inline-block;
+}
+.sidebar ul li a.l1{
+	background-position: 0 0;
+}
+.sidebar ul li a.l2{
+	background-position: 0 -50px;
+}
+.sidebar ul li a.l3{
+	background-position: 0 -100px;
+}
+.sidebar ul li a.l4{
+	background-position: 0 -150px;
+}
+.sidebar ul li a.l5{
+	background-position: 0 -200px;
+}
+/*页面悬浮 入口 end*/
+
+
 /*首页 顶部*/
 .index-banner{
 	padding: 40px 0;
@@ -2322,7 +2355,7 @@
 	/*IE4-IE9*/
 	filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
 }
-.infor .infor-group label .ipt-style{
+label .ipt-style{
 	width: 24px;
 	height: 18px;
 	padding-top: 3px;
@@ -2333,7 +2366,7 @@
 	background-repeat: no-repeat;
 	background-position: -5px -35px;
 }
-.infor .infor-group label .on{
+label .on{
 	background-position: -5px -61px;
 }
 .infor .infor-group > textarea{
@@ -2408,17 +2441,345 @@
 
 /*找回密码*/
 .information .pwd-bg{
-	background: url(../images/pwd_way.png) no-repeat 0 18px;
-	width: 330px;
-	height: 95px;
-	margin: 20px auto;
-	border: 2px solid #00a7ea;
+	background: url(../images/pwd_way.png) no-repeat;
+	width: 296px;
+	padding: 25px 0;
+	margin: 50px auto;
+	border: 1px solid #dadada;
 	-webkit-border-radius:3px;
 	-moz-border-radius:3px;
 	border-radius:3px;
+	/* padding-left: 40px; */
+}
+.information .pwd-bg.pwd-phone{
+	background-position: 30px 18px;
+}
+.information .pwd-bg.pwd-email{
+	background-position: 30px -142px;
+}
+.information .pwd-bg:hover{
+	border: 1px solid #00a7ea;
+	cursor: pointer;
+}
+.information .pwd-bg > h2{
+	font-size:20px;
+	font-weight:normal;
+}
+.information .pwd-bg > h2,.information .pwd-bg > p{
+	margin-left: 125px;
+	text-align: left;
+}
+.information .pwd-bg > p{
+	color: #00a7ea;
+	margin-top: 10px;
+}
 
+.f-14c{
+	color: #00a7ea !important;
+	font-size: 14px !important;
+}
+
+.pwd-result{
+	padding: 60px 0;
+}
+.pwd-result > h2,.pwd-result > h2 > a{
+	font-size:20px;
+	font-weight:normal;
+}
+.pwd-result > h2,.pwd-result > p{
+	margin: 40px 0;
+	line-height: 30px;
+}
+.pwd-result > h2 > a{
+	color: #00a7ea;
 }
 /*找回密码 end*/
+
+/*申请为导师*/
+.apply-left,.apply-right{
+	background: #FFFFFF;
+	min-height: 750px;
+	/* older safari/Chrome browsers */
+	-webkit-opacity: 0.9;
+	/* Netscape and Older than Firefox 0.9 */
+	-moz-opacity: 0.9;
+	/* Safari 1.x (pre WebKit!) 老式khtml内核的Safari浏览器*/
+	-khtml-opacity: 0.9;
+	/* IE9 + etc...modern browsers */
+	opacity: .9;
+	/* IE 4-9 */
+	filter:alpha(opacity=90);
+	/*This works in IE 8 & 9 too*/
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+	/*IE4-IE9*/
+	filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
+}
+.apply-left .form{
+	margin: 50px 0 0 0;
+	text-align: center;
+	font-size: 16px;
+}
+.apply-left .form input{
+	padding: 10px;
+	border: 1px solid #dadada;
+	background: #f8f8f8;
+}
+.form label .chk-style{
+	margin-right: 0;
+}
+.form .course-btn{
+	margin-top: 60px !important;
+}
+.form .course-btn > a{
+	margin:0;
+	background: #00a7ea;
+	width:300px;
+}
+.apply-left .form input[type="text"]{
+	width: 100%;
+}
+.apply-left .form .input .txtRight > label{
+	margin: 0 20px 0 0;
+	cursor: pointer;
+}
+.apply-left .form > div{
+	position: relative;
+	margin: 30px 0;
+}
+.apply-left .form > div > label{
+	display: inline-block;
+	width: 140px;
+	text-align: right;
+}
+.apply-left .form .textarea .txtRight > textarea{
+	width: 340px;
+	padding: 10px;
+	border: 1px solid #dadada;
+	background: #f8f8f8;
+	resize: none;
+}
+.apply-left .form .textarea > label{
+	vertical-align: top;
+}
+.apply-left .form .txtRight{
+	display: inline-block;
+	width: 340px;
+	text-align: left;
+}
+.apply-right{
+	background:#FFFFFF url("../images/bottom.png") no-repeat right bottom;
+}
+.apply-pane .note-pane{
+	margin: 0;
+	padding:0;
+}
+.apply-right-info{
+	padding: 20px 15px;
+}
+.apply-right-info > div{
+	margin: 20px 0;
+	color: #808080;
+}
+.apply-right-info > div > span{
+	color: #333;
+}
+.apply-right-info > div .adr{
+	display: inline-block;
+	width: 200px;
+	vertical-align: top;
+	line-height: 30px;
+	margin-top: -5px;
+}
+/*申请为导师 end*/
+
+
+/*登录*/
+.login-box{
+	margin: 0 auto;
+	padding: 20px 0 0 0;
+	width: 560px;
+	text-align: center;
+	background: #FFFFFF;
+	/* older safari/Chrome browsers */
+	-webkit-opacity: 0.9;
+	/* Netscape and Older than Firefox 0.9 */
+	-moz-opacity: 0.9;
+	/* Safari 1.x (pre WebKit!) 老式khtml内核的Safari浏览器*/
+	-khtml-opacity: 0.9;
+	/* IE9 + etc...modern browsers */
+	opacity: .9;
+	/* IE 4-9 */
+	filter:alpha(opacity=90);
+	/*This works in IE 8 & 9 too*/
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+	/*IE4-IE9*/
+	filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
+
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;;
+}
+.login-box .login-bottom{
+	border-top:1px dashed #a0b7c9;
+	background: #c0dcf3;
+	padding:20px 0;
+	margin-top: 30px;
+
+	-webkit-border-bottom-left-radius: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	-moz-border-radius-bottomright: 5px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+.login-box .item{
+	margin: 30px 0;
+}
+.login-box .item > label{
+	display: inline-block;
+	width:100px;
+	text-align: right;
+}
+.login-box .item > input{
+	display: inline-block;
+	width:275px;
+	border:1px solid #dadada;
+	background: #f8f8f8;
+	padding:10px;
+}
+.login-box .item.gets > input{
+	width: 152px;
+	margin-right: 20px;
+}
+.login-box .item.gets .codes{
+	width: 100px;
+	margin-left: 0;
+	height: 35px;
+	line-height: 35px;
+}
+.login-box .item .chk-style > input[type="checkbox"]{
+	/* older safari/Chrome browsers */
+		-webkit-opacity: 0;
+	/* Netscape and Older than Firefox 0.9 */
+		-moz-opacity: 0;
+	/* Safari 1.x (pre WebKit!) 老式khtml内核的Safari浏览器*/
+		-khtml-opacity: 0;
+	/* IE9 + etc...modern browsers */
+		opacity: 0;
+	/* IE 4-9 */
+		filter:alpha(opacity=0);
+	/*This works in IE 8 & 9 too*/
+		-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	/*IE4-IE9*/
+		filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+}
+.login-success{
+	display: none;
+	margin: 100px 0 200px 0;
+}
+.login-success h2{
+	font-size:20px;
+	font-weight:normal;
+}
+.login-success h2,.login-success p{
+	margin: 20px 0	;
+}
+/*登录 end*/
+
+/*首页登录*/
+.cover-box.loginCover > h2{
+	background: #FFFFFF;
+	color: #333;
+	border-bottom:1px solid #dadada;
+	padding:15px 10px;
+}
+
+.loginCover .index-login.form{
+	text-align: center;
+}
+.loginCover .index-login.form > div{
+	margin: 10px auto;
+	width:400px;
+	display: inline-block;
+}
+.loginCover .index-login.form > div > input {
+	width: 338px;
+	border: 1px solid #dadada;
+	background: #f8f8f8 url(../images/arrow_icon1.png) no-repeat 0 0;
+	padding: 10px 30px;
+}
+.loginCover .index-login.form .username > input{
+	background-position: 5px -156px;
+}
+.loginCover .index-login.form .pwd > input{
+	background-position: 5px -120px;
+}
+.loginCover .index-login.form > div input[type='checkbox']{
+	/* older safari/Chrome browsers */
+	-webkit-opacity: 0;
+	/* Netscape and Older than Firefox 0.9 */
+	-moz-opacity: 0;
+	/* Safari 1.x (pre WebKit!) 老式khtml内核的Safari浏览器*/
+	-khtml-opacity: 0;
+	/* IE9 + etc...modern browsers */
+	opacity: 0;
+	/* IE 4-9 */
+	filter:alpha(opacity=0);
+	/*This works in IE 8 & 9 too*/
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	/*IE4-IE9*/
+	filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+}
+
+.cover-box.loginCover .index-login.form > div > a.f-14c{
+	display: initial;
+	background: transparent;
+	padding: 0;
+	margin: 0;
+}
+.index-login.form .course-btn{
+	margin-top: 20px !important;
+}
+.index-login.form .course-btn > a{
+	width: 185px;
+	padding:15px 90px;
+}
+.index-login-bottom{
+	border-top:1px solid #dadada;
+	margin:0 20px;
+	text-align: center;
+	position: relative;
+	padding:20px 0;
+}
+.index-login-bottom .abs{
+	position: absolute;
+	font-size: 20px;
+	font-weight: normal;
+	top: -15px;
+	background: #fff;
+	display: inline-block;
+	left: 50%;
+	color: #dadada;
+	width:30px;
+	height:30px;
+}
+.index-login-bottom .plat{
+	background: url(../images/login_icon_03.png) no-repeat 0 0;
+	width: 55px;
+	height: 55px;
+	display: inline-block;
+	margin: 20px;
+}
+.index-login-bottom .plat.wx{
+	background-position: 0 0;
+}
+.index-login-bottom .plat.wb{
+	background-position: -128px 0;
+}
+.index-login-bottom .plat.qq{
+	background-position: -257px 0;
+}
+/*首页登录 end*/
 
 /*账户信息修改*/
 .infor.update{
@@ -2472,9 +2833,9 @@
 .infor.update .infor-group .codes{
 	float: right;
 	width: 90px !important;
-	margin-top: 0; !important;
+	margin-top: 0 !important;
 }
-.infor.update .infor-group .getYzm{
+.getYzm{
 	display: inline-block;
 	width: 100px;
 	background: #fff;
@@ -3001,7 +3362,7 @@ label .ipt-default{
 	font-size: 16px;
 	margin-top: 20px;
 }
-span#idcode{
+.codes{
 	display: inline-block;
 	background: #efefef;
 	padding: 3px 0;

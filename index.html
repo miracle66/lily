@@ -11,6 +11,42 @@
 
 </head>
 <body>
+	<!--cover-->
+	<div class="cover"></div>
+	<!--cover end-->
+	<!--实名认证 弹层-->
+	<div class="cover-box js-close-box nameAuthen loginCover">
+		<h2>登录 <img class="js-close fr" src="images/close_gray.png" alt=""></h2>
+		<div class="index-login form">
+			<div class="username"><input type="text" placeholder="请输入用户名/邮箱/手机号码"></div>
+			<div class="pwd"><input type="text" placeholder="请输入密码"></div>
+			<div>
+				<label for="" class="js-checkbox fl"><span class="chk-style"><input type="checkbox" class="chk-default"></span>一个月免登录</label>
+				<a href="forgetPwd.html" class="f-14c fr">忘记密码</a>
+			</div>
+			<div class="course-btn">
+				<a href="#" class="buy">登录</a>
+			</div>
+			<div><a href=""	class="f-14c">还没有账号？去注册</a></div>
+		</div>
+		<div class="index-login-bottom">
+			<span class="abs">or</span>
+			<span class="plat wx"></span>
+			<span class="plat wb"></span>
+			<span class="plat qq"></span>
+		</div>
+	</div>
+	<!--实名认证 end 弹层-->
+
+	<div class="sidebar">
+		<ul>
+			<li><a class="l1" href="https://www.baidu.com/"></a></li>
+			<li><a class="l2" href="#"></a></li>
+			<li><a class="l3" href="#"></a></li>
+			<li><a class="l4" href="#"></a></li>
+			<li><a class="l5 backTop" href="#"></a></li>
+		</ul>
+	</div>
 	<header>
 		<div class="index-banner">
 			<div class="content">
@@ -23,7 +59,7 @@
 				</div>
 				<div class="index-enter fr">
 					<div class="before-enter show">
-						<a href="javascript:void(0);">登录</a>/<a href="javascript:void(0);">注册</a>
+						<a href="javascript:void(0);" class="js-login">登录</a>/<a href="register.html">注册</a>
 					</div>
 					<div class="after-enter">
 						<span class="name">地主家的傻儿子多得多</span>
@@ -580,5 +616,22 @@
 	<script src="js/libs/bootstrap.min.js"></script>
 	<script src="js/libs/jQuery-jcMarquee.js"></script>
 	<script src="js/index.js"></script>
+	<script src="js/main.js"></script>
+
+	<script>
+		$('.backTop').hide();
+		//滚动按钮和加入认证显示
+		$(window).bind('scroll', function () {
+			$('.backTop').show();
+			var sc_top=$(document).scrollTop();
+			if(sc_top==0)
+			{
+				$(".backTop").hide();
+			}
+		});
+		$(".backTop").click(function () {
+			$('body,html').animate({scrollTop: 0}, 500,function(){$(".backTop").hide();});
+		});
+	</script>
 </body> 
 </html>

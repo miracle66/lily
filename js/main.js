@@ -27,6 +27,17 @@ if( !('placeholder' in document.createElement('input')) ){
 }
 
 
+// 首页 登录
+$('.js-login').click(function(){
+	$('.cover').show();
+	$('.loginCover').show();
+})
+$('.js-close').click(function () {
+	$('.cover').hide();
+	$('.loginCover').hide();
+})
+
+
 // 课程首页 顶部分类点击样式
 $('.js-top > a').click(function(){
 	$(this).addClass('active').siblings().removeClass('active');
@@ -116,7 +127,13 @@ $(document).on('click','.detail-toggle .js-toggle',function () {
 
 
 // 个人设置 - 基本信息 单选按钮选中
-$(".ipt-style").on("click",function(){
-	console.log($(this).addClass("on").parent().siblings().children('span').removeClass('on'));
+$(".js-radio").on("click",function(){
+	console.log($(this).children('.ipt-style').addClass("on").parent().siblings().children('span').removeClass('on'));
 })
 
+
+// 申请为导师 复选框 js
+$(".form .js-checkbox").on("click",function(){
+	console.log('复选框')
+	$(this).children('.chk-style').toggleClass("on");
+})
