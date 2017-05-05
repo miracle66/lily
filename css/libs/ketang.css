@@ -1,0 +1,128 @@
+body {
+  margin: 0;
+  font-family: "Microsoft YaHei";
+}
+a {
+  text-decoration: none;
+  color: #000000;
+  cursor: pointer;
+}
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.nav-box {
+  height: 40px;
+  background-color: #f5f5f5;
+  line-height: 40px;
+}
+.nav-box .nav-lists {
+  width: 980px;
+  margin: 0 auto;
+}
+.nav-box .nav-lists .ketang {
+  float: left;
+  color: #0354a6;
+  font-weight: bold;
+  font-size: 18px;
+}
+.nav-box .nav-lists .nav-index {
+  float: right;
+}
+.nav-box .nav-lists .nav-index a {
+  font-size: 14px;
+  margin-left: 10px;
+  color: #666666;
+}
+.video {
+  height: 621px;
+  background-color: #262a2d;
+}
+.video .video-box {
+  position: relative;
+  width: 980px;
+  height: 100%;
+  margin: 0 auto;
+  color: gray;
+  overflow: hidden;
+}
+.video .video-box .share {
+  position: absolute;
+  right: 0;
+  top: 180px;
+  width: 82px;
+  margin-right: 0px;
+}
+.video .video-box .share .left-ctrl {
+  border: 1px solid #3C3C3C;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 3px;
+  font-family: serif;
+  cursor: pointer;
+  float: left;
+  width: 15px;
+  margin-top: 50px;
+  color: #9E9E9E;
+  text-align: center;
+  font-size: 14px;
+}
+.video .video-box .share .right-show {
+  float: right;
+  border: 1px solid #3C3C3C;
+  width: 58px;
+  height: 171px;
+  border-radius: 5px;
+}
+.video .video-box .share .right-show .show-text {
+  text-align: center;
+  width: 44px;
+  border-bottom: 1px dashed #3C3C3C;
+  margin: 0 auto;
+  padding: 5px 0;
+  font-size: 14px;
+}
+.video .video-box .share .right-show ul li {
+  text-align: center;
+}
+.video .video-box .share .right-show ul li span {
+  display: block;
+}
+.video .video-box .share .right-show .bdsharebuttonbox a {
+  display: block;
+  float: none;
+  margin: 10px auto;
+  opacity: 0.5;
+}
+.video .video-box .share .right-show .bdsharebuttonbox a:hover {
+  opacity: 1;
+}
+#a1 {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+.head-box {
+  background-color: #ededed;
+}
+.head-box .head {
+  margin: 0 auto;
+  width: 980px;
+}
+.head-box .head .title {
+  color: #333333;
+  font-size: 18px;
+  height: 50px;
+  line-height: 50px;
+}
+.head-box .head .video-details {
+  color: #999999;
+  font-size: 14px;
+  line-height: 15px;
+  height: 30px;
+}
+.head-box .head .video-details span {
+  margin-left: 30px;
+}
